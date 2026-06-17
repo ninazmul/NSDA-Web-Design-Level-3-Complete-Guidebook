@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Complete Guidebook for NSDA Web Design Level 3 Competency Standard — Full answers, code examples, and guidance for all 9 units. Created by N.I. Nazmul.">
+  <title>NSDA Web Design Level 3 — Complete Guidebook</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Scroll Progress -->
+<div id="scroll-progress"></div>
+
+<!-- Header -->
+<header class="header">
+  <a href="index.html" class="header-logo">
+    <div class="header-logo-icon">W3</div>
+    <div class="header-logo-text">NSDA <span>Web Design</span> L3</div>
+  </a>
+  <nav class="header-nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="unit1-negotiation.html">Units</a>
+    <a href="#course-structure">Structure</a>
+    <a href="#units-overview">All Units</a>
+  </nav>
+  <div style="display:flex;align-items:center;gap:8px;">
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="#course-structure">Course Structure</a>
+  <a href="#units-overview">All Units</a>
+  <a href="unit1-negotiation.html">Unit 1: Negotiation</a>
+  <a href="unit2-osh.html">Unit 2: OSH</a>
+  <a href="unit3-documents.html">Unit 3: Documents</a>
+  <a href="unit4-visual-design.html">Unit 4: Visual Design</a>
+  <a href="unit5-environment.html">Unit 5: Environment</a>
+  <a href="unit6-html.html">Unit 6: HTML</a>
+  <a href="unit7-css.html">Unit 7: CSS</a>
+  <a href="unit8-design-to-web.html">Unit 8: Design to Web</a>
+  <a href="unit9-javascript.html">Unit 9: JavaScript</a>
+</nav>
+
+<main class="main-content">
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-badge">
+      <span></span> CS-ICT-WD-L3-EN-V2 • Approved 2025
+    </div>
+
+    <h1>
+      NSDA Web Design<br>
+      <span class="gradient-text">Level 3 Guidebook</span>
+    </h1>
+
+    <p class="hero-subtitle">
+      The complete, interactive guide covering all competency standards for the National Skills Certificate in Web Design — with detailed answers, real-world code examples, and expert guidance.
+    </p>
+
+    <div class="hero-stats">
+      <div class="hero-stat fade-up">
+        <div class="hero-stat-value">360</div>
+        <div class="hero-stat-label">Total Hours</div>
+      </div>
+      <div class="hero-stat fade-up">
+        <div class="hero-stat-value">9</div>
+        <div class="hero-stat-label">Competency Units</div>
+      </div>
+      <div class="hero-stat fade-up">
+        <div class="hero-stat-value">3</div>
+        <div class="hero-stat-label">BNQF Level</div>
+      </div>
+      <div class="hero-stat fade-up">
+        <div class="hero-stat-value">ICT</div>
+        <div class="hero-stat-label">Sector</div>
+      </div>
+    </div>
+
+    <!-- Author Card -->
+    <div class="author-card fade-up">
+      <div class="author-avatar">N</div>
+      <div class="author-info">
+        <div class="author-name">N.I. Nazmul</div>
+        <div class="author-role">Full-Stack Developer (MERN Stack & Next.js Specialist)</div>
+        <a href="https://github.com/ninazmul" target="_blank" rel="noopener" class="author-link">github.com/ninazmul</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About NSDA Section -->
+  <section class="section" id="about">
+    <div class="section-header">
+      <div class="section-label">About This Guidebook</div>
+      <h2 class="section-title">What is the NSDA Web Design Level 3?</h2>
+      <p class="section-desc">
+        A competency-based qualification under the Bangladesh National Qualification Framework (BNQF) developed by the National Skills Development Authority.
+      </p>
+    </div>
+
+    <div style="max-width:800px;margin:0 auto;padding:0 2rem;">
+      <div class="info-box fade-up">
+        <div class="info-box-title">📘 Competency Standard</div>
+        <p>A competency standard is a written specification of the knowledge, skills, and attitudes required for the performance of an occupation, trade, or job corresponding to industry standards.</p>
+      </div>
+
+      <div class="info-box tip fade-up">
+        <div class="info-box-title">🎯 Purpose</div>
+        <p><strong>Training & Assessment:</strong> Provides a consistent framework for training programs and assessment tools.</p>
+        <p><strong>Industry Recognition:</strong> Enables industry-recognized qualifications through direct assessment of workplace competencies.</p>
+        <p><strong>Flexible Learning:</strong> Encourages development and delivery of flexible training suited to individual and industry requirements.</p>
+      </div>
+
+      <div class="info-box example fade-up">
+        <div class="info-box-title">🏢 BNQF Level 3 — Skilled Worker</div>
+        <p><strong>Knowledge:</strong> Moderately broad knowledge in a specific work or study area, able to perceive ideas and abstract from drawing and design.</p>
+        <p><strong>Skills:</strong> Basic cognitive and practical skills required to use relevant information, carry out tasks, and solve routine problems using simple rules and tools.</p>
+        <p><strong>Responsibility:</strong> Work or study under supervision with considerable autonomy. Participate in teams and responsible for group coordination.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Course Structure -->
+  <section class="section" id="course-structure" style="background:var(--bg-secondary);">
+    <div class="section-header">
+      <div class="section-label">Overview</div>
+      <h2 class="section-title">Course Structure</h2>
+      <p class="section-desc">
+        The complete 360-hour program organized into Generic, Sector-Specific, and Occupation-Specific competency units.
+      </p>
+    </div>
+
+    <div class="course-table fade-up">
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Unit Code</th>
+              <th>Unit Title</th>
+              <th>Type</th>
+              <th>Hours</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><code>GU-09-L2-V1</code></td>
+              <td><a href="unit1-negotiation.html">Practice Negotiation Skills</a></td>
+              <td><span class="unit-badge badge-generic">Generic</span></td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><code>SU-ICT-10-L2-V1</code></td>
+              <td><a href="unit2-osh.html">Practice OSH Standard in ICT</a></td>
+              <td><span class="unit-badge badge-sector">Sector</span></td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><code>SU-ICT-11-L2-V1</code></td>
+              <td><a href="unit3-documents.html">Prepare Documents & Create Presentations</a></td>
+              <td><span class="unit-badge badge-sector">Sector</span></td>
+              <td>45</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><code>OU-ICT-WD-01-L3-V2</code></td>
+              <td><a href="unit4-visual-design.html">Visual Design Principles & Color Sense</a></td>
+              <td><span class="unit-badge badge-occupation">Occupation</span></td>
+              <td>35</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td><code>OU-ICT-WD-02-L3-V2</code></td>
+              <td><a href="unit5-environment.html">Setup Web Design Environment</a></td>
+              <td><span class="unit-badge badge-occupation">Occupation</span></td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td><code>OU-ICT-WD-03-L3-V2</code></td>
+              <td><a href="unit6-html.html">Work with HTML</a></td>
+              <td><span class="unit-badge badge-occupation">Occupation</span></td>
+              <td>60</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td><code>OU-ICT-WD-04-L3-V2</code></td>
+              <td><a href="unit7-css.html">Work with CSS & CSS Frameworks</a></td>
+              <td><span class="unit-badge badge-occupation">Occupation</span></td>
+              <td>45</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td><code>OU-ICT-WD-05-L3-V2</code></td>
+              <td><a href="unit8-design-to-web.html">Perform Design to Web</a></td>
+              <td><span class="unit-badge badge-occupation">Occupation</span></td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td><code>OU-ICT-WD-06-L3-V2</code></td>
+              <td><a href="unit9-javascript.html">Work with Core JavaScript</a></td>
+              <td><span class="unit-badge badge-occupation">Occupation</span></td>
+              <td>40</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Units Overview -->
+  <section class="section" id="units-overview">
+    <div class="section-header">
+      <div class="section-label">Explore Units</div>
+      <h2 class="section-title">All Competency Units</h2>
+      <p class="section-desc">
+        Click any unit to access the full guidebook with answers, examples, and guidance.
+      </p>
+    </div>
+
+    <div class="units-grid">
+
+      <!-- Unit 1 -->
+      <a href="unit1-negotiation.html" class="unit-card fade-up">
+        <div class="unit-card-number">1</div>
+        <div class="unit-card-code">GU-09-L2-V1</div>
+        <h3>Practice Negotiation Skills</h3>
+        <p>Learn to plan and participate in professional negotiations with effective communication and conflict resolution strategies.</p>
+        <div class="unit-card-meta">
+          <span>⏱ 20 Hours</span>
+          <span>📂 Generic</span>
+          <span>📝 2 Elements</span>
+        </div>
+      </a>
+
+      <!-- Unit 2 -->
+      <a href="unit2-osh.html" class="unit-card fade-up">
+        <div class="unit-card-number">2</div>
+        <div class="unit-card-code">SU-ICT-10-L2-V1</div>
+        <h3>Practice OSH Standard in ICT</h3>
+        <p>Identify hazards, apply personal safety practices, manage risks, and respond to emergencies in ICT workplaces.</p>
+        <div class="unit-card-meta">
+          <span>⏱ 15 Hours</span>
+          <span>📂 Sector</span>
+          <span>📝 4 Elements</span>
+        </div>
+      </a>
+
+      <!-- Unit 3 -->
+      <a href="unit3-documents.html" class="unit-card fade-up">
+        <div class="unit-card-number">3</div>
+        <div class="unit-card-code">SU-ICT-11-L2-V1</div>
+        <h3>Prepare Documents & Create Presentations</h3>
+        <p>Create professional MS Word documents and PowerPoint presentations with formatting, storytelling, and feedback integration.</p>
+        <div class="unit-card-meta">
+          <span>⏱ 45 Hours</span>
+          <span>📂 Sector</span>
+          <span>📝 8 Elements</span>
+        </div>
+      </a>
+
+      <!-- Unit 4 -->
+      <a href="unit4-visual-design.html" class="unit-card fade-up">
+        <div class="unit-card-number">4</div>
+        <div class="unit-card-code">OU-ICT-WD-01-L3-V2</div>
+        <h3>Visual Design Principles & Color Sense</h3>
+        <p>Interpret design principles for web layouts, understand color theory, psychology, and create accessible web color schemes.</p>
+        <div class="unit-card-meta">
+          <span>⏱ 35 Hours</span>
+          <span>📂 Occupation</span>
+          <span>📝 4 Elements</span>
+        </div>
+      </a>
+
+      <!-- Unit 5 -->
+      <a href="unit5-environment.html" class="unit-card fade-up">
+        <div class="unit-card-number">5</div>
+        <div class="unit-card-code">OU-ICT-WD-02-L3-V2</div>
+        <h3>Setup Web Design Environment</h3>
+        <p>Install editors, configure local/live servers, organize project files, set up version control with Git, and interpret data layers.</p>
+        <div class="unit-card-meta">
+          <span>⏱ 40 Hours</span>
+          <span>📂 Occupation</span>
+          <span>📝 6 Elements</span>
+        </div>
+      </a>
+
+      <!-- Unit 6 -->
+      <a href="unit6-html.html" class="unit-card fade-up">
+        <div class="unit-card-number">6</div>
+        <div class="unit-card-code">OU-ICT-WD-03-L3-V2</div>
+        <h3>Work with HTML</h3>
+        <p>Build semantic HTML5 pages, embed multimedia, create forms with validation, and ensure accessibility with ARIA and W3C standards.</p>
+        <div class="unit-card-meta">
+          <span>⏱ 60 Hours</span>
+          <span>📂 Occupation</span>
+          <span>📝 4 Elements</span>
+        </div>
+      </a>
+
+      <!-- Unit 7 -->
+      <a href="unit7-css.html" class="unit-card fade-up">
+        <div class="unit-card-number">7</div>
+        <div class="unit-card-code">OU-ICT-WD-04-L3-V2</div>
+        <h3>Work with CSS & CSS Frameworks</h3>
+        <p>Master CSS styling, responsive design, CSS Grid, transitions, animations, and frameworks like Bootstrap and Tailwind.</p>
+        <div class="unit-card-meta">
+          <span>⏱ 45 Hours</span>
+          <span>📂 Occupation</span>
+          <span>📝 7 Elements</span>
+        </div>
+      </a>
+
+      <!-- Unit 8 -->
+      <a href="unit8-design-to-web.html" class="unit-card fade-up">
+        <div class="unit-card-number">8</div>
+        <div class="unit-card-code">OU-ICT-WD-05-L3-V2</div>
+        <h3>Perform Design to Web</h3>
+        <p>Convert visual design files from Figma, XD, and Photoshop into responsive, functional web pages with pixel precision.</p>
+        <div class="unit-card-meta">
+          <span>⏱ 40 Hours</span>
+          <span>📂 Occupation</span>
+          <span>📝 4 Elements</span>
+        </div>
+      </a>
+
+      <!-- Unit 9 -->
+      <a href="unit9-javascript.html" class="unit-card fade-up">
+        <div class="unit-card-number">9</div>
+        <div class="unit-card-code">OU-ICT-WD-06-L3-V2</div>
+        <h3>Work with Core JavaScript</h3>
+        <p>Learn JavaScript fundamentals, control structures, functions, DOM manipulation, and event handling for interactive web pages.</p>
+        <div class="unit-card-meta">
+          <span>⏱ 40 Hours</span>
+          <span>📂 Occupation</span>
+          <span>📝 4 Elements</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <h3>NSDA <span>Web Design</span> Level 3</h3>
+      <p>Complete Guidebook covering all 9 Competency Units of the National Skills Certificate in Web Design under the Bangladesh National Qualification Framework (BNQF).</p>
+      <p style="font-size:0.82rem;color:var(--text-muted);">Competency Standard Code: CS-ICT-WD-L3-EN-V2<br>Approved by 39th Authority Meeting of NSDA — 23 January 2025</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="unit1-negotiation.html">Negotiation Skills</a></li>
+        <li><a href="unit2-osh.html">OSH in ICT</a></li>
+        <li><a href="unit3-documents.html">Documents & Presentations</a></li>
+        <li><a href="unit4-visual-design.html">Visual Design & Color</a></li>
+        <li><a href="unit5-environment.html">Environment Setup</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Technical Units</h4>
+      <ul class="footer-links">
+        <li><a href="unit6-html.html">Work with HTML</a></li>
+        <li><a href="unit7-css.html">CSS & Frameworks</a></li>
+        <li><a href="unit8-design-to-web.html">Design to Web</a></li>
+        <li><a href="unit9-javascript.html">Core JavaScript</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 NSDA Web Design Level 3 Guidebook. All rights reserved.</span>
+    <div class="footer-author">
+      <span>Created by <a href="https://github.com/ninazmul" target="_blank" rel="noopener"><strong>N.I. Nazmul</strong></a></span>
+      <span>—</span>
+      <span>Full-Stack Developer (MERN Stack & Next.js Specialist)</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>

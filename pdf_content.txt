@@ -1,0 +1,2756 @@
+Total pages: 66
+
+--- PAGE 1 ---
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ COMPETENCY STANDARD  
+ 
+ 
+Web  Design 
+ 
+Level: 0 3 
+ 
+ 
+(ICT Sector)  
+ 
+ 
+Competency Standard Code: CS-ICT-WD-L3-EN-V2 
+ 
+National Skills Development Authority  
+Chief Adviser's Office  
+Government of the People’s Republic of Bangladesh  
+
+
+--- PAGE 2 ---
+  
+
+--- PAGE 3 ---
+ 
+ Copyright  
+ 
+National Skills Development Authority  
+Chief Adviser's Office  
+Level: 10 -11, Biniyog Bhaban,  
+E-6 / B, Agargaon, Sher -E-Bangla Nagar Dhaka -1207, Bangladesh.  
+Email: ec@nsda.gov.bd  
+Website: www.nsda.gov.bd.  
+National Skills Portal: http: \\skillsportal.gov.bd  
+ 
+National Skills Development Authority (NSDA) is the owner of this document. Other 
+interested parties must obtain written permission from NSDA for reproduction of information 
+in any manner, in whole or in part, of this Competency Standard, in English or oth er language.  
+This Competency Standard for Web  Design  is a document for the development of curricula, 
+teaching and learning materials, and assessment tools. It also serves as the document for 
+providing training consistent with the requirements of industry in order to meet the 
+qualification of individuals who graduated through the established standard via competency -
+based assessment for a relevant job.  
+This document has been developed by NSDA in association with ICT Sector ISC, industry 
+representatives, academia, related specialist, trainer and related employee.  
+Public and private institutions may use the information contained in this standard for activities 
+benefitting Bangladesh.  
+ 
+ 
+  
+
+--- PAGE 4 ---
+ 
+ii Introduction  
+The NSDA aims to enhance an individual’s employability by certifying completeness with 
+skills. NSDA works to expand the skilling capacity of identified public and private training 
+providers qualitatively and quantitatively. It also aims to establish and op erationalize a 
+responsive skills ecosystem and delivery mechanism through a combination of well -defined 
+set of mechanisms and necessary technical supports.   
+Key priority economic growth sectors identified by the government have been targeted by 
+NSDA to improve current job skills along with existing workforce to ensure required skills to 
+industry standards. Training providers are encouraged and supported to wor k with industry to 
+address identified skills and knowledge to enable industry growth and increased employment 
+through the provision of market responsive inclusive skills training program. " Web  Design " is 
+selected as one of the priority occupations of ICT Sector. This standard is developed to adopt 
+a demand driven approach to training with effective inputs from Industry Skills Councils 
+(ISC’s), employer associations and employers.  
+Generally, a competency standard informs curriculum, learning materials, assessment and 
+certification of trainees enrolled in Skills Training. Trainees who successfully pass the 
+assessment will receive a qualification in the Bangladesh National Qualificati on Framework 
+(BNQF) and will be listed on the NSDA’s online portal.  
+This competency standard is developed to improve skills and knowledge in accordance with 
+the job roles, duties and tasks of the occupation and ensure that the required skills and 
+knowledge are aligned to industry requirements. A series of stakeholder consu ltations, 
+workshops were held to develop this document.  
+The document also details the format, sequencing, wording and layout of the Competency 
+Standard for an occupation which is comprised of Units of Competence and its corresponding 
+Elements.  
+  
+
+--- PAGE 5 ---
+ 
+iii Overview  
+A competency standard  is a written specification of the knowledge, skills and attitudes required 
+for the performance of an occupation, trade or job c orresponding to the industry standard of 
+performance required in the workplace.  
+The purpose of a competency standards is to:  
+▪ provide a consistent and reliable set of components for training, recognising and 
+assessing people’s skills, and may also have optional support materials  
+▪ enable industry recognised qualifications to be awarded through direct assessment of 
+workplace competencies  
+▪ encourage the development and delivery of flexible training which suits individual and 
+industry requirements  
+▪ encourage learning and assessment in a work -related environment which leads to 
+verifiable workplace outcomes  
+Competency standards are developed by a working group comprised of representative from 
+NSDA, Key Institutions, ISC, and industry experts to identify the competencies required of an 
+occupation in Informal Sector . 
+Competency standards describe the skills, knowledge and attitude needed to perform 
+effectively in the workplace. CS acknowledge that people can achieve technical and vocational 
+competency in many ways by emphasizing what the learner can do, not how or wher e they 
+learned to do it.  
+With competency standards, training and assessment may be conducted at the workplace or at 
+training institute or any combination of these.  
+Competency standards consist of a number of units of competency. A unit of competency 
+describes a distinct work activity that would normally be undertaken by one person in 
+accordance with industry standards.  
+Units of competency are documented in a standard format that comprises of:  
+▪ unit title  
+▪ nominal duration  
+▪ unit code  
+▪ unit descriptor  
+▪ elements and performance criteria  
+▪ variables and range statement  
+▪ curricular content guide  
+▪ assessment  evidence guides  
+Together, all the parts of a unit of competency:  
+▪ describe a work activity  
+▪ guide the assessor to determine whether the candidate is competent or not yet  competent  
+The ensuing sections of this document comprise of a description of the relevant occupation, 
+trade or job with all the key components of a unit of competency, including:  
+▪ a chart with an overview of all Units of Competency for the relevant occupation, trade or 
+job including the Unit Codes and the Unit of Competency titles and corresponding 
+Elements  
+▪ the Competency Standard that includes the Unit of Competency, Unit Descriptor,  
+Elements and Performance Criteria, Range of Variables, Curricular Content Guide and 
+Assessment Evidence Guide.  
+ 
+ 
+ 
+  
+
+--- PAGE 6 ---
+ 
+iv Competency Standards for National Skill s Certificate – Level -3 in 
+Web  Design  in ICT Sector  
+  
+Level Descriptors  of BNQF 1 -6 
+ 
+Level & Job 
+Classification  Knowledge Domain  
+ Skills Domain  
+ Responsibility Domain  
+6-Mid-Level 
+Manager/ Sub 
+Assistant 
+Engineer  Comprehensive actual and 
+theoretical knowledge 
+within a specific work or 
+study area with an 
+awareness of the validity 
+and limits of that 
+knowledge, able to analyse, 
+compare, relate and 
+evaluate.  Specialised and wider range of 
+cognitive and practical skills 
+required to provide leadership in 
+the development of creative 
+solutions to defined problems. 
+Communicate professional issues 
+and solutions to the team and to 
+external partners/users.  Work under broad guidance and 
+self-motivation to execute strategic 
+and operational plan/s. Lead lower -
+level management. Diagnose and 
+resolve problems within and among 
+work groups.  
+5-Supervisor  Broad knowledge of the 
+underlying, concepts, 
+principles, and processes in 
+a specific work or study 
+area, able to scrutinize and 
+break information into parts 
+by identifying motives or 
+causes.  Broad range of cognitive and 
+practical skills required to 
+generate solutions to specific 
+problems in one or more work or 
+study areas. Communicate 
+practice -related problems and 
+possible solutions to external 
+partners.  Work under guidance of 
+management and self -direction to 
+resolve specific issues. Lead and 
+take responsibility for the work and 
+actions of group/team members. 
+Bridge between management.  
+4-Highly 
+Skilled 
+Worker  Broader knowledge of the 
+underlying, concepts, 
+principles, and processes in 
+a specific work or study 
+area, able to solve problems 
+to new situations by 
+comparing and applying 
+acquired knowledge.  A range of cognitive and practical 
+skills required to accomplish 
+tasks and solve problems by 
+selecting and applying the full 
+range of methods, tools, materials 
+and information. Communicate 
+using technical terminology and 
+IT technology with partners and 
+users as per workplace 
+requirements.  
+ Work under minimal supervision 
+in specific contexts in response to 
+workplace requirements. Resolve 
+technical issues  in response to 
+workplace requirements  and 
+lead/guide a team/ group.  
+3-Skilled 
+Worker  Moderately broad 
+knowledge in a specific 
+work or study area, able to 
+perceive ideas and abstract 
+from drawing and design 
+according to workplace 
+requirements.  Basic cognitive and practical 
+skills required to use relevant 
+information in order to carry out 
+tasks and to solve routine 
+problems using simple rules and 
+tools. Communicate with his 
+team and limited external 
+partners upholding the values, 
+nature and cultu re of the 
+workplace  Work or study under supervision 
+with considerable autonomy. 
+Participate in teams and 
+responsible for group coordination.  
+2-Semi Skilled 
+Worker  Basic understanding  of 
+underpinning knowledge 
+in a specific work or study 
+area, able  to interpret and 
+apply common 
+occupational terms and 
+instructions.  Skills required to carry out 
+simple tasks, communicate with 
+his team in the workplace 
+presenting and discussing 
+results of his work with required 
+clarity.  Work or study under supervision in 
+a structured context with limited 
+scope of manipulation  
+1 –Basic 
+Skilled Worker  Elementary understanding 
+of ability to interpret  the 
+underpinning knowledge 
+in a specific study area, 
+able to interpret common 
+occupational terms and 
+instructions.  Specific Basic skills required to 
+carry out simple tasks. Interpret 
+occupational terms and present 
+the results of own work within 
+guided work environment/ 
+under supervision.  Work under direct supervision in a 
+structured context with limited 
+range of responsibilities.  
+ 
+  
+
+--- PAGE 7 ---
+ 
+v List of Abbreviations  
+ 
+General  
+NSDA  National Skills Development Authority  
+BMET  Bureau of Manpower Employment and Training  
+ILO International Labor Organization  
+ISC Industry Skills Council  
+NPVC  National Pre -Vocation Certificate  
+NSQF  National Skills Qualifications Framework  
+PPP Public Private Partnership  
+SCVC  Standards and Curriculum Validation Committee  
+SEIP  Skills for Employment Investment Program  
+STP Skills Training Provider  
+UoC  Unit of Competency  
+GU Generic Unit  
+SU Sector Unit  
+OU Occupation Unit  
+Occupation Specific  
+GUI Graphical User Interface  
+ESD  Electro -static Discharge  
+ICT Information Communication T echnology  (ICT)  
+KPI Key Performance Indicator  
+LCD  Liquid Crystal Display  
+OSH  Occupational safety and health  
+PPE Personal protective equipment  
+RAM  Random Access Memory  
+USB  Universal serial bus  
+CO Computer Operation  
+OS Operating System  
+VDU  Visual Display Unit 
+CD Compact Disc 
+DVD  Digital Video Disc” or “ Digital Versatile Disc.” 
+ASCII  American Standard Code for Information Interchange   
+CV Curriculum Vitae  
+CPU  Central Processing Unit  
+ 
+ 
+
+--- PAGE 8 ---
+ 
+  
+Approval of Competency Standard  
+ 
+ 
+ 
+ 
+ 
+Approved by  
+39th Authority  Meeting of NSDA  
+Held on 23.01. 2025 
+ 
+ 
+ 
+ 
+ 
+
+--- PAGE 9 ---
+ 
+ 
+
+--- PAGE 10 ---
+ 
+vi Contents  
+ 
+Copyright  ................................ ................................ ................................ ......................  i 
+Introduction  ................................ ................................ ................................ ..................  ii 
+Overview  ................................ ................................ ................................ .....................  iii 
+Level Descriptors  of BNQF 1 -6 ................................ ................................ ......................  iv 
+List of Abbreviations  ................................ ................................ ................................ ..... v 
+Approval of Competency Standard  ................................ ................................ .................  vi 
+Course Structure  ................................ ................................ ................................ .........  44 
+Units & Elements at Glance  ................................ ................................ .........................  45 
+Generic Units of Competencies  ................................ ................................ ....................  48 
+Unit Code and Title  ................................ ................................ ................................ ..... 49 
+GU-09-L2-V1: Practice Negotiation Skills  ................................ ................................ .... 49 
+Sector -Specific Units of Competencies  ................................ ................................ .........  52 
+SU-ICT-10-L2-V1: Practice Occupational Safety and Health (OSH) Standard in ICT.  ....... 53 
+SU-ICT-11-L2-V1: Prepare Documents and Create Presentations for client  ......................  56 
+Occupation -Specific Units of Competencies  ................................ ................................ .. 64 
+OU-ICT-WD-01-L3-V2: Interpret Visual Design Principles and Apply Color Sense for Web 
+Design  ................................ ................................ ................................ .......................  65 
+OU-ICT-WD-02-L3-V2: Setup Web Design Environment  ................................ ..............  70 
+OU-ICT-WD-03-L3-V2: Work with HTML  ................................ ................................ .. 77 
+OU-ICT-WD-04-L3-V2: Work with CSS and use CSS framework for web design  ............  81 
+OU-ICT-WD-05-L3-V2: Perform Design to Web  ................................ ..........................  87 
+OU-ICT-WD-06-L3-V2: Work with Core JavaScript  ................................ .....................  90 
+Validation of Competency Standard by Standard and Curriculum Validation Committee 
+(SCVC)  ................................ ................................ ................................ .....................  94 
+Review and Validation of Competency Standard  ................................ ............................  96 
+Workshop Minutes  ................................ ................................ ................................ .... 97 
+ 
+
+--- PAGE 11 ---
+ 
+  
+
+--- PAGE 12 ---
+ 
+44 Competency Standards for National Skill Certificate – 3 in  
+Web  Design  in ICT Sector  
+Course Structure  
+SL Unit Code and Title  UoC  
+Level  Nominal 
+Duration 
+(Hours)  
+Generic Units of Competencies  20 
+1.  GU-09-L2-V1 Practice Negotiation Skill s 3 20 
+Sector -Specific Units of Competencies    60 
+2.  SU-ICT-01-L2-V1 Practice Occupational Safety and 
+Health (OSH) Standard in ICT  2 15 
+3.  SU-ICT-11-L2-V1 Prepare Documents and Create 
+Presentations for client  3 45 
+Occupation -Specific Units of Competencies  260 
+4.  OU-ICT-01-L3-V2 Interpret Visual Design Principles and 
+Apply Color Sense for Web Design  3 35 
+5.  OU-ICT-02-L3-V2 Setup Web Design Environment  3 40 
+6.  OU-ICT-03-L3-V2 Work with HTML  3 60 
+7.  OU-ICT-04-L3-V2 Work with CSS and use CSS 
+framework for web design  3 45 
+8.  OU-ICT-05-L3-V2 Perform Design to Web  3 40 
+9.  OU-ICT-06-L3-V2 Work With Core JavaScript  3 40 
+Sub Total  340 
+Workplace Visit  20 
+Total Nominal Learning Hours  360 
+ 
+  
+
+--- PAGE 13 ---
+ 
+45 
+ Units & Elements at Glance  
+ 
+Generic Units of Competencies  
+ 
+Code  Unit of 
+Competency  Elements of Competency  Duration 
+(Hours)  
+GU-09-L2-
+V1 Practice 
+Negotiation Skills  1. Plan negotiations  
+2. Participate in negotiations  20 
+ 
+Sector -Specific Units of Competencies  
+ 
+Code  Unit of 
+Competency  Elements of Competency  Duration 
+(Hours)  
+SU-ICT-10-
+L2-V1 Practice 
+Occupational 
+Safety and Health 
+(OSH) Standard in 
+ICT. 1. Identify hazards and risks in the 
+ICT Environment  
+2. Apply Personal Health and Safety 
+Practices  
+3. Manage and Report Hazards  
+4. Respond to Emergencies  15 
+SU-ICT-11-
+L2-V1 Prepare 
+Documents and 
+Create 
+Presentations for 
+client  1. Prepare for Document Creation  
+2. Create and Format MS Word 
+Documents  
+3. Finalize and Save Documents  
+4. Prepare PowerPoint Presentations  
+5. Design Slide Layouts and Apply 
+Storytelling Techniques  
+6. Furnish and Finalize Presentation  
+7. Print & Transfer Document  45 
+  
+
+--- PAGE 14 ---
+ 
+46 
+ Occupation Specific  Units of Competencies  
+  
+Code  Unit of Competency  Elements of Competency  Duration 
+(Hours)  
+OU-ICT-WD-
+01-L3-V2 Interpret Visual Design 
+Principles and Apply 
+Color Sense for Web 
+Design  1. Research and Analysis for 
+identifying client needs  
+2. Generate Ideas and Develop 
+Concepts  
+3. Sketch and visualize the 
+concepts  
+4. Refine and Present Concept for 
+final approval  35 
+OU-ICT-WD-
+02-L3-V2 Setup Web Design 
+Environment  1. Select and Install Web 
+Development Tools  
+2. Organize File and Folder 
+Structure  
+3. Configure Local Development 
+Environment  
+4. Configure Live Development 
+Environment for Web Design  
+5. Interpret Data Layer  
+6. Setup Version Control for 
+Project  40 
+OU-ICT-WD-
+03-L3-V2 Work with HTML  1. Create HTML Structure  
+2. Insert and Format Content  
+3. Create and Manage Forms  
+4. Ensure Accessibility and 
+Standards Compliance  60 
+OU-ICT-WD-
+04-L3-V2 Work with CSS and 
+use CSS framework for 
+web design  1. Interpret and Structure CSS  
+2.  Apply CSS for Layout and 
+Styling  
+3. Implement Responsive Design 
+Using Media Queries  
+4.  
+5. Use CSS Grid System for Layout  
+6. Configure CSS Frameworks  
+7. Design Web Pages Using CSS 
+Frameworks  
+8. Test and Optimize Design  45 
+OU-ICT-WD-
+05-L3-V2 Perform  Design to 
+Web  1. Select and Install Web 
+Development Tools  
+2. Export and Optimize Design 
+Assets  
+3. Build Web Page Based on 
+Design  
+4. Ensure Design Consistency and 
+Optimization  40 
+
+--- PAGE 15 ---
+ 
+47 
+ OU-ICT-WD-
+06-L3-V2 Work with Core 
+JavaScript  1. Interpret JavaScript 
+Fundamentals  
+2. Apply Control Structures  
+3. Work with Functions  
+4. Handle Events using DOM 
+Manipulation  40 
+  
+
+--- PAGE 16 ---
+ 
+48 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Generic Units of Competencies  
+ 
+  
+
+--- PAGE 17 ---
+ 
+49 
+ Unit Code and Title GU-09-L2-V1: Practice Negotiation Skills  
+Unit Descriptor This unit covers the knowledge, skills and attitudes required to practice 
+negotiation skills. It specifically includes – planning negotiations and 
+participating in negotiations.  
+Nominal Hours  20 Hours  
+Elements of Competency Performance Criteria  
+Bold & Underlined terms are elaborated in the Range of Variables 
+Training Components 
+1. Plan negotiations  1.1 Information  on preparing for negotiation  us identified and 
+included in the plan.  
+1.2 Information  on creating non-verbal environments  for positive 
+negotiating is identified and included in the plan.  
+1.3 Information  on active listening  is identified and included in the 
+plan.  
+1.4 Information  on different questioning techniques  is identified 
+and included in the plan.  
+1.5 Information  is checked to ensure it is correct and up -to-date.  
+2. Participate in 
+negotiations  2.1 Criteria for successful outcome are agreed upon by all parties.  
+2.2 Desired outcome of all parties is considered.  
+2.3 Appropriate language is used throughout the negotiation.  
+2.4 A variety of questioning techniques are used.  
+2.5 The issues and processes are documented and agreed upon by 
+all parties.  
+2.6 Possible solutions are discussed and their viability assessed.  
+2.7 Areas for agreement are confirmed and recorded.  
+2.8 Follow -up action is agreed upon by all parties.  
+Range of Variables  
+Variable  Range (May include but not limited to)  
+1. Preparing for negotiation  1.1 Background information on other parties to the negotiation  
+1.2 Good understanding of topic to be negotiated  
+1.3 Clear understanding of desired outcome/s  
+1.4 Personal attributes  
+1.4.1 Self esteem  
+1.4.2 Self esteem  
+1.4.3 Objectivity  
+1.4.4 Empathy  
+1.4.5 Respect for others  
+1.5 Interpersonal skills  
+1.5.1 Listening / reflecting  
+1.5.2 Non-verbal communication  
+1.5.3 Assertiveness  
+1.5.4 Behavior labeling  
+1.5.5 Testing understanding  
+1.5.6 Seeking information  
+1.5.7 Self-disclosure  
+1.6 Analytic skills  
+
+--- PAGE 18 ---
+ 
+50 
+ 1.6.1 Observing differences between content and 
+process  
+1.6.2 Identifying bargaining information  
+1.6.3 Applying strategies to manage process  
+1.6.4 Applying steps in negotiating process  
+1.6.5 Strategies to manage conflict  
+1.6.6 Steps in negotiating process  
+1.7 Options within organization and externally for resolving 
+conflict  
+2. Non-verbal 
+environments  2.1 Friendly reception  
+2.2 Warm and welcoming room  
+2.3 Refreshments offered  
+2.4 Lead in conversation before negotiation begins  
+3. Active listening  3.1 Attentive  
+3.2 Don’t interrupt  
+3.3 Good posture  
+3.4 Maintain eye contact  
+3.5 Reflective listening  
+4. Questioning techniques  4.1 Direct  
+4.2 Indirect  
+4.3 Human Open -ended  
+Evidence Guide  
+The evidence must be authentic, valid, sufficient and meet all requirements of current version of the 
+Unit of Competency.  
+1. Critical aspects of 
+competency  The assessment  required evidence  that the candidate:  
+1.1 demonstrated sufficient knowledge of the factors influencing 
+negotiation to achieve agreed outcome.  
+1.2 Participated  in negotiation with at least one person to achieve 
+an agreed outcome.  
+2. Underpinning knowledge  2.1 Codes  of practice and guidelines for the organization.  
+2.2 Organization policy and procedures for negotiations.  
+2.3 Decision -making  and conflict resolution strategies and 
+procedures.  
+2.4 Problem -solving  strategies on how to deal with unexpected 
+questions and attitudes during negotiation.  
+2.5 Flexibility.  
+2.6 Empathy.  
+3. Underpinning skill  3.1 Interpersonal skills to develop rapport with other parties.  
+3.2 Communication skills (verbal and listening).  
+3.3 Observation skills.  
+3.4 Negotiation skills.  
+4. Required attitude  4.1 Commitment  to occupational health and safety  
+3.1 Environmental concerns  
+3.2 Eagerness to learn  
+3.3 Tidiness and timeliness  
+3.4 Respect for rights of peers and seniors in workplace  
+3.5 Communication  with peers and seniors in workplace  
+
+--- PAGE 19 ---
+ 
+51 
+ 5. Resource implication  The following resources MUST be provided:  
+5.1 Workplace (actual or simulated).  
+5.2 Human resources (negotiators).  
+6. Methods of assessment  6.1 Demonstration  with oral questioning  
+6.2 On the job observation with oral questioning  
+6.3 Written test  
+6.4 Portfolio  
+7. Context of assessment  7.1. Competency assessment must be done in a training center or 
+in an actual or simulated work place after Completion of the 
+training module.  
+7.2. Assessment should be done by a certified assessor  
+Accreditation Requirements  
+Training Providers must be accredited by National Skills Development Authority (NSDA), 
+the National Quality Assurance Body, or a body with delegated authority for quality 
+assurance to conduct training and assessment against this unit of competency for cred it 
+towards the award of qualification under Bangladesh National Qualification Framework 
+(BNQF). Accredited providers assessing against this unit of competency must meet the 
+quality assurance requirements set by NSDA.  
+ 
+ 
+ 
+  
+
+--- PAGE 20 ---
+ 
+52 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Sector -Specific Units of Competencies  
+ 
+ 
+  
+
+--- PAGE 21 ---
+ 
+53 
+ Unit Code  and Unit Title  SU-ICT-10-L2-V1: Practice Occupational Safety and 
+Health (OSH) Standard in ICT.  
+Unit Descriptor  This unit covers the knowledge, skills , and attitudes required 
+to Practice Occupational Safety and Health (OSH) Standard s 
+in ICT . It includes  the task of  identifying hazards  and risk in 
+the ICT Environment, applying Personal Health and Safety 
+Practices, managing and reporting hazards  and responding to 
+Emergencies  
+Nominal Hours  15 Hours  
+Elements of Competency  Performance Criteria  
+1. Identify hazards  and 
+risks  in the ICT 
+Environment  1.1 Common safety and health risks  specific to IT 
+workplaces are identified.  
+1.2 Workplace types , layout , and conditions  are assessed for 
+compliance with OSH standards.  
+1.3 Types and appropriate usage of Personal Protective 
+Equipment (PPE)  for IT -related tasks are identified.  
+1.4 Hazards  are identified in ICT environment  
+2. Apply Personal Health 
+and Safety Practices  2.1 Ergonomically sound practices  are implemented , 
+including proper workstation setup and posture.  
+2.2 Preventive measures  are taken to reduce physical and 
+mental strain.  
+2.3 Cleanliness and orderliness in the workplace are 
+maintained to reduce risks.  
+2.4 Personal Protective Equipment (PPE) is worn and stored 
+properly after use.  
+2.5 Workplace safety conditions are inspected , and issues are 
+reported to the designated authority.  
+3. Manage and Report 
+Hazards  3.1 Routine checks of the immediate work area are conducted 
+to identify hazards and risks.  
+3.2 Corrective actions  are taken to mitigate risks within the 
+scope of responsibility.  
+3.3 Internet and social media addiction is minimized to 
+enhance workplace focus and safety.  
+3.4 Detail records of incidents, hazards, and corrective 
+actions are maintained as per workplace standard  
+3.5 Hazards, risks, and incidents are reported accurately and 
+promptly to the designated authority.  
+4. Respond to 
+Emergencies  4.1 Emergencies  are identified and reported according to 
+workplace protocols.  
+4.2 Workplace emergency response procedures  are 
+followed effectively as per organizational policy during 
+incidents.  
+4.3 Basic first aid is administered , or assistance is sought 
+from qualified personnel as required.  
+Range of Variables 
+
+--- PAGE 22 ---
+ 
+54 
+ Variable  Range (may include but not limited to):  
+1. Common safety and 
+health risks  1.1 Ergonomics  
+1.2 Repetitive strain injuries  
+1.3 Eye strain  
+1.4 Radiation  
+1.5 Carpal Tunnel Syndrome  
+1.6 Electrical hazards.  
+2. Workplace Type and 
+layout  2.1 Hardware servicing labs  
+2.2 Software development rooms  
+2.3 IT Training Lab  
+2.4 Server room  
+2.5 Networking infrastructure  
+3. Personal Protective 
+Equipment (PPE)  3.1 Aprons,  
+3.2 Earplugs  
+3.3 Face mask  
+3.4 UV-protected eye ware  
+3.5 Anti-static wristband  
+3.6 Anti-static shoes.  
+3.7 Gloves  
+4. Hazards  4.1 Physical Hazard  
+4.1.Cables running across the floor  
+4.2.Slippery floor  
+4.3.Dust  
+4.2 Mechanical Hazard  
+4.2.1.  Computer case  
+4.3 Chemical Hazard  
+4.3.1.  Display cleaning chemicals  
+4.3.2.  Keyboard cleaning chemical  
+5. Ergonomically sound 
+practices  5.1 Using adjustable seating  
+5.2 Maintaining proper posture  
+5.3 Ensuring proper lighting.  
+6. Preventive measures  6.1. Regular breaks  
+6.2. Adequate lighting  
+6.3. Time management  
+6.4. Ergonomic furniture  
+6.5. Adequate ventilation  
+7. Emergencies  7.1 Equipment failures/malfunctions  
+7.2 Fires  
+7.3 Electrical fires  
+7.4 Explosions  
+7.5 Natural disasters.  
+8. Workplace emergency 
+response procedures  8.1 First aid  
+8.2 Emergency treatment  
+8.3 Firefighting protocols  
+8.4 Evacuation plans  
+Evidence Guide  
+1. Critical aspects of 
+competency  Assessment required evidence that the candidate:  
+1.1 Identified and mitigated OSH issues in IT workplaces.  
+
+--- PAGE 23 ---
+ 
+55 
+ 1.2 Ensured a safe and hygienic work environment.  
+1.3 Reported hazards and followed emergency procedures.  
+1.4 Prevented and addressed social media/internet addiction.  
+1.5 Demonstrate the ability to identify and manage workplace 
+hazards.  
+1.6 Demonstrated observance of safety procedures and ergonomic 
+practices.  
+1.7 Followed emergency response procedures effectively.  
+2. Underpinning 
+knowledge  2.1 OSH policies, regulations, and standards for IT workplaces.  
+2.2 Common hazards in IT environments  
+2.3 Emergency response procedures and safety protocols.  
+2.4 Principles of Occupational Safety and Health (OSH).  
+2.5 Common IT workplace hazards and associated risks  
+2.6 Workplace safety regulations and organizational policies  
+3. Underpinning 
+skills  3.1 Safe operation and maintenance of IT equipment and tools  
+3.2 Practical application of ergonomic practices  
+3.3 Documenting incidents and communicating with relevant 
+personnel  
+3.4 Effective communication of safety concerns to peers and 
+supervisors  
+3.5 Ability to respond promptly to emergencies  
+4. Required 
+attitudes  4.1 Commitment to maintaining a safe and healthy work 
+environment  
+4.2 Proactive approach to identifying and mitigating risks  
+4.3 Accountability for personal and workplace safety  
+4.4 Cooperation and respect for peers, supervisors, and safety 
+policies  
+4.5 Willingness to participate in training and continuous 
+improvement efforts  
+4.6 Mindfulness to avoid workplace distractions like excessive use 
+of social media  
+5. Resource 
+implication  5.1 IT workplace setup (actual or simulated).  
+5.2 PPE and safety equipment.  
+5.3 Workplace policies and emergency response documentation.  
+6. Methods of 
+Assessment  6.1 Written Test  
+6.2 Demonstration  
+6.3 Oral Questioning  
+7. Context of 
+Assessment  7.1. Competency assessment must be done in NSDA accredited 
+centers . 
+7.2. Assessment should be done by NSDA -certified / nominated 
+assessor  
+Accreditation Requirements  
+Training Providers must be accredited by the National Skills Development Authority 
+(NSDA), the National Quality Assurance Body, or a body with delegated authority for 
+quality assurance to conduct training and assessment against this unit of competency for 
+credit towards the award of qualification und er BNQF. Accredited providers assessing 
+against this unit of competency must meet the quality assurance requirements set by NSDA.  
+ 
+
+--- PAGE 24 ---
+ 
+56 
+  
+ 
+Unit Code Title  SU-ICT-11-L2-V1: Prepare Documents and Create 
+Presentations for client  
+Unit Descriptor  This unit covers the competencies (knowledge, skills and attitudes ) 
+required to create, format, and finalize professional documents and 
+prepar ing PowerPoint Presentations  and design ing slide layouts 
+and applying storytelling Techniques . It also includes presenting 
+designs effectively to stakeholders and gathering feedback.  
+Nominal Hours  45 Hours  
+Elements of 
+Competency  Performance Criteria  
+Bold & Underlined  terms are elaborated in the Range of 
+Variables ) 
+1. Prepare for 
+Document 
+Creation  1.1 Safe work practices  are followed and personal protective 
+equipment (PPE)  are worn as per workplace  safety 
+standards.  
+1.2 Work areas are maintained in a clean and organized manner 
+to prevent accidents and hazards.  
+1.3 Necessary Software  is checked and ensured operational as 
+per job requirement.  
+1.4 The availability  of required fonts for typing of Bangla and 
+English are ensured . 
+1.5 Job requirements  are identified.  
+1.6 Necessary resources  are gathered and organized.  
+1.7 Software settings and ribbons  are configured according to 
+project needs.  
+2. Create and Format 
+MS Word 
+Documents  2.1 A blank document is prepared using a template or custom 
+layout.  
+2.2 Contents are inserted and arranged logically.  
+2.3 Page layout  is set as per job requirements.  
+2.4 Styles, headings, and subheadings are applied consistently 
+throughout the document.  
+2.5 Tables are designed and formatted for readability and 
+aesthetic appeal.  
+2.6 Internal links, page numbers, and references are added as 
+needed.  
+3. Finalize and Save 
+Documents  3.1 The document is reviewed for consistency in formatting , 
+spelling and grammar.  
+3.2 Accessibility features, such as alt text for images and proper 
+heading structure are checked.  
+3.3 The finalized document is exported and saved in a n 
+appropriate file format  suitable for delivery.  
+
+--- PAGE 25 ---
+ 
+57 
+ 3.4 Backup copies of the document are saved systematically in 
+designated storage locations for efficient retrieval.  
+3.5 Backup strategies  are followed  to prevent data loss . 
+4. Prepare 
+PowerPoint 
+Presentations  4.1 New presentation file from a blank template or a library are 
+create d as required.  
+4.2 Slide size is select ed based on presentation needs.  
+4.3 Presentation requirements, including audience needs and 
+objectives are identified.  
+4.4 A slide master is created or customized to ensure 
+consistency in design and branding.  
+4.5 Contents for slide  for the presentation  is collected and 
+organized.  
+5. Design Slide 
+Layouts and Apply 
+Storytelling 
+Techniques  5.1 Slides are inserted with suitable layouts according to 
+presentation requirements.  
+5.2 Slide layouts are designed with appropriate fonts, colors, and 
+visual hierarchy.  
+5.3 Key messages are highlighted using concise text and visual 
+elements . 
+5.4 Storytelling techniques  are applied to create a logical flow 
+in the presentation.  
+5.5 Contents are selected and added to emphasize key points.  
+5.6 The use of visual aids is planned and integrated into the 
+presentation in a logical and timely manner.  
+6. Furnish and 
+Finalize 
+Presentation  6.1 Animations  and transitions are added (if needed) to enhance 
+engagement.  
+6.2 Slides are checked with the presentation view  for review.  
+6.3 Slides are reviewed for consistency  and readability  to 
+branding guidelines.  
+6.4 Feedback from peers or stakeholders is received  and 
+prioritized to determine the necessary revisions.  
+6.5 Revisions are made based on the feedback received . 
+6.6 Collaboration with peers and stakeholders is maintained 
+throughout the revision process.  
+6.7 The finalized presentation is exported  and saved  in the 
+required format  suitable for delivery . 
+6.8 Backup copies of the document are saved securely  to prevent 
+data loss . 
+7. Print & Transfer 
+Document  7.1 The printer is selected, and print settings  are verified based 
+on document requirements.  
+7.2 The appropriate paper size is confirmed to meet the desired 
+output.  
+7.3 The print preview is reviewed to ensure accuracy and 
+alignment.  
+7.4 The document is printed following the approved settings.  
+7.5 The document is transferred securely using suitable storage 
+media . 
+
+--- PAGE 26 ---
+ 
+58 
+ 8 Deliver 
+Presentation and 
+Gather Feedback  8.1 The presentation is delivered confidently using appropriate 
+visual aids and speaking techniques.  
+8.2 Feedback from stakeholders  is gathered systematically 
+during or after the presentation.  
+8.3 The feedback is analyzed and used to refine the presentation 
+or future designs.  
+8.4 Potential areas for improvement in in the presentation  are 
+identified based on the feedback received.  
+8.5 Feedback is integrated into future presentations to align 
+with workplace expectations and stakeholder requirements.  
+Range of Variables  
+Variable  Range  (may include but not limited to):  
+1. Necessary Software  1.1 Word Processing Application Software  
+1.1.1.  Microsoft Word  
+1.1.2.  LibreOffice Writer  
+1.1.3.  WPS Office Free Writer  
+1.1.4.  Google Doc  
+1.2 Typing Tutor Software  for English and Bengali  
+1.3 Bangla typing Software  
+a. Bijoy  
+b. Avro  
+2. Job requirements  2.1 Type of document  
+2.1.1 Business or client proposals  
+2.1.2 Contracts  
+2.1.3 Product catalogs showcasing descriptions  
+2.1.4 Annual reports, project updates  
+2.1.5 Informational brochures  for marketing purposes  
+2.1.6 Simple one -page documents for promotions  
+2.1.7 Newsletters  (Periodical updates for customers)  
+2.1.8 Custom -designed templates  
+2.2 Audience  
+2.3 Branding guidelines  
+3. Necessary resources  3.1 Templates  
+3.2  Text 
+3.3  Images  
+3.4  Charts  
+4. Contents  4.1 Text 
+4.2 Images  
+4.3 Charts  
+4.4 Shapes  
+4.5 Infographics  
+4.6 Text Box  
+4.7 Symbols  
+
+--- PAGE 27 ---
+ 
+59 
+ 5. Page layout  5.1 Page Orientations  
+5.2 Page Size  
+5.3 Margin  
+5.3.1 Top 
+5.3.2 Bottom  
+5.3.3 Left 
+5.3.4 Right  
+5.4 Header and Footer  
+5.5 Page Number  
+5.6 Columns  
+6. Formatting  6.1 Font 
+6.1.1 Font Face, Size, Color  
+6.1.2 Font Style (Bold, Italic, Underline)  
+6.2 Paragraph  
+6.2.1 Alignment  
+6.2.2 Indentation   
+6.3 Listing (Bullet, Numbering)  
+6.4 Line Spacing  
+6.5 Image size  with wrapping  
+6.6 Format Painter  
+7. File Format  7.1 .docx  
+7.2 .pdf 
+8. Backup strategies  8.1 Saving multiple copies on  
+8.1.1 Secure physical  
+8.1.2 Cloud storage  
+9. Contents for slide  9.1 Text 
+9.2 Table  
+9.3 Illustrations  
+9.3.1 Picture  
+9.3.2 Shapes  
+9.3.3 Text Box  
+9.3.4 SmartArt  
+9.3.5 Chart  
+9.4 Symbols  
+9.5 Media  
+9.5.1 Audio  
+9.5.2 Video   
+10. Visual Element  10.1 Charts  
+10.2 Graphs  
+10.3 Infographics  
+10.4 Icons  
+10.5 Logos  
+10.6 High -resolution images  
+
+--- PAGE 28 ---
+ 
+60 
+ 11. Storytelling 
+Techniques  11.1 Narrative  Structure  
+11.1.1  Beginning  
+11.1.2  Middle and end  
+11.1.3  problem -solution format  
+11.2 Audience Focus  
+11.2.1  Tailored messages  
+11.2.2  empathy -driven content  
+11.2.3   relatable examples  
+11.3 Visual Hierarchy  
+11.3.1  One idea per slide  
+11.3.2  emphasized key points  
+11.3.3  logical flow  
+11.4 Emotional Engagement  
+11.4.1  Use of case studies  
+11.4.2  Testimonials  
+11.4.3  humor  
+11.4.4  and appeals to values  
+11.5 Data Visualization  
+11.5.1  Infographics  
+11.5.2  Charts and diagrams to simplify complex ideas  
+11.6 Analogies and Metaphors  
+11.6.1  Simplifying concepts by relating them to everyday 
+ideas  
+11.7 Transitions  
+11.7.1  Smooth slide transitions and references to 
+previous points to maintain coherence.  
+11.8 Call to Action (CTA)  
+11.8.1  Clear next steps or recommendations presented in 
+the conclusion  
+12. Animation  12.1 Entrance  
+12.2 Emphasis  
+12.3 Motion Path  
+12.4 Exit 
+13. Presentation  view  13.1 From beginning  
+13.2 From Current slide  
+14. Required Format  14.1 .pptx  
+14.2 .pptm  
+14.3 .ppt 
+14.4 .pdf 
+15. Print Settings   15.1 Paper size  
+15.2 Single/Both side Print.  
+15.3 Odd/Even Page print  
+15.4 Collated  
+15.5 Page Orientation  
+15.6 Margins  
+15.7 Page Per sheet  
+
+--- PAGE 29 ---
+ 
+61 
+ 16. Storage Media  16.1 USB Pen drive  
+16.2 Portable Hard drive  
+16.3 Optical Disk  
+17. Stakeholders  17.1 Clients  
+17.2 Supervisors  
+17.3 Team members  
+17.4 Marketing personnel  
+Evidence Guide  
+The evidence must be authentic, valid, sufficient and meet all requirements of current version 
+of the Unit of Competency.  
+1. Critical aspects of 
+competency  The assessment  required evidence that the candidate:  
+1.1 Prepared documents that adhere to formatting and branding 
+requirements.  
+1.2 Designed slides that aligned  with audience objectives and 
+visual storytelling principles.  
+1.3 Ensured consistency and clarity in both documents and 
+presentations.  
+1.4 Delivered professional presentations confidently to 
+stakeholders.  
+1.5 Gathered and utilized stakeholder feedback to improve 
+designs and processes.  
+2. Underpinning 
+knowledge  2.1 Knowledge of Occupational Health and Safety (OHS) 
+principles and their application in the workplace.  
+2.2 Identification and management of hazards specific to IT 
+workplaces.  
+2.3 Understanding the structure and layout of a keyboard for 
+efficient operation  
+2.4 Principles of document formatting, layout design, and 
+visual hierarchy.  
+2.5 Concepts of margin settings and page layout adjustments 
+for document formatting.  
+2.6 Familiarity with different types of documents, including 
+their purposes and formats.  
+2.7 Knowledge of various file formats and extensions for 
+saving and sharing files.  
+2.8 Differences between "Save" and "Save As" functions in 
+document management.  
+2.9 Understanding different types of presentations and their 
+uses in professional settings.  
+2.10 File formats/extensions used for saving presentations.  
+2.11 Procedures for printing slides, including layout and 
+configuration options . 
+2.12 Appropriate use of slide transitions, animations, and 
+motion paths to enhance presentations.  
+
+--- PAGE 30 ---
+ 
+62 
+ 2.13 Techniques for integrating storytelling into presentations.  
+2.14 Best practices for creating accessible and professional 
+documents and presentations.  
+2.15 Methods for gathering, analyzing, and incorporating 
+stakeholder feedback.  
+2.16 Steps to maintain a clean and orderly workplace and 
+ensure equipment is well -maintained.  
+3. Underpinning skills  3.1 Preparing and customizing documents with styles, layouts, 
+and visual elements.  
+3.2 Designing slides that use visual storytelling to enhance 
+audience engagement.  
+3.3 Reviewing and refining documents and presentations based 
+on stakeholder input.  
+3.4 Exporting and sharing files in various formats suitable for 
+digital or print use.  
+3.5 Delivering confident presentations while interacting 
+effectively with stakeholders.  
+4. Required attitudes  4.1 Commitment to occupational safety and health.  
+4.2 Commitment to producing high -quality and professional 
+documents and presentations.  
+4.3 Attention to detail to ensure accuracy and consistency in 
+formatting and design.  
+4.4 Creativity and innovation in visual design and storytelling 
+approaches.  
+4.5 Willingness to adapt to feedback and continuously improve 
+designs.  
+4.6 Discipline in meeting deadlines and managing time 
+effectively.  
+4.7 Proactive approach to staying updated on design trends, 
+tools, and software.  
+4.8 Strong sense of organization and cleanliness in managing 
+files, tools, and workspaces.  
+4.9 Collaborative mindset to work effectively with team 
+members and stakeholders.  
+4.10 Patience and resilience when resolving technical issues or 
+revising work.  
+4.11 Professionalism in communicating with clients and 
+presenting designs confidently.  
+5. Resource implication  The following resources must be provided:  
+5.1 Workplace (actual or simulated).  
+5.2 Tools, equipment and physical facilities appropriate to 
+perform activities.  
+5.3 Materials consumable to perform activities.  
+
+--- PAGE 31 ---
+ 
+63 
+ 6. Methods of 
+assessment  Methods of assessment may include but not limited to:  
+6.1 Demonstration  with oral questioning  
+6.2 On the job  observation  with oral questioning  
+6.3 Written  test 
+6.4 Portfolio  
+7. Context of assessment  7.1 Competency assessment must be done in NSDA 
+accredited center.  
+7.2 Assessment should be done by NSDA -certified / 
+nominated assessor  
+Accreditation Requirements  
+Training Providers must be accredited by the National Skills Development Authority 
+(NSDA), the National Quality Assurance Body, or a body with delegated authority for 
+quality assurance to conduct training and assessment against this unit of competency for 
+credit towards the award of qualification und er BNQF. Accredited providers assessing 
+against this unit of competency must meet the quality assurance requirements set by NSDA.  
+  
+
+--- PAGE 32 ---
+ 
+64 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Occupation -Specific  Units of Competencies  
+ 
+  
+
+--- PAGE 33 ---
+ 
+65 
+ Unit Code and Title OU-ICT-WD-01-L3-V2: Interpret Visual Design Principles 
+and Apply Color Sense for Web Design  
+Unit Descriptor This unit covers the foundational visual design knowledge and 
+skills required for effective web design. It includes interpreting 
+design principles for web layouts, explaining visual design 
+elements within interactive interfaces, applying color theory for 
+user experience (UX), and preparing web -safe color schemes. The 
+unit emphasizes usability, aesthetics, accessibility, and digital 
+responsiveness.  
+Nominal Hours  35 Hours  
+Elements of Competency Performance Criteria  
+Bold and Underlined terms are elaborated in the Range of 
+Variables 
+1. Interpret Design 
+Principles for Web 
+Layout  1.1 Web design principles  are identified and explained in the 
+context of user interface (UI).  
+1.2 Application of design principles is analyzed from existing 
+website or web application layouts.  
+1.3 Misuse of web layout principles is identified, and corrective 
+design decisions are proposed.  
+1.4 Consistency, responsiveness, and content readability are 
+evaluated against user -centered design standards.  
+1.5 Design improvements are recommended to enhance layout 
+functionality and aesthetics.  
+2. Explain the Elements of 
+Visual Design in Web 
+Interfaces  2.1. Core visual elements  are identified within UI design.  
+2.2. Relationships between visual elements are interpreted for 
+clarity, visual hierarchy, and flow.  
+2.3. Use of imagery, shapes, and text in web environments is 
+analyzed for consistency  and branding.  
+2.4. Grid systems, containers, and modular design approaches are 
+checked  for structure and alignment.  
+2.5. Interactive visual elements  are interpreted for usability and 
+feedback.  
+3. Interpret Color Concepts 
+for the Web  3.1 Color theory  is explained in the context of screen -based 
+design.  
+3.2 Web-safe color palettes and accessibility -compliant 
+combinations are identified.  
+3.3 Color modes  are compared and used according to web 
+requirements.  
+3.4 Color psychology  is interpreted to align with brand tone and 
+user emotion.  
+3.5 Color use is analyzed for sufficient contrast, accessibility 
+(WCAG), and user engagement.  
+
+--- PAGE 34 ---
+ 
+66 
+ 3.6 Browser and device color rendering differences are 
+explained.  
+4. Prepare and Apply Color 
+for Web Design Projects  4.1 Primary, secondary, and tertiary colors are selected or 
+created using color tools and libraries.  
+4.2 Tints, shades, and tones are prepared to ensure visual 
+hierarchy and user guidance.  
+4.3 Color schemes  are generated for layout sections.  
+4.4 Chosen colors are tested across devices for consistency 
+and accessibility.  
+4.5 Color usage is documented in a design system or style 
+guide for web implementation.  
+4.6 Contrast and background overlays are adjusted for 
+legibility and user interaction clarity.  
+Range of Variables  
+Variables  Range (may include but not limited to):  
+1. Web d esign principles  1.1 Grid Systems  
+1.2 Balance  
+1.3 Contrast  
+1.4 Emphasis  
+1.5 Proximity  
+1.6 Proportion  
+1.7 Hierarchy  
+1.8 Repetition  
+1.9 Alignment  
+1.10 Unity  
+1.11 Whitespace  
+2. Visual elements  2.1 Interactive Components  
+2.2 Text 
+2.3 Image  
+2.4 Line 
+2.5 Shape  
+2.6 Form  
+2.7 Space  
+2.8 Icon 
+2.9 Typography  
+3. Interactive visual 
+elements  3.1 Buttons  
+3.2 Navigation menus  
+3.3 Hover states  
+3.4 Click effects  
+3.5 Dropdowns  
+3.6 Toggles and switches  
+3.7 Tabs  
+3.8 Modals and popups  
+3.9 Tooltips  
+3.10 Sliders  
+3.11 Accordion panels  
+
+--- PAGE 35 ---
+ 
+67 
+ 3.12 Progress bars and loaders  
+3.13 Search fields with auto -suggestions  
+3.14 Checkboxes and radio buttons  
+3.15 Form input fields with validation messages  
+3.16 Scrollable areas with drag/scroll indicators  
+3.17 Animated micro -interactions  
+4. Color Theory  4.1 Color Wheel  
+4.1.1 Primary  
+• Red 
+• Yellow  
+• Blue  
+4.1.2 Secondary  
+• Green  
+• Orange  
+• Purple  
+4.1.3 Tertiary  
+• Yellow -Green  
+• Yellow -Orange  
+• Red-Orange  
+• Red-Purple  
+• Blue -Purple  
+• Blue -Green  
+4.1.4 Process Color  
+• Cyan  
+• Magenta  
+• Yellow  
+• Black  
+4.1.5 Color Temperature  
+• Warm Color  
+• Cool Color  
+4.2 Color Harmony  
+4.2.1 Complimentary  
+4.2.2 Analogous  
+4.2.3 Monochromatic  
+4.2.4 Triadic  
+4.2.5 Neutral  
+4.3 Hue-Saturation -Value  
+4.4 Shade -Tone -Tints  
+5. Color Modes  5.1 RGB (Red, Green, Blue)  
+5.2 HEX (Hexadecimal)  
+5.3 HSL (Hue, Saturation, Lightness)  
+5.4 HSLA (Hue, Saturation, Lightness, Alpha)  
+5.5 RGBA (Red, Green, Blue, Alpha)  
+5.6 Named Colors  
+5.7 Lab (CIELAB)  
+5.8 LCH (Lightness, Chroma, Hue)  
+
+--- PAGE 36 ---
+ 
+68 
+ 6. Color Psychology  6.1 Emotional responses (e.g., red = energy, blue = calm)  
+6.2 Cultural significance  
+6.3 Symbolic meanings  of colors  
+7. Color Schemes  7.1 Monochromatic  
+7.2 Complementary  
+7.3 Analogous  
+7.4 Triadic  
+7.5 Neutral  
+Evidence Guide  
+The evidence must be authentic, valid, sufficient, reliable, consistent , and recent and meet the 
+requirements of the current version of the Unit of Competency . 
+1. Critical aspects of 
+competency  The assessment  required evidence that the candidate:  
+1.1 Correctly interpreted visual design principles relevant to 
+web layout and UI.  
+1.2 Evaluated and critiqued existing web designs based on 
+visual design effectiveness.  
+1.3 Applied appropriate color schemes that enhance readability, 
+accessibility, and branding.  
+1.4 Prepared consistent color palettes and documented them in a 
+digital style guide.  
+1.5 Ensured visual balance and hierarchy using appropriate 
+elements and grid systems.  
+1.6 Tested and refined color usage for web accessibility 
+compliance (WCAG 2.1).  
+1.7 Adapted visual elements for different screen sizes, 
+resolutions, and devices.  
+2. Underpinning knowledge  The candidate must demonstrate knowledge of:  
+2.1 Basic principles of web design and UI layout.  
+2.2 Common visual elements used in web design and their 
+interactions.  
+2.3 The concept of color theory and psychology in digital 
+products.  
+2.4 Color spaces used in web design (e.g., RGB, HEX, HSL).  
+2.5 Accessibility requirements for web color usage.  
+2.6 Web -safe and brand -safe color management practices.  
+2.7 Use of modern color tools for web (e.g., Tailwind, Adobe 
+Color).  
+2.8 Importance of design consistency across pages and devices.  
+3. Underpinning Skills  The candidate must be able to : 
+3.1 Identify  and interpret UI design elements in web interfaces.  
+3.2 Apply visual hierarchy using typography, spacing, and 
+color.  
+3.3 Select  and apply accessible color schemes for digital 
+displays.  
+3.4 Utilize online and offline tools to generate and manage color 
+palettes.  
+3.5 Evaluate websites using visual design critique methods.  
+
+--- PAGE 37 ---
+ 
+69 
+ 3.6 Document color decisions in web style guides or design 
+systems.  
+3.7 Communicate design intentions effectively with teams and 
+stakeholders.  
+4. Required attitude  The candidate must demonstrate the following attitudes : 
+4.1 Willingness to learn evolving web design and color trends.  
+4.2 Attention to detail in applying color for functional and 
+aesthetic purposes.  
+4.3 Openness to critique and user feedback for improvement.  
+4.4 Appreciation for accessibility and inclusive design.  
+4.5 Consistency in applying brand identity across digital 
+platforms.  
+4.6 Desire to explore new design tools and frameworks.  
+4.7 Professionalism in maintaining design integrity across 
+screen formats.  
+5. Resource Implication  The following resources must be provided:  
+5.1 workplace (actual or simulated)  
+5.2 equipment and outfits appropriate in applying safety 
+measures  
+5.3 tools, materials and documentation required  
+5.4 relevant specifications or work instructions.  
+6. Methods of Assessment  Methods of assessment may include but are not limited to:  
+6.1 Demonstration with oral questioning  
+6.2 On the job observation with oral questioning  
+6.3 Written test  
+6.4 Portfolio  
+7. Context of Assessment  7.1 Competency assessment must be done in a training center or 
+in an actual or simulated workplace after completion of the 
+training module  
+7.2 Assessment should be done by NSDA the certified assessor  
+Accreditation Requirements  
+Training Providers must be accredited by the National Skills Development Authority (NSDA), 
+the National Quality Assurance Body, or a body with delegated authority for quality assurance to 
+conduct training and assessment against this unit of competency for credit towards the award of 
+qualification und er BNQF. Accredited providers assessing against this unit of competency must 
+meet the quality assurance requirements set by NSDA . 
+ 
+  
+
+--- PAGE 38 ---
+ 
+70 
+ Unit Code Title  OU-ICT-WD-02-L3-V2: Setup Web Design Environment  
+Unit Descriptor  This unit covers the competencies (skills, knowledge, and 
+attitudes) required to set up and configure a professional web 
+design environment. It includes installing code editors and tools, 
+configuring browsers and extensions, organizing files and folders, 
+using version control systems, and ensuring the system is ready for 
+efficient front -end development work.  
+Nominal Hours  40 Hours  
+Elements of 
+Competency  Performance Criteria  
+Bold & Underlined  terms are elaborated in the Range of 
+Variables . 
+1. Select and Install 
+Web Development 
+Tools  1.1 Common web design tools and editors  are identified based 
+on project requirements.  
+1.2 The selected editor is downloaded and installed according to 
+standard procedures.  
+1.3 Recommended code editor extensions / plugins  are 
+installed and configured.  
+1.4 Browsers for testing web pages are identified and installed.  
+1.5 Browser developer tools  are explored and activated for 
+debugging.  
+1.6 Tools are tested to verify proper installation and 
+functionality.  
+2. Organize File and 
+Folder Structure  2.1 Project folders and subfolders are created following industry 
+best practices.  
+2.2 Naming conventions  for files and folders are applied 
+consistently.  
+2.3 Sample index file and supporting resource files are placed in 
+the appropriate locations.  
+2.4 A file organization template is used to standardize structure 
+across projects.  
+2.5 Files and folders are tested for accessibility and correct link 
+referencing.  
+3. Configure Local 
+Development 
+Environment  3.1 Local server  is set up for real -time preview.  
+3.2 Code editor automation settings  are configured in the code 
+editor.  
+3.3 Default workspace settings and themes are customized to 
+improve productivity.  
+3.4 Keyboard shortcuts and snippets are set up to accelerate 
+coding.  
+
+--- PAGE 39 ---
+ 
+71 
+ 3.5 Sample web files are run on the local server to ensure 
+environment stability.  
+4. Configure Live 
+Development 
+Environment for 
+Web Design  4.1 Hosting service providers are researched and selected based 
+on project needs.  
+4.2 Domain name is registered and DNS settings are configured 
+to point to the hosting server.  
+4.3 Web server settings  are configured to support the project’s 
+technologies.  
+4.4 Files are uploaded using FTP/SFTP or version control 
+deployment tools . 
+4.5 File and folder structures are verified and adjusted to match 
+hosting requirements.  
+4.6 Database connections (if applicable) are configured and 
+tested on the live server.  
+4.7 Site performance, responsiveness, and functionality are 
+tested on the live domain across multiple devices and 
+browsers.  
+4.8 Site security settings  are checked and configured for secure 
+access.  
+5. Interpret Data 
+Layer  5.1 The concept and purpose of a data layer in modern web 
+development are defined with examples.  
+5.2 Common structures of data layers  are interpreted in the 
+context of frontend -backend interaction.  
+5.3 Integration points for web APIs and data layer usage are 
+explained with sample scenarios.  
+5.4 Basic interaction between frontend UI and backend data is 
+Interpreted . 
+5.5 Real-world use cases involving dynamic content loading and 
+tracking with data layers are explained . 
+5.6 Best practices for organizing, managing, and debugging data 
+layers are identified and explained.  
+6. Setup Version 
+Control for Project  6.1 Version control tools  are installed and initialized in the 
+project folder.  
+6.2 Basic Git commands  are practiced.  
+6.3 Git repositories are created and configured locally.  
+6.4 Various  remote repositories are linked with the local project.  
+6.5 Sample commits are made to test synchronization.  
+6.6 Version history is reviewed to understand tracking and 
+collaboration.  
+Range of Variables  
+
+--- PAGE 40 ---
+ 
+72 
+ Variable  Range  (may include but not limited to):  
+1. Web design tools and 
+editors  1.1 VS Code  
+1.2 Sublime Text 
+1.3 Atom  
+1.4 Brackets  
+1.5 Notepad ++  
+2. Code editor 
+extensions/plugins  2.1 Emmet  
+2.2 Live Server  
+2.3 Prettier  
+2.4 ESLint  
+3. Browser developer 
+tools  3.1 Chrome DevTools  
+3.2 Firefox Inspector  
+3.3 Safari Web Inspector  
+4. Naming conventions  4.1 kebab -case 
+4.2 snake_case  
+4.3 Camel Case  
+4.4 Capitalize  
+4.5 Lower Case  
+5. Local server  5.1 Live Server  
+5.2 XAMPP  
+5.3 WAMP/MAMP/LAMP  
+5.4 Node.js  
+5.5 IIS (Internet Information Services)  
+6. Code Editor 
+Automation Settings  6.1 File auto -save options  
+6.2 Formatting options  
+6.3 Linting options  
+7. Server settings  7.1 Apache  
+7.2 Nginx  
+7.3 Node.js  
+8. Version control 
+deployment tools  8.1 GitHub  
+8.2 GitLab  
+8.3 Bitbucket  
+9. Site security settings  9.1 SSL certificate  
+9.2 file permissions  
+9.3 HTTPS setup  
+9.4 firewall configuration  
+
+--- PAGE 41 ---
+ 
+73 
+ 10. Data layer  10.1 JSON  
+10.2 JavaScript  
+10.3 Arrays  
+10.4 objects  
+11. Version Control 
+Tools  11.1 GitHub  
+11.2 GitLab  
+11.3 Bitbucket  
+12. Basic Git 
+commands  12.1 init 
+12.2 clone  
+12.3 add 
+12.4 commit  
+12.5 status  
+12.6 log 
+12.7 push  
+12.8 branch  
+12.9 pull 
+12.10  marge  
+12.11  checkout  
+12.12  reset  
+12.13  rm 
+12.14  mv 
+12.15  tag 
+12.16  help 
+Evidence Guide  
+The evidence must be authentic, valid, sufficient , and meet all requirements of the current 
+version of the Unit of Competency.  
+1. Critical aspects of 
+competency  Assessment required evidence that the candidate:  
+1.1 Correctly installed and configured a code editor and 
+relevant browser tools.  
+1.2 Created an organized file and folder structure according to 
+project standards.  
+1.3 Configured a local development environment for real -time 
+page preview.  
+1.4 Applied consistent file naming conventions and linked 
+resources correctly.  
+1.5 Uploaded and configured web files on a live server 
+securely.  
+1.6 Applied SSL and key security settings to enable secure 
+deployment.  
+1.7 Tested live site functionality including UI, links, and 
+responsiveness.  
+
+--- PAGE 42 ---
+ 
+74 
+ 1.8 Documented and implemented basic backup and version 
+control procedures.  
+1.9 Integrated a basic API call and interpreted the response in 
+a web interface.  
+1.10 Connected frontend components with backend data using 
+JavaScript.  
+1.11 Set up and used basic version control with Git and 
+connected to a remote repository.  
+1.12 Demonstrated proper use of code formatting tools and 
+productivity extensions.  
+1.13 Verified the functionality of the complete setup through 
+test projects.  
+2. Underpinning 
+knowledge  The candidate must demonstrate knowledge of:  
+2.1 Popular web development editors and their features.  
+2.2 Folder structures for HTML/CSS/JS -based web projects.  
+2.3 Local server setup and its importance in web 
+development.  
+2.4 File path referencing (relative vs absolute).  
+2.5 Basic web hosting infrastructure and live deployment 
+workflow.  
+2.6 Common control panels (e.g., cPanel) and their use in site 
+configuration.  
+2.7 SSL certificates and HTTPS setup for secure websites.  
+2.8 Domain registration and DNS configuration processes.  
+2.9 Purpose and function of data layers in web 
+communication.  
+2.10 Syntax and structure of JSON and JavaScript objects.  
+2.11 Basic use of fetch/AJAX for API interactions.  
+2.12 Security considerations when handling live data in web 
+design.  
+2.13 Git basics and version control principles.  
+2.14 Importance of browser compatibility and developer tools.  
+2.15 Coding productivity practices and use of extensions.  
+3. Underpinning skills  To demonstrate competency, the candidate must be able to : 
+3.1 Identify, download, and install code editors and browsers.  
+3.2 Set up file structures and maintain naming consistency.  
+3.3 Configure workspaces and install useful extensions in 
+editors.  
+3.4 Operate browser developer tools for preview and 
+debugging.  
+3.5 Use control panels to deploy and manage web files.  
+3.6 Upload web content securely via FTP/SFTP.  
+3.7 Configure SSL and DNS for live deployment.  
+3.8 Test website behavior across multiple devices and 
+browsers.  
+
+--- PAGE 43 ---
+ 
+75 
+ 3.9 Read and apply structured data in real projects.  
+3.10 Implement basic fetch/AJAX calls to retrieve and display 
+data.  
+3.11 Debug data layer interactions using browser DevTools.  
+3.12 Link and update UI components with dynamic data 
+sources.  
+ 
+3.13 Initialize Git repositories and perform basic commits.  
+3.14 Synchronize local projects with GitHub.  
+3.15 Run and verify sample web projects on a local server.  
+4. Required attitudes  The candidate must demonstrate the following attitudes : 
+4.1 Willingness to follow structured file organization and 
+naming conventions.  
+4.2 Consistency in applying formatting and code structure 
+standards.  
+4.3 Interest in exploring new tools and features to improve 
+productivity.  
+4.4 Responsibility in maintaining version history and 
+backups.  
+4.5 Patience in troubleshooting configuration and 
+environment setup errors.  
+4.6 Commitment to preparing a clean and error -free 
+workspace.  
+4.7 Collaboration and communication when sharing or 
+synchronizing code.  
+5. Resource implication  The following resources must be provided:  
+5.1 Workplace (actual or simulated).  
+5.2 Tools, equipment , and physical facilities appropriate to 
+perform activities.  
+5.3 Materials consumable to perform activities.  
+6. Methods of 
+Assessment  Methods of assessment may include , but are not limited to:  
+6.1 Demonstration with oral questioning  
+6.2 On-the-job observation with oral questioning  
+6.3 Written test  
+6.4 Portfolio  
+7. Context of assessment  7.1 Competency assessment must be done in an NSDA -
+accredited  center.  
+7.2 Assessment should be done by an NSDA -certified / 
+nominated assessor  
+
+--- PAGE 44 ---
+ 
+76 
+ Accreditation Requirements  
+Training Providers must be accredited by the National Skills Development Authority 
+(NSDA), the National Quality Assurance Body, or a body with delegated authority for 
+quality assurance to conduct training and assessment against this unit of competency for 
+credit towards the award of qualification und er BNQF. Accredited providers assessing 
+against this unit of competency must meet the quality assurance requirements set by NSDA.  
+ 
+  
+
+--- PAGE 45 ---
+ 
+77 
+ Unit Code Title  OU-ICT-WD-03-L3-V2: Work with HTML  
+Unit Descriptor  This unit covers the competencies (skills, knowledge, and 
+attitudes) required to use HTML (HyperText Markup Language) 
+to create structured, accessible, and standards -compliant web 
+content. It includes creating semantic page layouts, embedding 
+multimedia, ensuring accessibility, and validating markup.  
+Nominal Hours  60 Hours  
+Elements of 
+Competency  Performance Criteria  
+Bold & Underlined  terms are elaborated in the Range of 
+Variables . 
+1. Create HTML 
+Structure  1.1 Basic document structure is created following W3C 
+standards.  
+1.2 Root file tag s are added to enhance SEO and browser 
+compatibility.  
+1.3 Semantic elements are used for clear layout.  
+1.4 Headings and paragraph tags are applied to organize textual 
+content meaningfully.  
+1.5 Comments are used to annotate the code for clarity and 
+future maintenance.  
+2. Insert and Format 
+Content  2.1 Project folders and subfolders are created following industry 
+best practices.  
+2.2 Text formatting tags are  applied appropriately.  
+2.3 Ordered and unordered lists are created to present structured 
+content.  
+2.4 Hyperlinks are created using anchor tags with appropriate 
+attributes . 
+2.5 Tables are structured using table tag  for data presentation.  
+2.6 Media content is embedded using appropriate HTML5 tags.  
+3. Create and 
+Manage Forms  3.1 Local server  is set up for real -time preview.  
+3.2 Form elements are added with proper labels and field sets . 
+3.3 Input types are selected as per requirements.  
+3.4 Required attributes, placeholders, and validations are 
+applied.  
+3.5 Forms are grouped and styled using class or ID attributes.  
+3.6 Submit, reset, and custom buttons are configured for 
+functionality.  
+
+--- PAGE 46 ---
+ 
+78 
+ 4. Ensure 
+Accessibility and 
+Standards 
+Compliance  4.1 ARIA (Accessible Rich Internet Applications) roles and 
+attributes are applied to enhance accessibility for assistive 
+technologies.  
+4.2 Alt attributes are provided for all images and multimedia.  
+4.3 Tab index and keyboard navigation techniques are used to 
+improve usability.  
+4.4 HTML is validated using online  Validation Tools  to ensure 
+standards compliance.  
+4.5 Content structure is checked to support screen readers and 
+other accessibility tools.  
+Range of Variables  
+Variable  Range  (may include but not limited to):  
+1. Root file tag  1.1 Page titles  
+1.2 Meta descriptions  
+1.3 Viewport  
+1.4 Charset  
+2. Attributes  2.1 src 
+2.2 href 
+2.3 target  
+2.4 title 
+2.5 alt 
+2.6 role 
+2.7 aria-label  
+3. Table tag  3.1 table  
+3.2 thead  
+3.3 tbody  
+3.4 tfoot  
+3.5 tr 
+3.6 thtd 
+4. Online Validation 
+Tools  4.1 W3C Validator  
+4.2 Browser dev tools  
+Evidence Guide  
+The evidence must be authentic, valid, sufficient , and meet all requirements of the current 
+version of the Unit of Competency.  
+1. Critical aspects of 
+competency  Assessment required evidence that the candidate:  
+1.1 Structured HTML documents were created using semantic 
+tags and W3C standards.  
+1.2 Multimedia and content were embedded using appropriate 
+HTML elements.  
+
+--- PAGE 47 ---
+ 
+79 
+ 1.3 Forms were developed using various input types with 
+proper labeling and validation.  
+1.4 Accessibility features such as ARIA roles and alt text were 
+applied appropriately.  
+1.5 Markup was validated and corrected using HTML 
+validation tools.  
+2. Underpinning 
+knowledge  The candidate must demonstrate knowledge of:  
+2.1 HTML5 structure and its semantic significance.  
+2.2 Tag syntax, nesting rules, and browser rendering 
+behavior.  
+2.3 Media embedding and responsive HTML techniques.  
+2.4 Form controls and HTML validation mechanisms.  
+2.5 Accessibility guidelines and legal compliance . 
+3. Underpinning skills  To demonstrate competency, the candidate must be able to : 
+3.1 Writing clean, semantic, and error -free HTML code.  
+3.2 Embedding and configuring multimedia content.  
+3.3 Creating interactive and accessible web forms.  
+3.4 Using developer tools for validation and testing.  
+3.5 Organizing HTML code for maintainability.  
+4. Required attitudes  The candidate must demonstrate the following attitudes : 
+4.1 Attention to detail in writing clean and valid HTML code.  
+4.2 Commitment to web accessibility and user experience.  
+4.3 Curiosity to explore evolving HTML standards.  
+4.4 Proactive problem -solving when fixing validation errors.  
+4.5 Responsibility for code readability and future 
+maintenance.  
+5. Resource implication  The following resources must be provided:  
+5.1 Workplace (actual or simulated).  
+5.2 Tools, equipment , and physical facilities appropriate to 
+perform activities.  
+5.3 Materials consumable to perform activities.  
+6. Methods of 
+Assessment  Methods of assessment may include , but are not limited to:  
+6.1 Demonstration with oral questioning  
+6.2 On-the-job observation with oral questioning  
+6.3 Written test  
+6.4 Portfolio  
+7. Context of assessment  7.1 Competency assessment must be done in an NSDA -
+accredited  center.  
+7.2 Assessment should be done by an NSDA -certified / 
+nominated assessor  
+
+--- PAGE 48 ---
+ 
+80 
+ Accreditation Requirements  
+Training Providers must be accredited by the National Skills Development Authority 
+(NSDA), the National Quality Assurance Body, or a body with delegated authority for 
+quality assurance to conduct training and assessment against this unit of competency for 
+credit towards the award of qualification und er BNQF. Accredited providers assessing 
+against this unit of competency must meet the quality assurance requirements set by NSDA.  
+ 
+  
+
+--- PAGE 49 ---
+ 
+81 
+ Unit Code and Title OU-ICT-WD-04-L3-V2: Work with CSS  and use CSS 
+framework for web design  
+Unit Descriptor This unit covers the knowledge, skills and attitudes required to 
+work with CSS. It specifically includes interpreting and applying 
+CSS, using responsive approach and using CSS grid.  
+Nominal Hours  45 Hours  
+Elements of Competency Performance Criteria  
+Bold and Underlined  terms are elaborated in the Range of 
+Variables 
+1. Interpret and Structure 
+CSS 1.1 The concept and purpose of CSS are explained using real -
+world examples.  
+1.2 Types of CSS  are identified with examples from existing 
+websites.  
+1.3 CSS syntax is interpreted by analyzing selectors, properties, 
+and values.  
+1.4 CSS selectors  are compared and described through code 
+samples.  
+2.  Apply CSS for Layout 
+and Styling  2.1. A new CSS file is created and organized using standard 
+naming conventions.  
+2.2. The CSS file is properly linked and integrated with the 
+HTML document.  
+2.3. Design concepts for building a website are interpreted 
+according to conceptual design standard.  
+2.4. Styling rules are implemented based on a predefined layout 
+or design brief.  
+2.5. The CSS box model and positioning techniques  are applied 
+to arrange elements.  
+2.6. Transitions and gradient effects are added to enhance visual 
+appearance.  
+2.7. 2D and 3D transformations and simple animations are 
+applied to elements for interaction.  
+3. Implement Responsive 
+Design Using Media 
+Queries  
+ 3.1 Responsive design principles are defined and explained with 
+examples.  
+3.2 Media queries are interpreted and tested for different screen 
+breakpoints . 
+3.3 Media queries are implemented to adjust layouts on mobile, 
+tablet, and desktop devices.  
+3.4 Responsive techniques  are applied to web pages.  
+4. Use CSS Grid System 
+for Layout  4.1 CSS Grid layout concepts  are explained with use cases.  
+4.2 A CSS Grid container is created and configured with display 
+and template properties.  
+
+--- PAGE 50 ---
+ 
+82 
+ 4.3 Grid items are positioned and aligned using grid -specific 
+properties.  
+4.4 Complex page layouts are structured using CSS Grid 
+combined with media queries.  
+5. Configure CSS 
+Frameworks  5.1 Popular CSS frameworks  are identified and selected based on 
+project requirements.  
+5.2 Framework files are downloaded, installed, and linked to the 
+project environment.  
+5.3 Framework settings and configurations are customized as per 
+design needs.  
+5.4 Compatibility with HTML structure is ensured during 
+integration.  
+6. Design Web Pages 
+Using CSS Frameworks  6.1 Predefined classes and components from the CSS framework 
+are used to create structured layouts.  
+6.2 Responsive design principles  are applied to ensure the 
+website adapts to different screen sizes and devices.  
+6.3 Pages are styled using framework utilities.  
+6.4 Framework components  are customized with CSS to meet 
+specific design requirements.  
+7. Test and Optimize 
+Design  7.1 The website is tested for compatibility across different  
+browsers and devices . 
+7.2 Errors and layout inconsistencies are identified and resolved.  
+7.3 Performance of the web design is optimized using different  
+optimization techniques . 
+7.4 The final design is validated to ensure it meets project 
+specifications and client requirements  
+Range of Variables  
+Variable  Range (may include but not limited to):  
+1. Types of CSS  1.1 Inline  
+1.2 Embedded/ Internal  
+1.3 External  
+2. CSS selectors  2.1 Universal  
+2.2 Class  
+2.3 ID 
+2.4 Pseudo -class  
+2.5 Group  
+2.6 Descendant  
+3. Positioning techniques  1.1 Static  
+1.2 Relative  
+1.3 Absolute  
+1.4 Fixed  
+
+--- PAGE 51 ---
+ 
+83 
+ 1.5 Sticky  
+2. Screen breakpoints  2.1 Mobile (≤576px)  
+2.2 Tablet (768px)  
+2.3 Desktop (≥992px)  
+3. Responsive techniques  3.1 Fluid grids  
+3.2 Flexible images  
+3.3 Viewport settings  
+4. Grid layout concepts  4.1 Rows  
+4.2 Columns  
+4.3 Gaps  
+4.4 Areas  
+5. CSS Frameworks  5.1 Bootstrap  
+5.2 Tailwind CS  
+5.3 Foundation  
+5.4 Material UI  
+6. Responsive Design 
+Principles  8.1 Grid system  
+8.2 Flex box  
+8.3 Breakpoints  
+8.4 Media queries  
+8.5 Mobile -first design  
+7. Framework 
+components  9.1 Forms  
+9.2 Navigation menus/Navbar  
+9.3 Modals  
+9.4 Carousels  
+9.5 Tooltips  
+9.6 Nav Tabs/Pills  
+9.7 Accordion  
+9.8 Card  
+9.9 Toast  
+9.10 Collapse  
+9.11 Offcanvas  
+9.12 Buttons  
+9.13 Input field  
+9.14 Check box  
+9.15 Radio Button  
+9.16 Dropdown  
+9.17 Toggle  
+9.18 Progress bar  
+9.19 Alert  
+9.20 Badges  
+9.21 Tables  
+
+--- PAGE 52 ---
+ 
+84 
+ 8. Browsers and Devices  10.1 Browsers  
+10.1.1  Chrome  
+10.1.2  Firefox  
+10.1.3  Safari  
+10.1.4  Edge  
+10.2 Devices  
+10.2.1  Android phones  
+10.2.2  iPhones  
+10.2.3  tablets  
+10.2.4  desktops.  
+11 Optimization 
+Techniques  11.1 Minifying CSS and JS files  
+11.2 Lazy loading  
+11.3 Reducing unused CSS  
+11.4 Improving load time  
+11.5 Testing in Lighthouse  
+11.6 Image optimization  
+ 
+Evidence Guide  
+The evidence must be authentic, valid, sufficient, reliable, consistent and recent and meet the 
+requirements of the current version of the Unit of Competency  
+1. Critical Aspects of 
+Competency  Assessment required evidence that the candidate:  
+1.1 Correctly  interpreted and applied CSS syntax, selectors, 
+and styles.  
+1.2 Implemented  responsive web design using media queries 
+and layout techniques.  
+1.3 Used CSS Grid to build flexible and structured layouts.  
+1.4 Integrated and configured a CSS framework for structured 
+webpage  design.  
+1.5 Applied transitions, animations, and transform properties in 
+styling.  
+1.6 Validated and tested web designs across multiple devices 
+and browsers.  
+1.7 Optimized the performance of CSS -based web pages using 
+best practices.  
+2. Underpinning 
+Knowledge  The candidate must demonstrate knowledge of:  
+2.1 Principles of Cascading Style Sheets (CSS) and its role in 
+web development.  
+2.2 Types of CSS and the difference between selectors and 
+properties.  
+2.3 CSS Box Model and positioning techniques.  
+2.4 Syntax and structure of media queries.  
+2.5 Responsive design techniques and breakpoints.  
+2.6 Structure and utility of CSS frameworks like Bootstrap or 
+Tailwind.  
+
+--- PAGE 53 ---
+ 
+85 
+ 2.7 Cross -browser compatibility issues and testing methods.  
+2.8 Website performance optimization techniques related to 
+CSS.  
+ 
+3. Underpinning Skills  
+ The candidate must be able to:  
+3.1 Write clean and structured CSS code manually.  
+3.2 Integrate CSS with HTML documents effectively.  
+3.3 Apply advanced styling including transitions, gradients, 
+and transforms.  
+3.4 Create responsive web designs using media queries.  
+3.5 Use grid and flexbox layout systems to structure web pages.  
+3.6 Customize and extend prebuilt CSS framework 
+components.  
+3.7 Debug layout or styling issues across devices and browsers.  
+3.8 Test, validate, and optimize CSS for performance and 
+accessibility.  
+4. Required Attitudes  Assessment requires evidence that the candidate:  
+ 
+4.1 Attention to detail in writing and organizing CSS code.  
+4.2 Consistency in applying responsive layout and design 
+principles.  
+4.3 Commitment to writing clean, structured, and maintainable 
+code.  
+4.4 Responsibility for ensuring cross -browser and cross -device 
+compatibility.  
+4.5 Creativity in using modern CSS techniques such as animation, 
+transitions, and grids.  
+4.6 Willingness to explore and implement innovative layout 
+solutions.  
+4.7 Openness to learning new frameworks and improving 
+technical efficiency.  
+4.8 Curiosity to stay up -to-date with emerging trends and 
+technologies in frontend design.  
+4.9 Flexibility to adapt to changing project requirements and user 
+needs.  
+4.10 Collaborative mindset when working with designers, 
+developers, and other stakeholders.  
+4.11 Effective communication of technical decisions and styling 
+logic.  
+4.12 Receptiveness to constructive feedback and continuous 
+improvement.  
+4.13 Punctuality in meeting deadlines and delivering project 
+milestones.  
+4.14 Accountability for testing, debugging, and refining their own 
+code and designs.  
+
+--- PAGE 54 ---
+ 
+86 
+ 5. Resource Implications  The following resources must be provided:  
+5.1 Relevant tools, Equipment, software and facilities needed to 
+perform the activities.  
+5.2 Required learning materials.  
+6. Methods of Assessment  Methods of assessment may include, but are not limited to:  
+6.1 Demonstration with oral questioning  
+6.2 On-the-job observation with oral questioning  
+6.3 Written test  
+6.4 Portfolio  
+7. Context of Assessment  7.1 Competency assessment must be done in a training center or 
+in an actual or simulated work place after completion of the 
+training module  
+7.2 Assessment should be done by NSDA certified assessor  
+Accreditation Requirements  
+Training Providers must be accredited by the National Skills Development Authority (NSDA), 
+the National Quality Assurance Body, or a body with delegated authority for quality assurance to 
+conduct training and assessment against this unit of competency for credit towards the award of 
+qualification und er BNQF. Accredited providers assessing against this unit of competency must 
+meet the quality assurance requirements set by NSDA . 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+--- PAGE 55 ---
+ 
+87 
+ Unit Code Title  OU-ICT-WD-05-L3-V2: Perform  Design to Web  
+Unit Descriptor  This unit covers the competencies (skills, knowledge, and 
+attitudes) required to the conversion of visual design files (PSD, 
+Figma, XD) into responsive, functional web pages using HTML, 
+CSS, and JavaScript. It involves interpreting layout specifications, 
+slicing assets, and building code structures that reflect the design 
+accurately.  
+Nominal Hours  40 Hours  
+Elements of 
+Competency  Performance Criteria  
+Bold & Underlined  terms are elaborated in the Range of 
+Variables . 
+1. Select and Install 
+Web Development 
+Tools  1.1 Design files from visual design software  are opened and 
+inspected.  
+1.2 Layout grids, typography, and design tokens are identified.  
+1.3 Color palettes, margins, and spacing values are noted.  
+1.4 Design responsiveness requirements are interpreted.  
+1.5 Asset types and export settings are determined.  
+2. Export and 
+Optimize Design 
+Assets  2.1 Project folders and subfolders are created following industry 
+best practices.  
+2.2 Required images, icons, and illustrations are sliced and 
+exported.  
+2.3 Assets are optimized for web usage.  
+2.4 File naming conventions and folder structure are maintained.  
+2.5 Multiple screen variants are prepared for responsiveness.  
+ 
+3. Build Web Page 
+Based on Design  3.1 HTML layout is structured based on visual hierarchy.  
+3.2 CSS is applied to replicate spacing, colors, fonts, and 
+dimensions.  
+3.3 Web fonts and icons are integrated as per design.  
+3.4 Interactive components  are recreated using basic JavaScript 
+or CSS.  
+3.5 Responsive design is implemented using Flexbox, Grid, or 
+framework classes.  
+4. Ensure Design 
+Consistency and 
+Optimization  4.1 Browser testing is conducted to compare final page with 
+design mockups.  
+4.2 Cross-device  responsiveness is tested and refined.  
+4.3 Performance is improved by minimizing CSS/JS and 
+optimizing media.  
+
+--- PAGE 56 ---
+ 
+88 
+ 4.4 Accessibility checks are performed.  
+4.5 Final output is delivered in required format or hosted  for 
+review.  
+Range of Variables  
+Variable  Range  (may include but not limited to):  
+1. Visual design 
+software  1.1 Figma  
+1.2 XD 
+1.3 Photoshop  
+2. Cross -device  2.1 Mobile  
+2.2 Tablet  
+2.3 Desktop  
+Evidence Guide  
+The evidence must be authentic, valid, sufficient , and meet all requirements of the current 
+version of the Unit of Competency.  
+1. Critical aspects of 
+competency  Assessment required evidence that the candidate:  
+1.1 Interpreted visual design specifications from UI design 
+tools.  
+1.2 Exported and optimized all required assets for web use.  
+1.3 Accurately recreated the layout structure using HTML and 
+CSS.  
+1.4 Implemented responsive behavior consistent with original 
+designs.  
+1.5 Applied optimization techniques to ensure fast load time.  
+1.6 Ensured cross -browser compatibility and visual 
+consistency.  
+1.7 Delivered final coded layout aligned with the original 
+design vision.  
+2. Underpinning 
+knowledge  The candidate must demonstrate knowledge of:  
+2.1 Web -safe color theory and font implementation.  
+2.2 Conversion of pixel -perfect designs to fluid layouts.  
+2.3 Image optimization techniques and formats.  
+2.4 Semantic HTML and accessible design.  
+2.5 Best practices for performance and responsiveness.  
+3. Underpinning skills  To demonstrate competency, the candidate must be able to : 
+3.1 Extracting assets using Figma, XD, and PSD.  
+3.2 Slicing, naming, and organizing export files.  
+
+--- PAGE 57 ---
+ 
+89 
+ 3.3 Structuring semantic HTML with design fidelity.  
+3.4 Applying layout systems (Grid/Flexbox) to build 
+responsive pages.  
+3.5 Testing and optimizing web pages for multiple devices 
+and browsers.  
+ 
+4. Required attitudes  The candidate must demonstrate the following attitudes : 
+4.1 Attention to detail and visual precision.  
+4.2 Creativity in adapting fixed designs into flexible code.  
+4.3 Collaboration with designers for feedback and 
+clarification.  
+4.4 Motivation to maintain performance and accessibility.  
+4.5 Commitment to delivering visually faithful web output.  
+ 
+5. Resource implication  The following resources must be provided:  
+5.1 Workplace (actual or simulated).  
+5.2 Tools, equipment , and physical facilities appropriate to 
+perform activities.  
+5.3 Materials consumable to perform activities.  
+6. Methods of 
+Assessment  Methods of assessment may include , but are not limited to:  
+6.1 Demonstration with oral questioning  
+6.2 On-the-job observation with oral questioning  
+6.3 Written test  
+6.4 Portfolio  
+7. Context of assessment  7.1 Competency assessment must be done in an NSDA -
+accredited  center.  
+7.2 Assessment should be done by an NSDA -certified / 
+nominated assessor  
+Accreditation Requirements  
+Training Providers must be accredited by the National Skills Development Authority 
+(NSDA), the National Quality Assurance Body, or a body with delegated authority for 
+quality assurance to conduct training and assessment against this unit of competency for 
+credit towards the award of qualification und er BNQF. Accredited providers assessing 
+against this unit of competency must meet the quality assurance requirements set by NSDA.  
+ 
+ 
+  
+
+--- PAGE 58 ---
+ 
+90 
+ Unit Code Title  OU-ICT-WD-06-L3-V2: Work with Core JavaScript  
+Unit Descriptor  This unit covers the competencies (skills, knowledge, and 
+attitudes) required to set up and configure a professional web 
+design environment. It includes installing code editors and tools, 
+configuring browsers and extensions, organizing files and folders, 
+using version control systems, and ensuring the system is ready for 
+efficient front -end development work.  
+Nominal Hours  40 Hours  
+Elements of 
+Competency  Performance Criteria  
+Bold & Underlined  terms are elaborated in the Range of 
+Variables . 
+1. Interpret 
+JavaScript 
+Fundamentals  1.1 JavaScript syntax and data types  are explained with relevant 
+examples.  
+1.2 Variables are declared and initialized using var, let, and 
+const.  
+1.3 Operators  are applied to perform operations.  
+1.4 Data structures  are interpreted  and implemented.  
+1.5 Console logging is used to debug and display outputs.  
+2. Apply Control 
+Structures  2.1 Conditional statements  are written to control program 
+logic.  
+2.2 Looping statements  are implemented to iterate data.  
+2.3 Nested conditions and loops are created for complex logic.  
+2.4 Boolean logic  is used in decision -making scenarios.  
+3. Work with 
+Functions  3.1 Functions are declared using named and anonymous 
+methods.  
+3.2 Parameters and return values are used appropriately.  
+3.3 Scope and hoisting are applied in function design.  
+3.4 Reusable functions are written to improve code efficiency.  
+4. Handle Events 
+using DOM 
+Manipulation  4.1 DOM elements  are accessed using get  ElementById, 
+querySelector.  
+4.2 HTML content and attributes are modified using JavaScript.  
+4.3 Event listeners are added to enhance interactivity.  
+4.4 Basic form validation and alert messages are implemented.  
+Range of Variables  
+Variable  Range  (may include but not limited to):  
+
+--- PAGE 59 ---
+ 
+91 
+ 1. Data types  1.1 string  
+1.2 number  
+1.3 bigint  
+1.4 boolean  
+1.5 undefined  
+1.6 null 
+1.7 symbol  
+1.8 array  
+1.9 object  
+2. Operators  2.1 Arithmetic,  
+2.2 Assignment  
+2.3 Logical  
+2.4 Comparison  
+2.5 Bitwise  
+2.6 String  
+2.7 Ternary (Conditional)  
+3. Data structures  3.1 Arrays  
+3.2 Objects  
+3.3 Maps  
+3.4 Sets 
+3.5 Linked Lists  
+3.6 Stacks  
+3.7 Queues  
+3.8 Hash Tables  
+3.9 Trees  
+3.10 Graphs  
+4. Conditional 
+statements  4.1 if  
+4.2 if...else  
+4.3 if...else if...else  
+4.4 switch  
+5. Looping statements  5.1 for 
+5.2 while 
+5.3 do...while  
+5.4 for...in  
+5.5 for...of  
+6. Boolean logic  6.1 true 
+6.2 false  
+6.3 AND  
+6.4 OR 
+6.5 NOT  
+7. DOM elements  7.1 Buttons  
+7.2 Inputs  
+7.3 Forms  
+7.4 containers  
+
+--- PAGE 60 ---
+ 
+92 
+ Evidence Guide  
+The evidence must be authentic, valid, sufficient , and meet all requirements of the current 
+version of the Unit of Competency.  
+1. Critical aspects of 
+competency  Assessment required evidence that the candidate:  
+1.1 Accurately declared and used variables, data types, and 
+operators in code.  
+1.2 Applied control structures to solve logic -based problems.  
+1.3 Defined and invoked custom functions for task 
+modularization.  
+1.4 Integrated event listeners to respond to user actions.  
+1.5 Manipulated DOM elements to dynamically update 
+webpage content.  
+1.6 Debugged JavaScript code using console and logical 
+checks.  
+2. Underpinning 
+knowledge  The candidate must demonstrate knowledge of:  
+2.1 Basic JavaScript syntax and reserved keywords.  
+2.2 Variable types and data structures.  
+2.3 Logical and control flow in programming.  
+2.4 DOM structure and document traversal.  
+2.5 Common JavaScript events and handlers . 
+3. Underpinning skills  To demonstrate competency, the candidate must be able to : 
+3.1 Writing clean and functional JavaScript code.  
+3.2 Using browser tools for debugging.  
+3.3 Creating interactive forms and event -driven behaviors.  
+3.4 Accessing and modifying the DOM effectively.  
+3.5 Structuring functions to reduce repetition and improve 
+clarity.  
+4. Required attitudes  The candidate must demonstrate the following attitudes : 
+4.1 Curiosity to experiment with different JavaScript 
+functionalities.  
+4.2 Logical thinking and structured problem -solving mindset.  
+4.3 Attention to code readability and commenting.  
+4.4 Persistence in debugging and troubleshooting code.  
+4.5 Openness to learning and improving through practice.  
+5. Resource implication  The following resources must be provided:  
+5.1 Workplace (actual or simulated).  
+5.2 Tools, equipment , and physical facilities appropriate to 
+perform activities.  
+5.3 Materials consumable to perform activities.  
+
+--- PAGE 61 ---
+ 
+93 
+ 6. Methods of 
+Assessment  Methods of assessment may include , but are not limited to:  
+6.1 Demonstration with oral questioning  
+6.2 On-the-job observation with oral questioning  
+6.3 Written test  
+6.4 Portfolio  
+7. Context of assessment  7.1 Competency assessment must be done in an NSDA -
+accredited  center.  
+7.2 Assessment should be done by an NSDA -certified / 
+nominated assessor  
+Accreditation Requirements  
+Training Providers must be accredited by the National Skills Development Authority 
+(NSDA), the National Quality Assurance Body, or a body with delegated authority for 
+quality assurance to conduct training and assessment against this unit of competency for 
+credit towards the award of qualification und er BNQF. Accredited providers assessing 
+against this unit of competency must meet the quality assurance requirements set by NSDA.  
+ 
+  
+
+--- PAGE 62 ---
+ 
+94 
+ Validation of Competency Standard by Standard and Curriculum 
+Validation Committee (SCVC)  
+The Competency Standards for National Skills Certificate in Web  Design, NTVQF L -III Qualification is 
+validated by SCVC on 12 January 2020 and approved by NSDA.  
+Respectable members of the SCVC:  
+Web  Design , Level - III 
+1 Md. Faruque Hossain, Executive Chairman (Secretary)  
+Tel: +880 2 8891091, Email:  ecnsda@nsda.gov.b  Chief Guest  
+2 ATM Mahbubul Alam, Secretary General, ICTISC,  
+Cell: +8802 -8833463 -64, Email:  mahbub@wintelbd.com  Chairperson  
+3 Mohammad Rezaul Karim, Additional Secretary, Member (Skills Standard & 
+Certification)  
+Tel: +880 2 8891096, Email:  rezaul134@yahoo.com  Member  
+4 Md. Mustafizur Rahman, CEO, Choukosh.  
+Cell: 01819201456  Member  
+5 A.B.M. Owal Ikramul Islam, Trainer & Assessor, BASIS,  
+Cell: 01847174678  Member  
+6 Md. Asif Uddin, Trainer, BITM,  
+Cell: 01723004419  Member  
+7 Mahbub Ul Huda, Curriculum Coordinator (Consultant), NSDA.  
+Cell: 01735490491, Email: huda763@gmail.com  Member  
+8 Engr. Md. Abdur Razzaque, Specialist (CS), NSDA, Dhaka.  
+Mobile: +88 01743 734313, E -mail: razzaque159@gmail.com  Member  
+9 Mr. Saif Uddin, Process Expert (CS and Curriculum),  
+Cell: 01723004419, Email: engrbd.saif@gmail.com   Member  
+10 Modhusudan Sarkar, Consultant, NSDA  
+Cell:01714164518  Member  
+11 Ahsanul Haq, MIS Consultant, NSDA  
+Cell: 01712631884  Member  
+12 Md. Quamruzzaman , Director (Skills Standard)  
+Tel: +880 2 8891097, Email: qzaman40@yahoo.com  Member  
+13 Engr. B.M. Shariful Islam, Deputy Director (Skills Standard)  
+Cell: +880 01715010321, Email:  sharif9375@gmail.com  Member  
+14 Farid Ahmed, Deputy Director, NSDA  
+Cell: +880 01714545851, Email: faridje1993@gmail.com  Member  
+15 Shilabrata Karmakar, Deputy Director (Admin)  
+Cell: +880 1819478847, Email: shila16208 @্ gmail.com  Member  
+ 
+ 
+  
+
+--- PAGE 63 ---
+ 
+95 
+   
+
+--- PAGE 64 ---
+ 
+96 
+ Review and Validation of Competency Standard  
+The Competency Standards for National Skills Certificate in Web  Design, Level - 3 is reviewed 
+and validated by NSDA on 19 December  2024.  
+ 
+List of Members  
+ 
+S/N Name and Address  Position in the 
+committee  Signature and 
+Date  
+1.  Shafquat Haider, Chairman, ICT ISC, ciproco@bol -online.com , 
+shafquat.haider@gmail.com , Mobile No . 01711532597   Chairperson   
+2.  Md. Rafiuzzaman Khan  
+Software Engineering Team Lead  
+REEA Digital Limited  
+Email: ponickid@gmail.com  
+Mobile: 880 1710 -706260  Member   
+3.  Khondoker Ali Asgor Pavel  
+Chief Executive Officer,  
+bitBirds Solutions, Dhaka.  
+Email: email@aliasgorpavel.com  
+Mobile: 01711873008  Member   
+4.  Md. Abdul Hye Siddiqui,  
+Senior Instructor (Computer), BMET,  
+Email: siddiqui.ttc@gmail.com,  
+Mobile: 01819725610  Member   
+5.  Name: Habibur Rahman  
+Designation: Chief Technical Officer (CTO)  
+Company Name: Shihoron Solution  
+Email: habib2498922@gmail.com  
+Mobile: 01711805110  Member   
+6.  Al-Nahian Hasan  
+Software Developer,  
+OXIS Tech Limited, Motijheel, Dhaka  
+Email: nahianhasan161@gmail.com  
+Mobile: 01317340151  Member   
+7.  Md. Anisuzzaman,  
+Instructor (Computer), Rajshahi TTC,  
+Email: mazaman84@gmail.com  
+Mobile: 01714422225  Member   
+8.  Md. Saif Uddin, Junior Assessment Consultant, National Skills 
+Development Authority, Email: engrbd.saif@gmail.com ,  
+Mobile: 01723004419  Member   
+ 
+  
+
+--- PAGE 65 ---
+ 
+97 
+ Workshop Minutes  
+ 
+Government of the People's Republic of Bangladesh  
+Chief Adviser's Office  
+National Skills Development Authority  
+Level: 10 -11, Biniyog Bhaban,  
+E-6 / B, Agargaon, Sher -E-Bangla Nagar Dhaka -1207, Bangladesh.  
+Email: ec@nsda.gov.bd  
+Website: www.nsda.gov.bd.  
+ 
+Minutes of the Competency Standard  Review and Validation Workshop on “ Web  Design , 
+Level 3” Occupation.  
+Chairman  :  
+Date  : 19 December  2024  
+Time  : 9:00am - 5:00 pm  
+Place  : ISC Conference Room, NSDA, Biniyog Bhaban, Agargaon, Dhaka -1207  
+              
+ 
+The Chairman welcomed all those present and started the work of the workshop. During the 
+day-long workshop, the competency standard of Web  Design , Level 3 occupation was 
+reviewed and finalized in detail. The activities related to the finalized standard through review 
+and validation workshop are presented below:  
+ 
+Serial 
+No. 
+ Content of 
+validation  
+ Whether it 
+was 
+appropriate  What actions have been taken if not 
+appropriate?  
+Yes No. 
+1.  Name and level of 
+occupation  yes   
+2.  Nominal Hour  yes  360 hours . 
+3.  Unit of 
+Competency   No From the generic section  1 new Generic unit 
+added.  
+▪ Practice  Negotiation Skills  
+Deleted 2 Generic units  
+▪ Apply Occupational Safety and Health 
+(OSH) Practices at Workplace  
+▪ Carry  out workplace interaction in 
+English  
+From the sector section  2 new sector unit 
+added.  
+▪ Practice Occupational Safety and Health 
+(OSH) Standard in ICT   
+▪ Prepare Documents and Create 
+Presentations for client . 
+Deleted 4 sector  units  
+▪ Operate  a Personal Computer and Use 
+Application programs  
+▪  Operate  office application software  
+
+--- PAGE 66 ---
+ 
+98 
+ ▪ Access  Information using Internet and 
+electronic mail  
+▪ Comply  to Ethical Standards in IT 
+Workplace  
+1 new Occupation units added and two 
+occupation units are deleted.  
+Added:  
+▪ Interpret  Visual Design Principles and 
+Apply Color Sense for Web Design  
+Deleted:  
+▪ Work with basic javascript & jQuery  
+▪ Work with CMS  
+4.  Element   No. Proper refinement of required elements has 
+been achieved by keeping consistent 
+elements.  
+5.  Performance 
+Criteria   No. Necessary refinement of performance 
+criteria has been achieved.  
+6.  Variables   No. Appropriate addition, modification and 
+refinement of variables has been done 
+keeping in view the performance criteria.  
+7.  Critical Aspect of 
+Competence   No. Appropriate changes have been made in the 
+critical aspect of competency as per the 
+change of units.  
+8.  Underpinning 
+knowledge   No. Necessary addition, changings and 
+refinements have been made.  
+9.  Underpinning 
+Skills   No. Necessary added, changes and refinements 
+have been made.  
+10.  Attitude  Yes   
+11.  Resources  Yes   
+12.  Assessment 
+methods  Yes   
+13.  Others    ▪ The nominal hours of the units of 
+competencies have been readjusted for 
+content consideration.  
+▪ Overall, the occupation has been 
+included in Level -3 according to BNQF 
+1-6. 
+ 
+Through the above activities, the Competency Standard has been reviewed, finalized and 
+validated as “ Web  Design , Level  3”. 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ Chairman  
+Committee on Standard and 
+Curriculum Validation,  
+Chairman - ICT ISC 
+ 

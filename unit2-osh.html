@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Unit 2: Practice OSH Standard in ICT — SU-ICT-10-L2-V1. Complete guide on occupational safety, hazards, PPE, and emergency response in ICT workplaces.">
+  <title>Unit 2: Practice OSH Standard in ICT — NSDA Web Design L3</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="scroll-progress"></div>
+<header class="header">
+  <a href="index.html" class="header-logo">
+    <div class="header-logo-icon">W3</div>
+    <div class="header-logo-text">NSDA <span>Web Design</span> L3</div>
+  </a>
+  <nav class="header-nav">
+    <a href="index.html">Home</a>
+    <a href="unit1-negotiation.html">Unit 1</a>
+    <a href="unit2-osh.html" class="active">Unit 2</a>
+    <a href="unit3-documents.html">Unit 3</a>
+  </nav>
+  <div style="display:flex;align-items:center;gap:8px;">
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="unit1-negotiation.html">Unit 1: Negotiation</a>
+  <a href="unit2-osh.html">Unit 2: OSH</a>
+  <a href="unit3-documents.html">Unit 3: Documents</a>
+  <a href="unit4-visual-design.html">Unit 4: Visual Design</a>
+  <a href="unit5-environment.html">Unit 5: Environment</a>
+  <a href="unit6-html.html">Unit 6: HTML</a>
+  <a href="unit7-css.html">Unit 7: CSS</a>
+  <a href="unit8-design-to-web.html">Unit 8: Design to Web</a>
+  <a href="unit9-javascript.html">Unit 9: JavaScript</a>
+</nav>
+
+<div class="page-layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-title">On This Page</div>
+    <nav class="sidebar-nav">
+      <a href="#overview">Overview</a>
+      <a href="#element1">1. Identify Hazards & Risks</a>
+      <a href="#element2">2. Personal Health & Safety</a>
+      <a href="#element3">3. Manage & Report Hazards</a>
+      <a href="#element4">4. Respond to Emergencies</a>
+      <a href="#hazards">Types of Hazards</a>
+      <a href="#ppe">PPE Equipment</a>
+      <a href="#ergonomics">Ergonomic Practices</a>
+      <a href="#emergency">Emergency Procedures</a>
+      <a href="#evidence">Evidence Guide</a>
+    </nav>
+  </aside>
+
+  <div class="page-content">
+    <div class="content">
+
+      <div class="unit-header">
+        <div class="unit-header-meta">
+          <span class="unit-badge badge-sector">Sector Unit</span>
+          <span class="unit-badge badge-hours">⏱ 15 Hours</span>
+        </div>
+        <h1>Unit 2: Practice Occupational Safety and Health (OSH) Standard in ICT</h1>
+        <p class="unit-header-desc">
+          <strong>Unit Code:</strong> SU-ICT-10-L2-V1<br>
+          This unit covers identifying hazards and risks in ICT environments, applying personal health and safety practices, managing and reporting hazards, and responding to emergencies.
+        </p>
+      </div>
+
+      <h2 id="overview"><span class="icon">📋</span> Overview</h2>
+      <p>Working in ICT environments presents unique health and safety challenges — from ergonomic injuries caused by prolonged sitting to electrical hazards from equipment. This unit ensures you can identify, prevent, and respond to these risks professionally.</p>
+
+      <h2 id="element1"><span class="icon">⚠️</span> Element 1: Identify Hazards and Risks in ICT Environment</h2>
+
+      <div class="pc-card">
+        <div class="pc-card-id">PC 1.1</div>
+        <h4>Common Safety and Health Risks in IT Workplaces</h4>
+        <p>IT workplaces have specific risks that differ from industrial environments:</p>
+        <ul>
+          <li><strong>Ergonomic issues:</strong> Poor posture, non-adjustable chairs, improper monitor height</li>
+          <li><strong>Repetitive Strain Injuries (RSI):</strong> Caused by repetitive keyboard and mouse use</li>
+          <li><strong>Eye strain:</strong> Extended screen time without breaks, poor lighting, blue light exposure</li>
+          <li><strong>Radiation:</strong> Low-level electromagnetic radiation from monitors and devices</li>
+          <li><strong>Carpal Tunnel Syndrome:</strong> Nerve compression in the wrist from repetitive hand movements</li>
+          <li><strong>Electrical hazards:</strong> Faulty wiring, overloaded power strips, damaged cables</li>
+        </ul>
+      </div>
+
+      <div class="pc-card">
+        <div class="pc-card-id">PC 1.2</div>
+        <h4>Workplace Types and Layout Assessment</h4>
+        <p>Different ICT workspaces have different safety requirements:</p>
+        <div class="table-wrapper">
+          <table>
+            <thead><tr><th>Workspace Type</th><th>Key Safety Considerations</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Hardware servicing labs</strong></td><td>ESD protection, proper ventilation, tool organization</td></tr>
+              <tr><td><strong>Software development rooms</strong></td><td>Ergonomic furniture, adequate lighting, noise levels</td></tr>
+              <tr><td><strong>IT Training Labs</strong></td><td>Emergency exits, equipment spacing, cable management</td></tr>
+              <tr><td><strong>Server rooms</strong></td><td>Temperature control, restricted access, fire suppression</td></tr>
+              <tr><td><strong>Networking infrastructure</strong></td><td>Cable management, labeling, physical security</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="pc-card">
+        <div class="pc-card-id">PC 1.3</div>
+        <h4>Personal Protective Equipment (PPE) for IT Tasks</h4>
+        <p>While IT work doesn't require heavy PPE, specific equipment is still important:</p>
+        <ul>
+          <li><strong>Anti-static wristband:</strong> Prevents electrostatic discharge when handling components</li>
+          <li><strong>UV-protected eyewear:</strong> Reduces eye strain from prolonged screen use</li>
+          <li><strong>Face mask:</strong> For dusty environments (cleaning hardware, server rooms)</li>
+          <li><strong>Anti-static shoes:</strong> For working with sensitive electronic equipment</li>
+          <li><strong>Gloves:</strong> For handling chemicals (cleaning solutions) or hot components</li>
+          <li><strong>Earplugs:</strong> In server rooms or noisy environments</li>
+        </ul>
+      </div>
+
+      <h2 id="element2"><span class="icon">🛡️</span> Element 2: Apply Personal Health and Safety Practices</h2>
+
+      <div class="pc-card">
+        <div class="pc-card-id">PC 2.1</div>
+        <h4>Ergonomically Sound Practices</h4>
+        <p>Proper ergonomics prevents long-term health problems:</p>
+        <ul>
+          <li><strong>Adjustable seating:</strong> Chair height should allow feet flat on floor, thighs parallel to ground</li>
+          <li><strong>Proper posture:</strong> Back straight, shoulders relaxed, arms at 90° angle</li>
+          <li><strong>Monitor position:</strong> Screen at arm's length, top of screen at or slightly below eye level</li>
+          <li><strong>Proper lighting:</strong> Avoid glare on screen, maintain ambient lighting at 300-500 lux</li>
+        </ul>
+      </div>
+
+      <div class="info-box tip">
+        <div class="info-box-title">💡 The 20-20-20 Rule</div>
+        <p>Every <strong>20 minutes</strong>, look at something <strong>20 feet away</strong> for <strong>20 seconds</strong>. This simple practice significantly reduces eye strain and fatigue during long coding sessions.</p>
+      </div>
+
+      <div class="pc-card">
+        <div class="pc-card-id">PC 2.2 – 2.5</div>
+        <h4>Preventive Measures and Workplace Maintenance</h4>
+        <p><strong>Preventive measures include:</strong></p>
+        <ul>
+          <li>Taking regular breaks (5-10 minutes every hour)</li>
+          <li>Ensuring adequate lighting and ventilation</li>
+          <li>Practicing good time management to avoid overwork</li>
+          <li>Using ergonomic furniture (adjustable desks, keyboard trays, monitor stands)</li>
+        </ul>
+        <p><strong>Workplace maintenance:</strong> Keep the workspace clean, cables organized, and walkways clear. PPE should be properly stored after use. Report any safety issues to your supervisor immediately.</p>
+      </div>
+
+      <h2 id="element3"><span class="icon">📋</span> Element 3: Manage and Report Hazards</h2>
+
+      <div class="pc-card">
+        <div class="pc-card-id">PC 3.1 – 3.5</div>
+        <h4>Hazard Management Process</h4>
+        <p><strong>Routine checks:</strong> Regularly inspect your work area for potential hazards — loose cables, damaged equipment, blocked exits.</p>
+        <p><strong>Corrective actions:</strong> Take immediate action for hazards within your scope — organize cables, replace damaged power strips, clean spills.</p>
+        <p><strong>Minimize distractions:</strong> Internet and social media addiction can reduce workplace focus and create safety risks through inattention.</p>
+        <p><strong>Record keeping:</strong> Maintain detailed records of all incidents, hazards identified, and corrective actions taken.</p>
+        <p><strong>Reporting:</strong> Report hazards, risks, and incidents accurately and promptly to the designated authority using proper channels.</p>
+      </div>
+
+      <h2 id="element4"><span class="icon">🚨</span> Element 4: Respond to Emergencies</h2>
+
+      <div class="pc-card">
+        <div class="pc-card-id">PC 4.1 – 4.3</div>
+        <h4>Emergency Response Procedures</h4>
+        <p><strong>Types of emergencies in ICT:</strong></p>
+        <ul>
+          <li>Equipment failures or malfunctions</li>
+          <li>Electrical fires</li>
+          <li>General fires</li>
+          <li>Explosions (battery, power supply)</li>
+          <li>Natural disasters (earthquakes, floods, cyclones)</li>
+        </ul>
+        <p><strong>Response procedures:</strong></p>
+        <ul>
+          <li><strong>First aid:</strong> Administer basic first aid or seek qualified personnel</li>
+          <li><strong>Emergency treatment:</strong> Call emergency services if needed</li>
+          <li><strong>Firefighting:</strong> Use appropriate fire extinguisher (CO2 for electrical fires, NOT water)</li>
+          <li><strong>Evacuation:</strong> Follow the evacuation plan — know your nearest exit and assembly point</li>
+        </ul>
+      </div>
+
+      <div class="info-box important">
+        <div class="info-box-title">🔥 Critical: Electrical Fire Safety</div>
+        <p><strong>NEVER use water</strong> on an electrical fire! Use a CO2 or dry chemical fire extinguisher. Disconnect the power source first if safe to do so. Evacuate immediately if the fire cannot be controlled.</p>
+      </div>
+
+      <h2 id="hazards"><span class="icon">☠️</span> Types of Hazards in ICT</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Hazard Type</th><th>Examples</th><th>Prevention</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Physical</strong></td><td>Cables across floor, slippery surfaces, dust</td><td>Cable management, regular cleaning, anti-slip mats</td></tr>
+            <tr><td><strong>Mechanical</strong></td><td>Sharp computer case edges, fan blades</td><td>Handle carefully, use gloves, keep cases closed</td></tr>
+            <tr><td><strong>Chemical</strong></td><td>Display cleaning chemicals, keyboard cleaners</td><td>Read labels, use in ventilated areas, wear gloves</td></tr>
+            <tr><td><strong>Ergonomic</strong></td><td>Poor posture, repetitive strain, eye strain</td><td>Adjustable furniture, regular breaks, 20-20-20 rule</td></tr>
+            <tr><td><strong>Electrical</strong></td><td>Faulty wiring, overloaded sockets, damaged cables</td><td>Regular inspections, proper grounding, surge protectors</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="ppe"><span class="icon">🥽</span> PPE Equipment Guide</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>PPE Item</th><th>When to Use</th><th>Storage</th></tr></thead>
+          <tbody>
+            <tr><td>Anti-static wristband</td><td>Handling internal components, RAM, CPUs</td><td>Clean, dry storage; test before each use</td></tr>
+            <tr><td>UV-protected eyewear</td><td>Extended screen work (8+ hours)</td><td>In protective case when not in use</td></tr>
+            <tr><td>Face mask</td><td>Cleaning dusty hardware, server maintenance</td><td>Replace regularly, store in clean area</td></tr>
+            <tr><td>Gloves</td><td>Chemical cleaning, hot component handling</td><td>Wash and dry after use</td></tr>
+            <tr><td>Anti-static shoes</td><td>Server room access, hardware labs</td><td>Keep dry, check periodically</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="ergonomics"><span class="icon">🪑</span> Ergonomic Workstation Setup</h2>
+      <div class="info-box example">
+        <div class="info-box-title">🖥️ Ideal Workstation Checklist</div>
+        <p>✅ <strong>Monitor:</strong> At arm's length distance, top of screen at eye level</p>
+        <p>✅ <strong>Chair:</strong> Adjustable height, lumbar support, armrests at desk height</p>
+        <p>✅ <strong>Keyboard:</strong> At elbow height, wrists straight (not bent up or down)</p>
+        <p>✅ <strong>Mouse:</strong> Close to keyboard, use a wrist rest if needed</p>
+        <p>✅ <strong>Feet:</strong> Flat on the floor or on a footrest</p>
+        <p>✅ <strong>Lighting:</strong> No glare on screen, ambient light at 300-500 lux</p>
+        <p>✅ <strong>Breaks:</strong> 5-10 minute break every hour, stretch regularly</p>
+      </div>
+
+      <h2 id="emergency"><span class="icon">🆘</span> Emergency Response Flowchart</h2>
+      <div class="info-box">
+        <div class="info-box-title">📋 Emergency Response Steps</div>
+        <p><strong>Step 1:</strong> Identify the emergency type (fire, electrical, injury, natural disaster)</p>
+        <p><strong>Step 2:</strong> Alert others — use the alarm system or shout a warning</p>
+        <p><strong>Step 3:</strong> Call emergency services (999 / fire brigade)</p>
+        <p><strong>Step 4:</strong> If safe, attempt to contain (use fire extinguisher, first aid)</p>
+        <p><strong>Step 5:</strong> Evacuate using designated routes to the assembly point</p>
+        <p><strong>Step 6:</strong> Account for all personnel at the assembly point</p>
+        <p><strong>Step 7:</strong> Do not re-enter until authorities give the all-clear</p>
+        <p><strong>Step 8:</strong> Report the incident and document everything</p>
+      </div>
+
+      <h2 id="evidence"><span class="icon">📊</span> Evidence Guide</h2>
+      <div class="accordion">
+        <div class="accordion-item open">
+          <div class="accordion-header"><span>Critical Aspects of Competency</span><span class="arrow">▼</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">
+            <ul>
+              <li>Identified and mitigated OSH issues in IT workplaces</li>
+              <li>Ensured a safe and hygienic work environment</li>
+              <li>Reported hazards and followed emergency procedures</li>
+              <li>Prevented and addressed social media/internet addiction</li>
+              <li>Demonstrated ability to identify and manage workplace hazards</li>
+              <li>Demonstrated observance of safety procedures and ergonomic practices</li>
+              <li>Followed emergency response procedures effectively</li>
+            </ul>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header"><span>Underpinning Knowledge</span><span class="arrow">▼</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">
+            <ul>
+              <li>OSH policies, regulations, and standards for IT workplaces</li>
+              <li>Common hazards in IT environments</li>
+              <li>Emergency response procedures and safety protocols</li>
+              <li>Principles of Occupational Safety and Health (OSH)</li>
+              <li>Workplace safety regulations and organizational policies</li>
+            </ul>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header"><span>Assessment Methods</span><span class="arrow">▼</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">
+            <ul>
+              <li>Written Test</li>
+              <li>Demonstration with oral questioning</li>
+              <li>On-the-job observation</li>
+            </ul>
+          </div></div>
+        </div>
+      </div>
+
+      <div class="unit-nav">
+        <a href="unit1-negotiation.html">
+          <span class="unit-nav-label">← Previous</span>
+          <span class="unit-nav-title">Practice Negotiation Skills</span>
+        </a>
+        <a href="unit3-documents.html">
+          <span class="unit-nav-label">Next Unit →</span>
+          <span class="unit-nav-title">Prepare Documents & Presentations</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <h3>NSDA <span>Web Design</span> Level 3</h3>
+      <p>Complete Guidebook for National Skills Certificate in Web Design under BNQF.</p>
+    </div>
+    <div><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="unit6-html.html">HTML</a></li><li><a href="unit7-css.html">CSS</a></li><li><a href="unit9-javascript.html">JavaScript</a></li></ul></div>
+    <div><h4>Resources</h4><ul class="footer-links"><li><a href="https://nsda.gov.bd" target="_blank">NSDA Website</a></li><li><a href="https://github.com/ninazmul" target="_blank">Author GitHub</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 NSDA Web Design Level 3 Guidebook</span>
+    <div class="footer-author">
+      <span>Created by <a href="https://github.com/ninazmul" target="_blank"><strong>N.I. Nazmul</strong></a></span>
+      <span>— Full-Stack Developer (MERN Stack & Next.js Specialist)</span>
+    </div>
+  </div>
+</footer>
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>

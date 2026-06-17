@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Unit 6: Work with HTML — OU-ICT-WD-03-L3-V2. Complete guide on HTML5 structure, semantic elements, forms, multimedia, accessibility, and W3C validation.">
+  <title>Unit 6: Work with HTML — NSDA Web Design L3</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="scroll-progress"></div>
+<header class="header">
+  <a href="index.html" class="header-logo"><div class="header-logo-icon">W3</div><div class="header-logo-text">NSDA <span>Web Design</span> L3</div></a>
+  <nav class="header-nav">
+    <a href="index.html">Home</a><a href="unit5-environment.html">Unit 5</a><a href="unit6-html.html" class="active">Unit 6</a><a href="unit7-css.html">Unit 7</a>
+  </nav>
+  <div style="display:flex;align-items:center;gap:8px;">
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Home</a><a href="unit1-negotiation.html">Unit 1</a><a href="unit2-osh.html">Unit 2</a><a href="unit3-documents.html">Unit 3</a><a href="unit4-visual-design.html">Unit 4</a><a href="unit5-environment.html">Unit 5</a><a href="unit6-html.html">Unit 6</a><a href="unit7-css.html">Unit 7</a><a href="unit8-design-to-web.html">Unit 8</a><a href="unit9-javascript.html">Unit 9</a>
+</nav>
+
+<div class="page-layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-title">On This Page</div>
+    <nav class="sidebar-nav">
+      <a href="#overview">Overview</a>
+      <a href="#element1">1. HTML Structure</a>
+      <a href="#boilerplate">Boilerplate Code</a>
+      <a href="#meta-tags">Meta Tags & SEO</a>
+      <a href="#semantic">Semantic Elements</a>
+      <a href="#element2">2. Insert & Format Content</a>
+      <a href="#text-formatting">Text Formatting</a>
+      <a href="#lists">Lists</a>
+      <a href="#links">Hyperlinks</a>
+      <a href="#tables">Tables</a>
+      <a href="#media">Multimedia</a>
+      <a href="#element3">3. Forms</a>
+      <a href="#input-types">Input Types</a>
+      <a href="#element4">4. Accessibility</a>
+      <a href="#aria">ARIA Roles</a>
+      <a href="#evidence">Evidence Guide</a>
+    </nav>
+  </aside>
+
+  <div class="page-content">
+    <div class="content">
+
+      <div class="unit-header">
+        <div class="unit-header-meta">
+          <span class="unit-badge badge-occupation">Occupation Unit</span>
+          <span class="unit-badge badge-hours">⏱ 60 Hours</span>
+        </div>
+        <h1>Unit 6: Work with HTML</h1>
+        <p class="unit-header-desc">
+          <strong>Unit Code:</strong> OU-ICT-WD-03-L3-V2<br>
+          This unit covers using HTML (HyperText Markup Language) to create structured, accessible, and standards-compliant web content, including semantic layouts, multimedia, forms, and W3C validation.
+        </p>
+      </div>
+
+      <h2 id="overview"><span class="icon">📋</span> Overview</h2>
+      <p>HTML is the foundation of every web page. It defines the structure and content of your website — text, images, links, forms, and multimedia. This unit covers everything from basic document structure to advanced accessibility features.</p>
+
+      <h2 id="element1"><span class="icon">🏗️</span> Element 1: Create HTML Structure</h2>
+
+      <h2 id="boilerplate"><span class="icon">📄</span> HTML5 Boilerplate</h2>
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">HTML</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="tag">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;html</span> <span class="attr">lang</span>=<span class="val">"en"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;head&gt;</span>
+  <span class="tag">&lt;meta</span> <span class="attr">charset</span>=<span class="val">"UTF-8"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;meta</span> <span class="attr">name</span>=<span class="val">"viewport"</span> <span class="attr">content</span>=<span class="val">"width=device-width, initial-scale=1.0"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;meta</span> <span class="attr">name</span>=<span class="val">"description"</span> <span class="attr">content</span>=<span class="val">"A brief description of the page"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;title&gt;</span>Page Title<span class="tag">&lt;/title&gt;</span>
+  <span class="tag">&lt;link</span> <span class="attr">rel</span>=<span class="val">"stylesheet"</span> <span class="attr">href</span>=<span class="val">"css/styles.css"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/head&gt;</span>
+<span class="tag">&lt;body&gt;</span>
+  <span class="comment">&lt;!-- Your content goes here --&gt;</span>
+
+  <span class="tag">&lt;script</span> <span class="attr">src</span>=<span class="val">"js/main.js"</span><span class="tag">&gt;&lt;/script&gt;</span>
+<span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span></code></pre>
+      </div>
+
+      <h2 id="meta-tags"><span class="icon">🏷️</span> Root File Tags (Meta Tags & SEO)</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Tag</th><th>Purpose</th><th>Example</th></tr></thead>
+          <tbody>
+            <tr><td><code>&lt;title&gt;</code></td><td>Page title (browser tab, SEO)</td><td><code>&lt;title&gt;My Website - Home&lt;/title&gt;</code></td></tr>
+            <tr><td><code>meta description</code></td><td>Page summary for search engines</td><td><code>&lt;meta name="description" content="..."&gt;</code></td></tr>
+            <tr><td><code>meta viewport</code></td><td>Responsive scaling on mobile</td><td><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></td></tr>
+            <tr><td><code>meta charset</code></td><td>Character encoding</td><td><code>&lt;meta charset="UTF-8"&gt;</code></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="semantic"><span class="icon">🧱</span> Semantic HTML5 Elements</h2>
+      <p>Semantic elements describe their meaning to both browsers and developers:</p>
+
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">HTML</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="tag">&lt;header&gt;</span>
+  <span class="tag">&lt;nav&gt;</span>
+    <span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"/"</span><span class="tag">&gt;</span>Home<span class="tag">&lt;/a&gt;</span>
+    <span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"/about"</span><span class="tag">&gt;</span>About<span class="tag">&lt;/a&gt;</span>
+    <span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"/contact"</span><span class="tag">&gt;</span>Contact<span class="tag">&lt;/a&gt;</span>
+  <span class="tag">&lt;/nav&gt;</span>
+<span class="tag">&lt;/header&gt;</span>
+
+<span class="tag">&lt;main&gt;</span>
+  <span class="tag">&lt;section&gt;</span>
+    <span class="tag">&lt;h1&gt;</span>Welcome to My Website<span class="tag">&lt;/h1&gt;</span>
+    <span class="tag">&lt;p&gt;</span>This is the main content area.<span class="tag">&lt;/p&gt;</span>
+  <span class="tag">&lt;/section&gt;</span>
+
+  <span class="tag">&lt;article&gt;</span>
+    <span class="tag">&lt;h2&gt;</span>Blog Post Title<span class="tag">&lt;/h2&gt;</span>
+    <span class="tag">&lt;p&gt;</span>Article content here...<span class="tag">&lt;/p&gt;</span>
+  <span class="tag">&lt;/article&gt;</span>
+
+  <span class="tag">&lt;aside&gt;</span>
+    <span class="tag">&lt;h3&gt;</span>Related Links<span class="tag">&lt;/h3&gt;</span>
+  <span class="tag">&lt;/aside&gt;</span>
+<span class="tag">&lt;/main&gt;</span>
+
+<span class="tag">&lt;footer&gt;</span>
+  <span class="tag">&lt;p&gt;</span>&amp;copy; 2025 My Website<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;/footer&gt;</span></code></pre>
+      </div>
+
+      <h2 id="element2"><span class="icon">📝</span> Element 2: Insert and Format Content</h2>
+
+      <h2 id="text-formatting"><span class="icon">✏️</span> Text Formatting Tags</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Tag</th><th>Purpose</th><th>Example</th></tr></thead>
+          <tbody>
+            <tr><td><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code></td><td>Headings (H1 = most important)</td><td><code>&lt;h1&gt;Main Title&lt;/h1&gt;</code></td></tr>
+            <tr><td><code>&lt;p&gt;</code></td><td>Paragraph</td><td><code>&lt;p&gt;Text here&lt;/p&gt;</code></td></tr>
+            <tr><td><code>&lt;strong&gt;</code></td><td>Bold (semantic importance)</td><td><code>&lt;strong&gt;Important&lt;/strong&gt;</code></td></tr>
+            <tr><td><code>&lt;em&gt;</code></td><td>Italic (emphasis)</td><td><code>&lt;em&gt;Emphasized&lt;/em&gt;</code></td></tr>
+            <tr><td><code>&lt;br&gt;</code></td><td>Line break</td><td><code>Line 1&lt;br&gt;Line 2</code></td></tr>
+            <tr><td><code>&lt;hr&gt;</code></td><td>Horizontal rule/divider</td><td><code>&lt;hr&gt;</code></td></tr>
+            <tr><td><code>&lt;blockquote&gt;</code></td><td>Block quotation</td><td><code>&lt;blockquote&gt;Quote...&lt;/blockquote&gt;</code></td></tr>
+            <tr><td><code>&lt;code&gt;</code></td><td>Inline code</td><td><code>&lt;code&gt;console.log()&lt;/code&gt;</code></td></tr>
+            <tr><td><code>&lt;pre&gt;</code></td><td>Preformatted text</td><td><code>&lt;pre&gt;Formatted text&lt;/pre&gt;</code></td></tr>
+            <tr><td><code>&lt;mark&gt;</code></td><td>Highlighted text</td><td><code>&lt;mark&gt;Highlighted&lt;/mark&gt;</code></td></tr>
+            <tr><td><code>&lt;sub&gt; / &lt;sup&gt;</code></td><td>Subscript / Superscript</td><td><code>H&lt;sub&gt;2&lt;/sub&gt;O</code></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="lists"><span class="icon">📃</span> Lists</h2>
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">HTML</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="comment">&lt;!-- Unordered List (bullet points) --&gt;</span>
+<span class="tag">&lt;ul&gt;</span>
+  <span class="tag">&lt;li&gt;</span>HTML<span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span>CSS<span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span>JavaScript<span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span>
+
+<span class="comment">&lt;!-- Ordered List (numbered) --&gt;</span>
+<span class="tag">&lt;ol&gt;</span>
+  <span class="tag">&lt;li&gt;</span>First step<span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span>Second step<span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span>Third step<span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ol&gt;</span>
+
+<span class="comment">&lt;!-- Description List --&gt;</span>
+<span class="tag">&lt;dl&gt;</span>
+  <span class="tag">&lt;dt&gt;</span>HTML<span class="tag">&lt;/dt&gt;</span>
+  <span class="tag">&lt;dd&gt;</span>HyperText Markup Language<span class="tag">&lt;/dd&gt;</span>
+  <span class="tag">&lt;dt&gt;</span>CSS<span class="tag">&lt;/dt&gt;</span>
+  <span class="tag">&lt;dd&gt;</span>Cascading Style Sheets<span class="tag">&lt;/dd&gt;</span>
+<span class="tag">&lt;/dl&gt;</span></code></pre>
+      </div>
+
+      <h2 id="links"><span class="icon">🔗</span> Hyperlinks</h2>
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">HTML</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="comment">&lt;!-- External link (opens in new tab) --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"https://github.com/ninazmul"</span> <span class="attr">target</span>=<span class="val">"_blank"</span> <span class="attr">rel</span>=<span class="val">"noopener"</span><span class="tag">&gt;</span>
+  Visit GitHub
+<span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- Internal link --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"about.html"</span><span class="tag">&gt;</span>About Us<span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- Anchor link (same page) --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"#contact"</span><span class="tag">&gt;</span>Jump to Contact<span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- Email link --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"mailto:hello@example.com"</span><span class="tag">&gt;</span>Email Us<span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- Phone link --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"tel:+8801234567890"</span><span class="tag">&gt;</span>Call Us<span class="tag">&lt;/a&gt;</span></code></pre>
+      </div>
+
+      <h3>Link Attributes</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Attribute</th><th>Purpose</th><th>Values</th></tr></thead>
+          <tbody>
+            <tr><td><code>href</code></td><td>URL destination</td><td>URL, file path, #anchor, mailto:, tel:</td></tr>
+            <tr><td><code>target</code></td><td>Where to open</td><td><code>_blank</code> (new tab), <code>_self</code> (same tab)</td></tr>
+            <tr><td><code>title</code></td><td>Tooltip text</td><td>Descriptive text shown on hover</td></tr>
+            <tr><td><code>rel</code></td><td>Link relationship</td><td><code>noopener</code>, <code>noreferrer</code>, <code>nofollow</code></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="tables"><span class="icon">📊</span> Tables</h2>
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">HTML</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="tag">&lt;table&gt;</span>
+  <span class="tag">&lt;thead&gt;</span>
+    <span class="tag">&lt;tr&gt;</span>
+      <span class="tag">&lt;th&gt;</span>Name<span class="tag">&lt;/th&gt;</span>
+      <span class="tag">&lt;th&gt;</span>Role<span class="tag">&lt;/th&gt;</span>
+      <span class="tag">&lt;th&gt;</span>Email<span class="tag">&lt;/th&gt;</span>
+    <span class="tag">&lt;/tr&gt;</span>
+  <span class="tag">&lt;/thead&gt;</span>
+  <span class="tag">&lt;tbody&gt;</span>
+    <span class="tag">&lt;tr&gt;</span>
+      <span class="tag">&lt;td&gt;</span>N.I. Nazmul<span class="tag">&lt;/td&gt;</span>
+      <span class="tag">&lt;td&gt;</span>Full-Stack Developer<span class="tag">&lt;/td&gt;</span>
+      <span class="tag">&lt;td&gt;</span>nazmul@example.com<span class="tag">&lt;/td&gt;</span>
+    <span class="tag">&lt;/tr&gt;</span>
+  <span class="tag">&lt;/tbody&gt;</span>
+  <span class="tag">&lt;tfoot&gt;</span>
+    <span class="tag">&lt;tr&gt;</span>
+      <span class="tag">&lt;td</span> <span class="attr">colspan</span>=<span class="val">"3"</span><span class="tag">&gt;</span>Total: 1 member<span class="tag">&lt;/td&gt;</span>
+    <span class="tag">&lt;/tr&gt;</span>
+  <span class="tag">&lt;/tfoot&gt;</span>
+<span class="tag">&lt;/table&gt;</span></code></pre>
+      </div>
+
+      <h2 id="media"><span class="icon">🎬</span> Multimedia Embedding</h2>
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">HTML</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="comment">&lt;!-- Image --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src</span>=<span class="val">"images/photo.jpg"</span> <span class="attr">alt</span>=<span class="val">"A descriptive text"</span> <span class="attr">width</span>=<span class="val">"600"</span> <span class="attr">height</span>=<span class="val">"400"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Responsive image with figure --&gt;</span>
+<span class="tag">&lt;figure&gt;</span>
+  <span class="tag">&lt;img</span> <span class="attr">src</span>=<span class="val">"images/design.png"</span> <span class="attr">alt</span>=<span class="val">"Web design mockup"</span> <span class="attr">style</span>=<span class="val">"max-width:100%"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;figcaption&gt;</span>Figure 1: Website mockup design<span class="tag">&lt;/figcaption&gt;</span>
+<span class="tag">&lt;/figure&gt;</span>
+
+<span class="comment">&lt;!-- Video --&gt;</span>
+<span class="tag">&lt;video</span> <span class="attr">controls</span> <span class="attr">width</span>=<span class="val">"640"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;source</span> <span class="attr">src</span>=<span class="val">"video/demo.mp4"</span> <span class="attr">type</span>=<span class="val">"video/mp4"</span><span class="tag">&gt;</span>
+  Your browser does not support the video tag.
+<span class="tag">&lt;/video&gt;</span>
+
+<span class="comment">&lt;!-- Audio --&gt;</span>
+<span class="tag">&lt;audio</span> <span class="attr">controls</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;source</span> <span class="attr">src</span>=<span class="val">"audio/music.mp3"</span> <span class="attr">type</span>=<span class="val">"audio/mpeg"</span><span class="tag">&gt;</span>
+  Your browser does not support the audio tag.
+<span class="tag">&lt;/audio&gt;</span>
+
+<span class="comment">&lt;!-- YouTube Embed --&gt;</span>
+<span class="tag">&lt;iframe</span> <span class="attr">width</span>=<span class="val">"560"</span> <span class="attr">height</span>=<span class="val">"315"</span>
+  <span class="attr">src</span>=<span class="val">"https://www.youtube.com/embed/VIDEO_ID"</span>
+  <span class="attr">title</span>=<span class="val">"Video title"</span>
+  <span class="attr">allowfullscreen</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/iframe&gt;</span></code></pre>
+      </div>
+
+      <h2 id="element3"><span class="icon">📋</span> Element 3: Create and Manage Forms</h2>
+
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">HTML</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="tag">&lt;form</span> <span class="attr">action</span>=<span class="val">"/submit"</span> <span class="attr">method</span>=<span class="val">"POST"</span> <span class="attr">id</span>=<span class="val">"contact-form"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;fieldset&gt;</span>
+    <span class="tag">&lt;legend&gt;</span>Contact Information<span class="tag">&lt;/legend&gt;</span>
+
+    <span class="tag">&lt;label</span> <span class="attr">for</span>=<span class="val">"name"</span><span class="tag">&gt;</span>Full Name:<span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;input</span> <span class="attr">type</span>=<span class="val">"text"</span> <span class="attr">id</span>=<span class="val">"name"</span> <span class="attr">name</span>=<span class="val">"name"</span>
+      <span class="attr">required</span> <span class="attr">placeholder</span>=<span class="val">"Enter your name"</span><span class="tag">&gt;</span>
+
+    <span class="tag">&lt;label</span> <span class="attr">for</span>=<span class="val">"email"</span><span class="tag">&gt;</span>Email:<span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;input</span> <span class="attr">type</span>=<span class="val">"email"</span> <span class="attr">id</span>=<span class="val">"email"</span> <span class="attr">name</span>=<span class="val">"email"</span>
+      <span class="attr">required</span> <span class="attr">placeholder</span>=<span class="val">"you@example.com"</span><span class="tag">&gt;</span>
+
+    <span class="tag">&lt;label</span> <span class="attr">for</span>=<span class="val">"phone"</span><span class="tag">&gt;</span>Phone:<span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;input</span> <span class="attr">type</span>=<span class="val">"tel"</span> <span class="attr">id</span>=<span class="val">"phone"</span> <span class="attr">name</span>=<span class="val">"phone"</span>
+      <span class="attr">placeholder</span>=<span class="val">"+880-1234567890"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;/fieldset&gt;</span>
+
+  <span class="tag">&lt;fieldset&gt;</span>
+    <span class="tag">&lt;legend&gt;</span>Message<span class="tag">&lt;/legend&gt;</span>
+
+    <span class="tag">&lt;label</span> <span class="attr">for</span>=<span class="val">"subject"</span><span class="tag">&gt;</span>Subject:<span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;select</span> <span class="attr">id</span>=<span class="val">"subject"</span> <span class="attr">name</span>=<span class="val">"subject"</span><span class="tag">&gt;</span>
+      <span class="tag">&lt;option</span> <span class="attr">value</span>=<span class="val">""</span><span class="tag">&gt;</span>Select a topic<span class="tag">&lt;/option&gt;</span>
+      <span class="tag">&lt;option</span> <span class="attr">value</span>=<span class="val">"general"</span><span class="tag">&gt;</span>General Inquiry<span class="tag">&lt;/option&gt;</span>
+      <span class="tag">&lt;option</span> <span class="attr">value</span>=<span class="val">"project"</span><span class="tag">&gt;</span>Project Request<span class="tag">&lt;/option&gt;</span>
+    <span class="tag">&lt;/select&gt;</span>
+
+    <span class="tag">&lt;label</span> <span class="attr">for</span>=<span class="val">"message"</span><span class="tag">&gt;</span>Message:<span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;textarea</span> <span class="attr">id</span>=<span class="val">"message"</span> <span class="attr">name</span>=<span class="val">"message"</span> <span class="attr">rows</span>=<span class="val">"5"</span>
+      <span class="attr">required</span> <span class="attr">placeholder</span>=<span class="val">"Type your message..."</span><span class="tag">&gt;&lt;/textarea&gt;</span>
+  <span class="tag">&lt;/fieldset&gt;</span>
+
+  <span class="tag">&lt;button</span> <span class="attr">type</span>=<span class="val">"submit"</span><span class="tag">&gt;</span>Send Message<span class="tag">&lt;/button&gt;</span>
+  <span class="tag">&lt;button</span> <span class="attr">type</span>=<span class="val">"reset"</span><span class="tag">&gt;</span>Clear Form<span class="tag">&lt;/button&gt;</span>
+<span class="tag">&lt;/form&gt;</span></code></pre>
+      </div>
+
+      <h2 id="input-types"><span class="icon">⌨️</span> HTML Input Types</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Type</th><th>Purpose</th><th>Example</th></tr></thead>
+          <tbody>
+            <tr><td><code>text</code></td><td>Single-line text</td><td>Name, address</td></tr>
+            <tr><td><code>email</code></td><td>Email with validation</td><td>user@example.com</td></tr>
+            <tr><td><code>password</code></td><td>Hidden text input</td><td>Login passwords</td></tr>
+            <tr><td><code>number</code></td><td>Numeric input</td><td>Age, quantity</td></tr>
+            <tr><td><code>tel</code></td><td>Phone number</td><td>+880-1234567890</td></tr>
+            <tr><td><code>url</code></td><td>URL with validation</td><td>https://example.com</td></tr>
+            <tr><td><code>date</code></td><td>Date picker</td><td>Birthday, deadline</td></tr>
+            <tr><td><code>time</code></td><td>Time picker</td><td>Meeting time</td></tr>
+            <tr><td><code>color</code></td><td>Color picker</td><td>Theme color selection</td></tr>
+            <tr><td><code>range</code></td><td>Slider control</td><td>Volume, brightness</td></tr>
+            <tr><td><code>file</code></td><td>File upload</td><td>Resume, image upload</td></tr>
+            <tr><td><code>checkbox</code></td><td>Multiple selections</td><td>Agree to terms, preferences</td></tr>
+            <tr><td><code>radio</code></td><td>Single selection from group</td><td>Gender, payment method</td></tr>
+            <tr><td><code>hidden</code></td><td>Hidden data</td><td>Form tokens, IDs</td></tr>
+            <tr><td><code>search</code></td><td>Search field</td><td>Site search</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="element4"><span class="icon">♿</span> Element 4: Accessibility & Standards Compliance</h2>
+
+      <h2 id="aria"><span class="icon">🏷️</span> ARIA Roles and Attributes</h2>
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">HTML</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="comment">&lt;!-- Navigation with ARIA --&gt;</span>
+<span class="tag">&lt;nav</span> <span class="attr">role</span>=<span class="val">"navigation"</span> <span class="attr">aria-label</span>=<span class="val">"Main Navigation"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;ul&gt;</span>
+    <span class="tag">&lt;li&gt;&lt;a</span> <span class="attr">href</span>=<span class="val">"/"</span><span class="tag">&gt;</span>Home<span class="tag">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;&lt;a</span> <span class="attr">href</span>=<span class="val">"/about"</span><span class="tag">&gt;</span>About<span class="tag">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="tag">&lt;/ul&gt;</span>
+<span class="tag">&lt;/nav&gt;</span>
+
+<span class="comment">&lt;!-- Image with alt text --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src</span>=<span class="val">"logo.png"</span> <span class="attr">alt</span>=<span class="val">"Company Name Logo"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Decorative image (empty alt) --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src</span>=<span class="val">"decoration.png"</span> <span class="attr">alt</span>=<span class="val">""</span> <span class="attr">role</span>=<span class="val">"presentation"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Skip navigation link for keyboard users --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"#main-content"</span> <span class="attr">class</span>=<span class="val">"skip-link"</span><span class="tag">&gt;</span>Skip to main content<span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- Tab index for keyboard navigation --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">tabindex</span>=<span class="val">"0"</span> <span class="attr">role</span>=<span class="val">"button"</span> <span class="attr">aria-label</span>=<span class="val">"Toggle menu"</span><span class="tag">&gt;</span>
+  ☰ Menu
+<span class="tag">&lt;/div&gt;</span></code></pre>
+      </div>
+
+      <div class="info-box tip">
+        <div class="info-box-title">💡 Accessibility Checklist</div>
+        <p>✅ All images have descriptive <code>alt</code> attributes</p>
+        <p>✅ All form inputs have associated <code>&lt;label&gt;</code> elements</p>
+        <p>✅ Page has a logical heading hierarchy (H1 → H2 → H3)</p>
+        <p>✅ Color contrast meets WCAG 4.5:1 ratio</p>
+        <p>✅ All interactive elements are keyboard-accessible</p>
+        <p>✅ ARIA roles are used for non-semantic interactive elements</p>
+        <p>✅ HTML validated via <strong>W3C Validator</strong> (validator.w3.org)</p>
+      </div>
+
+      <h3>HTML Validation Tools</h3>
+      <ul>
+        <li><strong>W3C Validator:</strong> <a href="https://validator.w3.org" target="_blank">validator.w3.org</a> — Official HTML validation</li>
+        <li><strong>Browser DevTools:</strong> Elements panel shows errors and warnings</li>
+      </ul>
+
+      <h2 id="evidence"><span class="icon">📊</span> Evidence Guide</h2>
+      <div class="accordion">
+        <div class="accordion-item open">
+          <div class="accordion-header"><span>Critical Aspects of Competency</span><span class="arrow">▼</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">
+            <ul>
+              <li>Created structured HTML documents using semantic tags and W3C standards</li>
+              <li>Embedded multimedia content using appropriate HTML elements</li>
+              <li>Developed forms using various input types with proper labeling and validation</li>
+              <li>Applied ARIA roles and alt text for accessibility</li>
+              <li>Validated and corrected markup using HTML validation tools</li>
+            </ul>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header"><span>Underpinning Knowledge</span><span class="arrow">▼</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">
+            <ul>
+              <li>HTML5 structure and semantic significance</li>
+              <li>Tag syntax, nesting rules, and browser rendering behavior</li>
+              <li>Media embedding and responsive HTML techniques</li>
+              <li>Form controls and HTML validation mechanisms</li>
+              <li>Accessibility guidelines and legal compliance</li>
+            </ul>
+          </div></div>
+        </div>
+      </div>
+
+      <div class="unit-nav">
+        <a href="unit5-environment.html"><span class="unit-nav-label">← Previous</span><span class="unit-nav-title">Setup Web Design Environment</span></a>
+        <a href="unit7-css.html"><span class="unit-nav-label">Next Unit →</span><span class="unit-nav-title">Work with CSS & Frameworks</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-brand"><h3>NSDA <span>Web Design</span> Level 3</h3><p>Complete Guidebook for National Skills Certificate in Web Design under BNQF.</p></div>
+    <div><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="unit7-css.html">CSS</a></li><li><a href="unit9-javascript.html">JavaScript</a></li></ul></div>
+    <div><h4>Resources</h4><ul class="footer-links"><li><a href="https://nsda.gov.bd" target="_blank">NSDA Website</a></li><li><a href="https://github.com/ninazmul" target="_blank">Author GitHub</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 NSDA Web Design Level 3 Guidebook</span>
+    <div class="footer-author"><span>Created by <a href="https://github.com/ninazmul" target="_blank"><strong>N.I. Nazmul</strong></a></span><span>— Full-Stack Developer (MERN Stack & Next.js Specialist)</span></div>
+  </div>
+</footer>
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>

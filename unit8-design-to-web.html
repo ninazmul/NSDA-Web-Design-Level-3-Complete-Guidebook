@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Unit 8: Perform Design to Web — OU-ICT-WD-05-L3-V2. Complete guide on converting Figma, XD, Photoshop designs into responsive web pages with HTML, CSS, and JavaScript.">
+  <title>Unit 8: Perform Design to Web — NSDA Web Design L3</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="scroll-progress"></div>
+<header class="header">
+  <a href="index.html" class="header-logo"><div class="header-logo-icon">W3</div><div class="header-logo-text">NSDA <span>Web Design</span> L3</div></a>
+  <nav class="header-nav">
+    <a href="index.html">Home</a><a href="unit7-css.html">Unit 7</a><a href="unit8-design-to-web.html" class="active">Unit 8</a><a href="unit9-javascript.html">Unit 9</a>
+  </nav>
+  <div style="display:flex;align-items:center;gap:8px;">
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Home</a><a href="unit1-negotiation.html">Unit 1</a><a href="unit2-osh.html">Unit 2</a><a href="unit3-documents.html">Unit 3</a><a href="unit4-visual-design.html">Unit 4</a><a href="unit5-environment.html">Unit 5</a><a href="unit6-html.html">Unit 6</a><a href="unit7-css.html">Unit 7</a><a href="unit8-design-to-web.html">Unit 8</a><a href="unit9-javascript.html">Unit 9</a>
+</nav>
+
+<div class="page-layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-title">On This Page</div>
+    <nav class="sidebar-nav">
+      <a href="#overview">Overview</a>
+      <a href="#element1">1. Inspect Design Files</a>
+      <a href="#figma">Working with Figma</a>
+      <a href="#xd">Working with Adobe XD</a>
+      <a href="#photoshop">Working with Photoshop</a>
+      <a href="#element2">2. Export & Optimize Assets</a>
+      <a href="#image-formats">Image Formats Guide</a>
+      <a href="#element3">3. Build Web Page from Design</a>
+      <a href="#workflow">Design-to-Code Workflow</a>
+      <a href="#element4">4. Consistency & Optimization</a>
+      <a href="#checklist">Final Checklist</a>
+      <a href="#evidence">Evidence Guide</a>
+    </nav>
+  </aside>
+
+  <div class="page-content">
+    <div class="content">
+
+      <div class="unit-header">
+        <div class="unit-header-meta">
+          <span class="unit-badge badge-occupation">Occupation Unit</span>
+          <span class="unit-badge badge-hours">⏱ 40 Hours</span>
+        </div>
+        <h1>Unit 8: Perform Design to Web</h1>
+        <p class="unit-header-desc">
+          <strong>Unit Code:</strong> OU-ICT-WD-05-L3-V2<br>
+          This unit covers converting visual design files (PSD, Figma, XD) into responsive, functional web pages using HTML, CSS, and JavaScript. It involves interpreting layout specifications, slicing assets, and building code structures that reflect the design accurately.
+        </p>
+      </div>
+
+      <h2 id="overview"><span class="icon">📋</span> Overview</h2>
+      <p>Design-to-Web (also called "PSD to HTML" or "Design to Code") is the critical process of transforming visual mockups created in design tools into fully functional, responsive web pages. This requires careful attention to pixel-perfect accuracy, performance optimization, and cross-browser compatibility.</p>
+
+      <div class="info-box tip">
+        <div class="info-box-title">💡 The Design-to-Code Pipeline</div>
+        <p><strong>Designer creates mockup</strong> → <strong>Developer inspects design</strong> → <strong>Extract assets</strong> → <strong>Write HTML structure</strong> → <strong>Apply CSS styling</strong> → <strong>Add JavaScript interactivity</strong> → <strong>Test & optimize</strong> → <strong>Deliver</strong></p>
+      </div>
+
+      <h2 id="element1"><span class="icon">🔍</span> Element 1: Inspect Design Files</h2>
+
+      <div class="pc-card">
+        <div class="pc-card-id">PC 1.1 – 1.5</div>
+        <h4>What to Look for in Design Files</h4>
+        <p>When opening a design file, systematically inspect and note:</p>
+        <ul>
+          <li><strong>Layout grids:</strong> Column count, gutter width, margins — determines your CSS grid structure</li>
+          <li><strong>Typography:</strong> Font families, sizes, weights, line heights, letter spacing for every text element</li>
+          <li><strong>Design tokens:</strong> Colors, spacing values, border radius, shadows — build your CSS variables from these</li>
+          <li><strong>Color palettes:</strong> Primary, secondary, accent colors with their exact HEX/RGB values</li>
+          <li><strong>Spacing and margins:</strong> Padding, margins, gaps between elements (in pixels or rems)</li>
+          <li><strong>Responsiveness:</strong> Check if the design has mobile, tablet, and desktop variants</li>
+          <li><strong>Asset types:</strong> Identify images, icons, illustrations, and their required export formats</li>
+        </ul>
+      </div>
+
+      <h2 id="figma"><span class="icon">🎨</span> Working with Figma</h2>
+
+      <div class="pc-card">
+        <h4>Figma Inspection Workflow</h4>
+        <p>Figma is the most popular design tool for web design due to its collaborative features and browser accessibility.</p>
+        <p><strong>Key Figma Features for Developers:</strong></p>
+        <ul>
+          <li><strong>Inspect Panel:</strong> Click any element to see CSS properties (width, height, colors, fonts, spacing)</li>
+          <li><strong>Dev Mode:</strong> Toggle to Dev Mode for auto-generated CSS code snippets</li>
+          <li><strong>Export Settings:</strong> Select layers and choose export format (PNG, SVG, JPG, WebP)</li>
+          <li><strong>Design Tokens:</strong> Copy colors, fonts, and spacing values directly</li>
+          <li><strong>Auto Layout:</strong> Figma's auto layout translates directly to Flexbox in CSS</li>
+          <li><strong>Components:</strong> Identify reusable components that map to HTML/CSS components</li>
+        </ul>
+      </div>
+
+      <div class="info-box example">
+        <div class="info-box-title">🎯 Extracting CSS from Figma</div>
+        <p><strong>Step 1:</strong> Click on the element in Figma</p>
+        <p><strong>Step 2:</strong> Check the right panel "Inspect" tab</p>
+        <p><strong>Step 3:</strong> Copy CSS values — font-family, font-size, color, width, padding, border-radius</p>
+        <p><strong>Step 4:</strong> Convert pixel values to rem (divide by 16): 24px → 1.5rem</p>
+        <p><strong>Step 5:</strong> Note any hover states, active states, or animations specified</p>
+      </div>
+
+      <h2 id="xd"><span class="icon">✨</span> Working with Adobe XD</h2>
+      <div class="pc-card">
+        <h4>Adobe XD Workflow</h4>
+        <ul>
+          <li><strong>Share for Development:</strong> Use "Share > Development" to create inspection links</li>
+          <li><strong>Design Specs:</strong> View exact measurements, colors, and fonts</li>
+          <li><strong>Asset Export:</strong> Select elements → Mark for Export → Choose format and scale</li>
+          <li><strong>Prototype Preview:</strong> Review interactions and transitions that need to be coded</li>
+          <li><strong>Character Styles:</strong> Check the character styles panel for typography specs</li>
+        </ul>
+      </div>
+
+      <h2 id="photoshop"><span class="icon">🖌️</span> Working with Photoshop (PSD)</h2>
+      <div class="pc-card">
+        <h4>Photoshop Workflow</h4>
+        <ul>
+          <li><strong>Layer Organization:</strong> Review layer names and groups for component structure</li>
+          <li><strong>Slice Tool:</strong> Use the slice tool to cut images for web export</li>
+          <li><strong>Save for Web:</strong> File → Export → Save for Web (Legacy) for optimized images</li>
+          <li><strong>Measurement:</strong> Use the ruler tool and info panel for exact dimensions</li>
+          <li><strong>Extract Assets:</strong> Right-click layer → Quick Export as PNG/SVG</li>
+          <li><strong>Color Picker:</strong> Use the eyedropper to capture exact color codes</li>
+        </ul>
+      </div>
+
+      <h2 id="element2"><span class="icon">📦</span> Element 2: Export and Optimize Design Assets</h2>
+
+      <div class="pc-card">
+        <div class="pc-card-id">PC 2.1 – 2.5</div>
+        <h4>Asset Export Process</h4>
+        <ol>
+          <li><strong>Create folder structure</strong> — <code>images/</code>, <code>icons/</code>, <code>fonts/</code> following best practices</li>
+          <li><strong>Identify all exportable assets</strong> — Images, icons, illustrations, logos</li>
+          <li><strong>Export at correct sizes</strong> — 1x, 2x (Retina), and 3x for responsive images</li>
+          <li><strong>Apply naming conventions</strong> — <code>hero-banner.jpg</code>, <code>icon-search.svg</code>, <code>logo-dark.png</code></li>
+          <li><strong>Optimize file sizes</strong> — Compress without visible quality loss</li>
+        </ol>
+      </div>
+
+      <h2 id="image-formats"><span class="icon">🖼️</span> Image Formats Guide</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Format</th><th>Best For</th><th>Transparency</th><th>File Size</th></tr></thead>
+          <tbody>
+            <tr><td><strong>JPG/JPEG</strong></td><td>Photographs, complex images</td><td>❌ No</td><td>Small to medium</td></tr>
+            <tr><td><strong>PNG</strong></td><td>Graphics with transparency, screenshots</td><td>✅ Yes</td><td>Medium to large</td></tr>
+            <tr><td><strong>SVG</strong></td><td>Icons, logos, illustrations (vector)</td><td>✅ Yes</td><td>Very small</td></tr>
+            <tr><td><strong>WebP</strong></td><td>Modern web images (best compression)</td><td>✅ Yes</td><td>Smallest ⭐</td></tr>
+            <tr><td><strong>GIF</strong></td><td>Simple animations, limited colors</td><td>✅ Yes (1-bit)</td><td>Variable</td></tr>
+            <tr><td><strong>AVIF</strong></td><td>Next-gen format, superior compression</td><td>✅ Yes</td><td>Smallest</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="info-box tip">
+        <div class="info-box-title">💡 Image Optimization Best Practices</div>
+        <p>✅ Use <strong>SVG</strong> for icons and logos (scales infinitely, tiny file size)</p>
+        <p>✅ Use <strong>WebP</strong> for photographs with JPEG fallback</p>
+        <p>✅ Compress images using tools like TinyPNG, Squoosh, or ImageOptim</p>
+        <p>✅ Always specify <code>width</code> and <code>height</code> attributes to prevent layout shift</p>
+        <p>✅ Use <code>loading="lazy"</code> for below-the-fold images</p>
+        <p>✅ Serve responsive images with <code>&lt;picture&gt;</code> element or <code>srcset</code></p>
+      </div>
+
+      <h3>Responsive Image Example</h3>
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">HTML</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="comment">&lt;!-- Responsive image with srcset --&gt;</span>
+<span class="tag">&lt;img</span>
+  <span class="attr">src</span>=<span class="val">"images/hero-800.jpg"</span>
+  <span class="attr">srcset</span>=<span class="val">"images/hero-400.jpg 400w,
+         images/hero-800.jpg 800w,
+         images/hero-1200.jpg 1200w"</span>
+  <span class="attr">sizes</span>=<span class="val">"(max-width: 600px) 400px,
+        (max-width: 1000px) 800px,
+        1200px"</span>
+  <span class="attr">alt</span>=<span class="val">"Hero banner image"</span>
+  <span class="attr">loading</span>=<span class="val">"lazy"</span>
+  <span class="attr">width</span>=<span class="val">"1200"</span>
+  <span class="attr">height</span>=<span class="val">"600"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Picture element for format fallback --&gt;</span>
+<span class="tag">&lt;picture&gt;</span>
+  <span class="tag">&lt;source</span> <span class="attr">srcset</span>=<span class="val">"images/photo.avif"</span> <span class="attr">type</span>=<span class="val">"image/avif"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;source</span> <span class="attr">srcset</span>=<span class="val">"images/photo.webp"</span> <span class="attr">type</span>=<span class="val">"image/webp"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;img</span> <span class="attr">src</span>=<span class="val">"images/photo.jpg"</span> <span class="attr">alt</span>=<span class="val">"Photo description"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/picture&gt;</span></code></pre>
+      </div>
+
+      <h2 id="element3"><span class="icon">🔨</span> Element 3: Build Web Page Based on Design</h2>
+
+      <h2 id="workflow"><span class="icon">🔄</span> Design-to-Code Workflow</h2>
+
+      <div class="pc-card">
+        <h4>Step-by-Step Conversion Process</h4>
+        <p><strong>Step 1 — Analyze the Visual Hierarchy:</strong></p>
+        <ul>
+          <li>Identify the header, main content, sidebar, and footer sections</li>
+          <li>Map design sections to semantic HTML elements (<code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>)</li>
+        </ul>
+
+        <p><strong>Step 2 — Write the HTML Structure:</strong></p>
+        <ul>
+          <li>Build the skeleton with semantic elements following the design layout</li>
+          <li>Add content text, images, and links as specified in the design</li>
+        </ul>
+
+        <p><strong>Step 3 — Apply CSS Styling:</strong></p>
+        <ul>
+          <li>Set up CSS variables from design tokens (colors, fonts, spacing)</li>
+          <li>Replicate exact spacing, colors, fonts, and dimensions from the design</li>
+          <li>Use Flexbox or Grid for layout structure</li>
+        </ul>
+
+        <p><strong>Step 4 — Integrate Web Fonts and Icons:</strong></p>
+        <ul>
+          <li>Link Google Fonts or custom web fonts matching the design</li>
+          <li>Use icon libraries (Font Awesome, Material Icons) or custom SVG icons</li>
+        </ul>
+
+        <p><strong>Step 5 — Add Interactive Components:</strong></p>
+        <ul>
+          <li>Build dropdowns, modals, tabs, carousels using CSS and basic JavaScript</li>
+          <li>Add hover states, transitions, and animations from the design specs</li>
+        </ul>
+
+        <p><strong>Step 6 — Implement Responsive Design:</strong></p>
+        <ul>
+          <li>Apply media queries for mobile, tablet, and desktop breakpoints</li>
+          <li>Use Flexbox/Grid for flexible layouts</li>
+          <li>Test on multiple screen sizes</li>
+        </ul>
+      </div>
+
+      <h3>Example: Converting a Design Token to CSS Variables</h3>
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">CSS</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="comment">/* Design tokens extracted from Figma */</span>
+<span class="selector">:root</span> {
+  <span class="comment">/* Colors from design */</span>
+  <span class="property">--color-primary</span>: <span class="value">#2563eb</span>;
+  <span class="property">--color-secondary</span>: <span class="value">#7c3aed</span>;
+  <span class="property">--color-text</span>: <span class="value">#1e293b</span>;
+  <span class="property">--color-text-muted</span>: <span class="value">#64748b</span>;
+  <span class="property">--color-bg</span>: <span class="value">#ffffff</span>;
+
+  <span class="comment">/* Typography from design */</span>
+  <span class="property">--font-heading</span>: <span class="value">'Inter', sans-serif</span>;
+  <span class="property">--font-body</span>: <span class="value">'Inter', sans-serif</span>;
+
+  <span class="comment">/* Spacing from design (8px grid system) */</span>
+  <span class="property">--space-xs</span>: <span class="value">0.25rem</span>;  <span class="comment">/* 4px */</span>
+  <span class="property">--space-sm</span>: <span class="value">0.5rem</span>;   <span class="comment">/* 8px */</span>
+  <span class="property">--space-md</span>: <span class="value">1rem</span>;     <span class="comment">/* 16px */</span>
+  <span class="property">--space-lg</span>: <span class="value">1.5rem</span>;   <span class="comment">/* 24px */</span>
+  <span class="property">--space-xl</span>: <span class="value">2rem</span>;     <span class="comment">/* 32px */</span>
+
+  <span class="comment">/* Border radius from design */</span>
+  <span class="property">--radius-sm</span>: <span class="value">4px</span>;
+  <span class="property">--radius-md</span>: <span class="value">8px</span>;
+  <span class="property">--radius-lg</span>: <span class="value">16px</span>;
+  <span class="property">--radius-full</span>: <span class="value">9999px</span>;
+}</code></pre>
+      </div>
+
+      <h2 id="element4"><span class="icon">✅</span> Element 4: Design Consistency and Optimization</h2>
+
+      <div class="pc-card">
+        <div class="pc-card-id">PC 4.1 – 4.5</div>
+        <h4>Quality Assurance Process</h4>
+        <ul>
+          <li><strong>Browser testing:</strong> Compare coded page side-by-side with the design mockup in Chrome, Firefox, Safari, and Edge</li>
+          <li><strong>Cross-device testing:</strong> Test on mobile phones, tablets, and desktop — both Android and iOS</li>
+          <li><strong>Performance optimization:</strong> Minify CSS/JS, compress images, use lazy loading</li>
+          <li><strong>Accessibility checks:</strong> Run Lighthouse audit, verify screen reader compatibility</li>
+          <li><strong>Final delivery:</strong> Package in required format or deploy to hosting for client review</li>
+        </ul>
+      </div>
+
+      <h2 id="checklist"><span class="icon">📝</span> Design-to-Web Final Checklist</h2>
+      <div class="info-box example">
+        <div class="info-box-title">✅ Quality Assurance Checklist</div>
+        <p>✅ All fonts match the design (family, size, weight, line-height)</p>
+        <p>✅ All colors match exactly (use color picker to verify)</p>
+        <p>✅ Spacing and padding match the design specifications</p>
+        <p>✅ Images are optimized and properly sized</p>
+        <p>✅ All links work and navigate correctly</p>
+        <p>✅ Hover states and interactions are implemented</p>
+        <p>✅ Page is responsive across mobile, tablet, and desktop</p>
+        <p>✅ HTML is valid (W3C Validator passes)</p>
+        <p>✅ CSS has no unused rules</p>
+        <p>✅ Lighthouse score is 90+ for Performance, Accessibility, and SEO</p>
+        <p>✅ Cross-browser compatibility verified (Chrome, Firefox, Safari, Edge)</p>
+        <p>✅ Alt text provided for all images</p>
+        <p>✅ Page loads in under 3 seconds</p>
+      </div>
+
+      <h2 id="evidence"><span class="icon">📊</span> Evidence Guide</h2>
+      <div class="accordion">
+        <div class="accordion-item open">
+          <div class="accordion-header"><span>Critical Aspects of Competency</span><span class="arrow">▼</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">
+            <ul>
+              <li>Interpreted visual design specifications from UI design tools (Figma, XD, PSD)</li>
+              <li>Exported and optimized all required assets for web use</li>
+              <li>Accurately recreated the layout structure using HTML and CSS</li>
+              <li>Implemented responsive behavior consistent with original designs</li>
+              <li>Applied optimization techniques to ensure fast load time</li>
+              <li>Ensured cross-browser compatibility and visual consistency</li>
+              <li>Delivered final coded layout aligned with the original design vision</li>
+            </ul>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header"><span>Underpinning Knowledge</span><span class="arrow">▼</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">
+            <ul>
+              <li>Web-safe color theory and font implementation</li>
+              <li>Conversion of pixel-perfect designs to fluid layouts</li>
+              <li>Image optimization techniques and formats (JPG, PNG, SVG, WebP)</li>
+              <li>Semantic HTML and accessible design principles</li>
+              <li>Best practices for performance and responsiveness</li>
+            </ul>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header"><span>Required Attitudes</span><span class="arrow">▼</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">
+            <ul>
+              <li>Attention to detail and visual precision</li>
+              <li>Creativity in adapting fixed designs into flexible code</li>
+              <li>Collaboration with designers for feedback and clarification</li>
+              <li>Motivation to maintain performance and accessibility</li>
+              <li>Commitment to delivering visually faithful web output</li>
+            </ul>
+          </div></div>
+        </div>
+      </div>
+
+      <div class="unit-nav">
+        <a href="unit7-css.html"><span class="unit-nav-label">← Previous</span><span class="unit-nav-title">CSS & CSS Frameworks</span></a>
+        <a href="unit9-javascript.html"><span class="unit-nav-label">Next Unit →</span><span class="unit-nav-title">Work with Core JavaScript</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-brand"><h3>NSDA <span>Web Design</span> Level 3</h3><p>Complete Guidebook for National Skills Certificate in Web Design under BNQF.</p></div>
+    <div><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="unit6-html.html">HTML</a></li><li><a href="unit7-css.html">CSS</a></li><li><a href="unit9-javascript.html">JavaScript</a></li></ul></div>
+    <div><h4>Resources</h4><ul class="footer-links"><li><a href="https://nsda.gov.bd" target="_blank">NSDA Website</a></li><li><a href="https://github.com/ninazmul" target="_blank">Author GitHub</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 NSDA Web Design Level 3 Guidebook</span>
+    <div class="footer-author"><span>Created by <a href="https://github.com/ninazmul" target="_blank"><strong>N.I. Nazmul</strong></a></span><span>— Full-Stack Developer (MERN Stack & Next.js Specialist)</span></div>
+  </div>
+</footer>
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>

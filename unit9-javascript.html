@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Unit 9: Work with Core JavaScript — OU-ICT-WD-06-L3-V2. Complete guide on JavaScript fundamentals, variables, functions, DOM manipulation, events, and interactive web pages.">
+  <title>Unit 9: Work with Core JavaScript — NSDA Web Design L3</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="scroll-progress"></div>
+<header class="header">
+  <a href="index.html" class="header-logo"><div class="header-logo-icon">W3</div><div class="header-logo-text">NSDA <span>Web Design</span> L3</div></a>
+  <nav class="header-nav">
+    <a href="index.html">Home</a><a href="unit7-css.html">Unit 7</a><a href="unit8-design-to-web.html">Unit 8</a><a href="unit9-javascript.html" class="active">Unit 9</a>
+  </nav>
+  <div style="display:flex;align-items:center;gap:8px;">
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Home</a><a href="unit1-negotiation.html">Unit 1</a><a href="unit2-osh.html">Unit 2</a><a href="unit3-documents.html">Unit 3</a><a href="unit4-visual-design.html">Unit 4</a><a href="unit5-environment.html">Unit 5</a><a href="unit6-html.html">Unit 6</a><a href="unit7-css.html">Unit 7</a><a href="unit8-design-to-web.html">Unit 8</a><a href="unit9-javascript.html">Unit 9</a>
+</nav>
+
+<div class="page-layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-title">On This Page</div>
+    <nav class="sidebar-nav">
+      <a href="#overview">Overview</a>
+      <a href="#element1">1. JavaScript Fundamentals</a>
+      <a href="#variables">Variables & Data Types</a>
+      <a href="#operators">Operators</a>
+      <a href="#strings">String Methods</a>
+      <a href="#arrays">Arrays</a>
+      <a href="#element2">2. Control Structures</a>
+      <a href="#conditionals">Conditionals</a>
+      <a href="#loops">Loops</a>
+      <a href="#element3">3. Functions</a>
+      <a href="#function-types">Function Types</a>
+      <a href="#scope">Scope & Hoisting</a>
+      <a href="#element4">4. DOM & Events</a>
+      <a href="#dom-select">DOM Selection</a>
+      <a href="#dom-manipulate">DOM Manipulation</a>
+      <a href="#events">Event Handling</a>
+      <a href="#examples">Practical Examples</a>
+      <a href="#evidence">Evidence Guide</a>
+    </nav>
+  </aside>
+
+  <div class="page-content">
+    <div class="content">
+
+      <div class="unit-header">
+        <div class="unit-header-meta">
+          <span class="unit-badge badge-occupation">Occupation Unit</span>
+          <span class="unit-badge badge-hours">⏱ 40 Hours</span>
+        </div>
+        <h1>Unit 9: Work with Core JavaScript</h1>
+        <p class="unit-header-desc">
+          <strong>Unit Code:</strong> OU-ICT-WD-06-L3-V2<br>
+          This unit covers JavaScript programming fundamentals for web interactivity, including variables, data types, operators, control structures, functions, DOM manipulation, and event handling.
+        </p>
+      </div>
+
+      <h2 id="overview"><span class="icon">📋</span> Overview</h2>
+      <p>JavaScript is the programming language of the web. It adds interactivity, dynamic content, and behavior to your HTML pages. Every modern website uses JavaScript — from simple form validation to complex single-page applications.</p>
+
+      <div class="info-box tip">
+        <div class="info-box-title">💡 Where JavaScript Runs</div>
+        <p><strong>In the Browser:</strong> Every modern browser has a built-in JavaScript engine (V8 in Chrome, SpiderMonkey in Firefox). Use the browser console (F12 → Console) to test code instantly.</p>
+        <p><strong>On the Server:</strong> Node.js allows JavaScript to run on servers, enabling full-stack development with one language.</p>
+      </div>
+
+      <h3>Adding JavaScript to HTML</h3>
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">HTML</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="comment">&lt;!-- Method 1: Internal (in HTML file) --&gt;</span>
+<span class="tag">&lt;script&gt;</span>
+  console.log(<span class="string">"Hello from JavaScript!"</span>);
+<span class="tag">&lt;/script&gt;</span>
+
+<span class="comment">&lt;!-- Method 2: External file (recommended) --&gt;</span>
+<span class="tag">&lt;script</span> <span class="attr">src</span>=<span class="val">"js/main.js"</span><span class="tag">&gt;&lt;/script&gt;</span>
+
+<span class="comment">&lt;!-- Method 3: Inline (avoid in production) --&gt;</span>
+<span class="tag">&lt;button</span> <span class="attr">onclick</span>=<span class="val">"alert('Clicked!')"</span><span class="tag">&gt;</span>Click Me<span class="tag">&lt;/button&gt;</span></code></pre>
+      </div>
+
+      <h2 id="element1"><span class="icon">🧱</span> Element 1: Interpret Core JavaScript Fundamentals</h2>
+
+      <h2 id="variables"><span class="icon">📦</span> Variables and Data Types</h2>
+
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">JavaScript</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="comment">// Variable declarations</span>
+<span class="keyword">var</span> oldWay = <span class="string">"Avoid var (function-scoped, can cause bugs)"</span>;
+<span class="keyword">let</span> modern = <span class="string">"Use let for values that change"</span>;
+<span class="keyword">const</span> constant = <span class="string">"Use const for values that don't change"</span>;
+
+<span class="comment">// Data Types</span>
+<span class="keyword">const</span> name = <span class="string">"N.I. Nazmul"</span>;          <span class="comment">// String</span>
+<span class="keyword">const</span> age = <span class="number">25</span>;                      <span class="comment">// Number</span>
+<span class="keyword">const</span> isStudent = <span class="keyword">true</span>;              <span class="comment">// Boolean</span>
+<span class="keyword">const</span> skills = [<span class="string">"HTML"</span>, <span class="string">"CSS"</span>, <span class="string">"JS"</span>]; <span class="comment">// Array</span>
+<span class="keyword">const</span> person = {                      <span class="comment">// Object</span>
+  name: <span class="string">"N.I. Nazmul"</span>,
+  role: <span class="string">"Full-Stack Developer"</span>,
+  stack: <span class="string">"MERN"</span>
+};
+<span class="keyword">let</span> nothing = <span class="keyword">null</span>;                  <span class="comment">// Null (intentionally empty)</span>
+<span class="keyword">let</span> notDefined;                       <span class="comment">// Undefined (not assigned)</span>
+
+<span class="comment">// Checking types</span>
+console.log(<span class="keyword">typeof</span> name);     <span class="comment">// "string"</span>
+console.log(<span class="keyword">typeof</span> age);      <span class="comment">// "number"</span>
+console.log(<span class="keyword">typeof</span> isStudent); <span class="comment">// "boolean"</span>
+console.log(<span class="keyword">typeof</span> skills);   <span class="comment">// "object" (arrays are objects)</span></code></pre>
+      </div>
+
+      <h3>Variable Declaration Comparison</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Feature</th><th><code>var</code></th><th><code>let</code></th><th><code>const</code></th></tr></thead>
+          <tbody>
+            <tr><td><strong>Scope</strong></td><td>Function-scoped</td><td>Block-scoped</td><td>Block-scoped</td></tr>
+            <tr><td><strong>Re-assignable</strong></td><td>✅ Yes</td><td>✅ Yes</td><td>❌ No</td></tr>
+            <tr><td><strong>Re-declarable</strong></td><td>✅ Yes</td><td>❌ No</td><td>❌ No</td></tr>
+            <tr><td><strong>Hoisted</strong></td><td>✅ Yes (undefined)</td><td>✅ Yes (TDZ)</td><td>✅ Yes (TDZ)</td></tr>
+            <tr><td><strong>Best Practice</strong></td><td>❌ Avoid</td><td>✅ Use for changing values</td><td>✅ Use by default ⭐</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="operators"><span class="icon">➕</span> Operators</h2>
+
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Category</th><th>Operator</th><th>Example</th><th>Result</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Arithmetic</strong></td><td><code>+ - * / % **</code></td><td><code>10 % 3</code></td><td><code>1</code> (remainder)</td></tr>
+            <tr><td><strong>Assignment</strong></td><td><code>= += -= *= /=</code></td><td><code>x += 5</code></td><td>x = x + 5</td></tr>
+            <tr><td><strong>Comparison</strong></td><td><code>== === != !== &gt; &lt;</code></td><td><code>5 === "5"</code></td><td><code>false</code> (strict)</td></tr>
+            <tr><td><strong>Logical</strong></td><td><code>&amp;&amp; || !</code></td><td><code>true &amp;&amp; false</code></td><td><code>false</code></td></tr>
+            <tr><td><strong>Ternary</strong></td><td><code>? :</code></td><td><code>age >= 18 ? "Adult" : "Minor"</code></td><td>Conditional value</td></tr>
+            <tr><td><strong>Increment</strong></td><td><code>++ --</code></td><td><code>count++</code></td><td>Increases by 1</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="info-box important">
+        <div class="info-box-title">⚠️ == vs === (Very Important!)</div>
+        <p><code>==</code> (loose equality) converts types before comparing: <code>5 == "5"</code> is <strong>true</strong></p>
+        <p><code>===</code> (strict equality) compares both value AND type: <code>5 === "5"</code> is <strong>false</strong></p>
+        <p><strong>Always use <code>===</code></strong> to avoid unexpected bugs!</p>
+      </div>
+
+      <h2 id="strings"><span class="icon">📝</span> String Methods</h2>
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">JavaScript</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="keyword">const</span> text = <span class="string">"Hello, World!"</span>;
+
+text.length;                <span class="comment">// 13</span>
+text.toUpperCase();         <span class="comment">// "HELLO, WORLD!"</span>
+text.toLowerCase();         <span class="comment">// "hello, world!"</span>
+text.includes(<span class="string">"World"</span>);     <span class="comment">// true</span>
+text.indexOf(<span class="string">"World"</span>);      <span class="comment">// 7</span>
+text.slice(<span class="number">0</span>, <span class="number">5</span>);          <span class="comment">// "Hello"</span>
+text.replace(<span class="string">"World"</span>, <span class="string">"JS"</span>);<span class="comment">// "Hello, JS!"</span>
+text.split(<span class="string">", "</span>);           <span class="comment">// ["Hello", "World!"]</span>
+text.trim();                <span class="comment">// Removes whitespace from both ends</span>
+
+<span class="comment">// Template Literals (backticks)</span>
+<span class="keyword">const</span> name = <span class="string">"N.I. Nazmul"</span>;
+<span class="keyword">const</span> greeting = <span class="string">`Hello, ${name}! Welcome.`</span>;
+<span class="comment">// "Hello, N.I. Nazmul! Welcome."</span></code></pre>
+      </div>
+
+      <h2 id="arrays"><span class="icon">📚</span> Arrays</h2>
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">JavaScript</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="comment">// Creating arrays</span>
+<span class="keyword">const</span> fruits = [<span class="string">"Apple"</span>, <span class="string">"Banana"</span>, <span class="string">"Cherry"</span>];
+<span class="keyword">const</span> numbers = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];
+
+<span class="comment">// Accessing elements (0-indexed)</span>
+fruits[<span class="number">0</span>];          <span class="comment">// "Apple"</span>
+fruits[fruits.length - <span class="number">1</span>]; <span class="comment">// "Cherry" (last item)</span>
+
+<span class="comment">// Common array methods</span>
+fruits.push(<span class="string">"Date"</span>);     <span class="comment">// Add to end → ["Apple","Banana","Cherry","Date"]</span>
+fruits.pop();             <span class="comment">// Remove from end → returns "Date"</span>
+fruits.unshift(<span class="string">"Avocado"</span>);<span class="comment">// Add to start</span>
+fruits.shift();           <span class="comment">// Remove from start</span>
+fruits.includes(<span class="string">"Banana"</span>);<span class="comment">// true</span>
+fruits.indexOf(<span class="string">"Banana"</span>); <span class="comment">// 1</span>
+fruits.splice(<span class="number">1</span>, <span class="number">1</span>);     <span class="comment">// Remove 1 item at index 1</span>
+fruits.slice(<span class="number">0</span>, <span class="number">2</span>);      <span class="comment">// Get items from index 0 to 1</span>
+
+<span class="comment">// Iteration methods</span>
+fruits.forEach(<span class="keyword">function</span>(fruit) {
+  console.log(fruit);
+});
+
+<span class="comment">// Map — create new array from transformation</span>
+<span class="keyword">const</span> upperFruits = fruits.map(f => f.toUpperCase());
+
+<span class="comment">// Filter — create new array from condition</span>
+<span class="keyword">const</span> longNames = fruits.filter(f => f.length > <span class="number">5</span>);
+
+<span class="comment">// Find — get first match</span>
+<span class="keyword">const</span> found = fruits.find(f => f.startsWith(<span class="string">"B"</span>));</code></pre>
+      </div>
+
+      <h2 id="element2"><span class="icon">🔀</span> Element 2: Apply Control Structures</h2>
+
+      <h2 id="conditionals"><span class="icon">❓</span> Conditional Statements</h2>
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">JavaScript</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="comment">// if...else if...else</span>
+<span class="keyword">const</span> score = <span class="number">85</span>;
+
+<span class="keyword">if</span> (score >= <span class="number">90</span>) {
+  console.log(<span class="string">"Grade: A (Excellent)"</span>);
+} <span class="keyword">else if</span> (score >= <span class="number">80</span>) {
+  console.log(<span class="string">"Grade: B (Very Good)"</span>);
+} <span class="keyword">else if</span> (score >= <span class="number">70</span>) {
+  console.log(<span class="string">"Grade: C (Good)"</span>);
+} <span class="keyword">else if</span> (score >= <span class="number">60</span>) {
+  console.log(<span class="string">"Grade: D (Satisfactory)"</span>);
+} <span class="keyword">else</span> {
+  console.log(<span class="string">"Grade: F (Needs Improvement)"</span>);
+}
+
+<span class="comment">// switch statement</span>
+<span class="keyword">const</span> day = <span class="string">"Monday"</span>;
+
+<span class="keyword">switch</span> (day) {
+  <span class="keyword">case</span> <span class="string">"Monday"</span>:
+  <span class="keyword">case</span> <span class="string">"Tuesday"</span>:
+  <span class="keyword">case</span> <span class="string">"Wednesday"</span>:
+  <span class="keyword">case</span> <span class="string">"Thursday"</span>:
+  <span class="keyword">case</span> <span class="string">"Friday"</span>:
+    console.log(<span class="string">"Weekday — Time to work!"</span>);
+    <span class="keyword">break</span>;
+  <span class="keyword">case</span> <span class="string">"Saturday"</span>:
+  <span class="keyword">case</span> <span class="string">"Sunday"</span>:
+    console.log(<span class="string">"Weekend — Time to rest!"</span>);
+    <span class="keyword">break</span>;
+  <span class="keyword">default</span>:
+    console.log(<span class="string">"Invalid day"</span>);
+}
+
+<span class="comment">// Ternary operator (short if/else)</span>
+<span class="keyword">const</span> status = score >= <span class="number">60</span> ? <span class="string">"Pass"</span> : <span class="string">"Fail"</span>;</code></pre>
+      </div>
+
+      <h2 id="loops"><span class="icon">🔄</span> Loops</h2>
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">JavaScript</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="comment">// for loop — when you know the count</span>
+<span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i < <span class="number">5</span>; i++) {
+  console.log(<span class="string">`Iteration ${i}`</span>);
+}
+
+<span class="comment">// for...of — iterate over array values</span>
+<span class="keyword">const</span> colors = [<span class="string">"red"</span>, <span class="string">"green"</span>, <span class="string">"blue"</span>];
+<span class="keyword">for</span> (<span class="keyword">const</span> color <span class="keyword">of</span> colors) {
+  console.log(color);
+}
+
+<span class="comment">// for...in — iterate over object keys</span>
+<span class="keyword">const</span> user = { name: <span class="string">"Nazmul"</span>, age: <span class="number">25</span>, role: <span class="string">"Developer"</span> };
+<span class="keyword">for</span> (<span class="keyword">const</span> key <span class="keyword">in</span> user) {
+  console.log(<span class="string">`${key}: ${user[key]}`</span>);
+}
+
+<span class="comment">// while loop — when condition is checked first</span>
+<span class="keyword">let</span> count = <span class="number">0</span>;
+<span class="keyword">while</span> (count < <span class="number">3</span>) {
+  console.log(<span class="string">`Count: ${count}`</span>);
+  count++;
+}
+
+<span class="comment">// do...while — runs at least once</span>
+<span class="keyword">let</span> num = <span class="number">10</span>;
+<span class="keyword">do</span> {
+  console.log(<span class="string">`Number: ${num}`</span>);
+  num++;
+} <span class="keyword">while</span> (num < <span class="number">5</span>);
+<span class="comment">// Prints "Number: 10" (runs once even though 10 < 5 is false)</span>
+
+<span class="comment">// break and continue</span>
+<span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i < <span class="number">10</span>; i++) {
+  <span class="keyword">if</span> (i === <span class="number">3</span>) <span class="keyword">continue</span>; <span class="comment">// Skip 3</span>
+  <span class="keyword">if</span> (i === <span class="number">7</span>) <span class="keyword">break</span>;    <span class="comment">// Stop at 7</span>
+  console.log(i);         <span class="comment">// 0, 1, 2, 4, 5, 6</span>
+}</code></pre>
+      </div>
+
+      <h2 id="element3"><span class="icon">⚙️</span> Element 3: Use Functions</h2>
+
+      <h2 id="function-types"><span class="icon">🔧</span> Function Types</h2>
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">JavaScript</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="comment">// 1. Function Declaration</span>
+<span class="keyword">function</span> <span class="func">greet</span>(name) {
+  <span class="keyword">return</span> <span class="string">`Hello, ${name}!`</span>;
+}
+console.log(greet(<span class="string">"Nazmul"</span>)); <span class="comment">// "Hello, Nazmul!"</span>
+
+<span class="comment">// 2. Function Expression</span>
+<span class="keyword">const</span> <span class="func">add</span> = <span class="keyword">function</span>(a, b) {
+  <span class="keyword">return</span> a + b;
+};
+console.log(add(<span class="number">5</span>, <span class="number">3</span>)); <span class="comment">// 8</span>
+
+<span class="comment">// 3. Arrow Function (ES6 — modern & concise)</span>
+<span class="keyword">const</span> <span class="func">multiply</span> = (a, b) => a * b;
+console.log(multiply(<span class="number">4</span>, <span class="number">5</span>)); <span class="comment">// 20</span>
+
+<span class="comment">// Arrow function with body</span>
+<span class="keyword">const</span> <span class="func">calculateArea</span> = (width, height) => {
+  <span class="keyword">const</span> area = width * height;
+  <span class="keyword">return</span> area;
+};
+
+<span class="comment">// 4. Default Parameters</span>
+<span class="keyword">function</span> <span class="func">createUser</span>(name, role = <span class="string">"Student"</span>) {
+  <span class="keyword">return</span> { name, role };
+}
+console.log(createUser(<span class="string">"Ali"</span>));           <span class="comment">// { name: "Ali", role: "Student" }</span>
+console.log(createUser(<span class="string">"Ali"</span>, <span class="string">"Teacher"</span>)); <span class="comment">// { name: "Ali", role: "Teacher" }</span>
+
+<span class="comment">// 5. Rest Parameters (...args)</span>
+<span class="keyword">function</span> <span class="func">sum</span>(...numbers) {
+  <span class="keyword">return</span> numbers.reduce((total, num) => total + num, <span class="number">0</span>);
+}
+console.log(sum(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>)); <span class="comment">// 15</span></code></pre>
+      </div>
+
+      <h2 id="scope"><span class="icon">🔒</span> Scope and Hoisting</h2>
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">JavaScript</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="comment">// Global Scope — accessible everywhere</span>
+<span class="keyword">const</span> globalVar = <span class="string">"I'm global"</span>;
+
+<span class="keyword">function</span> <span class="func">example</span>() {
+  <span class="comment">// Function Scope — only inside this function</span>
+  <span class="keyword">const</span> functionVar = <span class="string">"I'm function-scoped"</span>;
+
+  <span class="keyword">if</span> (<span class="keyword">true</span>) {
+    <span class="comment">// Block Scope — only inside this block</span>
+    <span class="keyword">let</span> blockVar = <span class="string">"I'm block-scoped"</span>;
+    <span class="keyword">const</span> alsoBlock = <span class="string">"Me too"</span>;
+    <span class="keyword">var</span> notBlock = <span class="string">"I escape blocks! (function-scoped)"</span>;
+  }
+
+  console.log(notBlock);   <span class="comment">// ✅ Works (var is function-scoped)</span>
+  <span class="comment">// console.log(blockVar); // ❌ Error (let is block-scoped)</span>
+}
+
+<span class="comment">// Hoisting — var declarations are moved to the top</span>
+console.log(x); <span class="comment">// undefined (hoisted but not initialized)</span>
+<span class="keyword">var</span> x = <span class="number">5</span>;
+
+<span class="comment">// console.log(y); // ❌ ReferenceError (let/const are in TDZ)</span>
+<span class="keyword">let</span> y = <span class="number">10</span>;</code></pre>
+      </div>
+
+      <h2 id="element4"><span class="icon">🖱️</span> Element 4: DOM Manipulation and Event Handling</h2>
+
+      <div class="info-box">
+        <div class="info-box-title">📌 What is the DOM?</div>
+        <p>The <strong>Document Object Model (DOM)</strong> is a tree-like representation of your HTML document. JavaScript uses the DOM to read, modify, add, and remove HTML elements dynamically — making web pages interactive without reloading.</p>
+      </div>
+
+      <h2 id="dom-select"><span class="icon">🎯</span> DOM Selection Methods</h2>
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">JavaScript</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="comment">// Select by ID (returns single element)</span>
+<span class="keyword">const</span> header = document.getElementById(<span class="string">"header"</span>);
+
+<span class="comment">// Select by CSS selector (returns first match)</span>
+<span class="keyword">const</span> firstCard = document.querySelector(<span class="string">".card"</span>);
+
+<span class="comment">// Select all matches (returns NodeList)</span>
+<span class="keyword">const</span> allCards = document.querySelectorAll(<span class="string">".card"</span>);
+
+<span class="comment">// Select by class name (returns HTMLCollection)</span>
+<span class="keyword">const</span> buttons = document.getElementsByClassName(<span class="string">"btn"</span>);
+
+<span class="comment">// Select by tag name</span>
+<span class="keyword">const</span> paragraphs = document.getElementsByTagName(<span class="string">"p"</span>);</code></pre>
+      </div>
+
+      <h2 id="dom-manipulate"><span class="icon">🔧</span> DOM Manipulation</h2>
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">JavaScript</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="keyword">const</span> element = document.querySelector(<span class="string">"#myElement"</span>);
+
+<span class="comment">// Change text content</span>
+element.textContent = <span class="string">"New text content"</span>;
+
+<span class="comment">// Change HTML content</span>
+element.innerHTML = <span class="string">"&lt;strong&gt;Bold text&lt;/strong&gt;"</span>;
+
+<span class="comment">// Change styles</span>
+element.style.color = <span class="string">"#38bdf8"</span>;
+element.style.fontSize = <span class="string">"1.5rem"</span>;
+element.style.backgroundColor = <span class="string">"#1e293b"</span>;
+
+<span class="comment">// Add/Remove/Toggle CSS classes</span>
+element.classList.add(<span class="string">"active"</span>);
+element.classList.remove(<span class="string">"hidden"</span>);
+element.classList.toggle(<span class="string">"dark-mode"</span>);
+element.classList.contains(<span class="string">"active"</span>); <span class="comment">// true/false</span>
+
+<span class="comment">// Change attributes</span>
+element.setAttribute(<span class="string">"href"</span>, <span class="string">"https://github.com/ninazmul"</span>);
+element.getAttribute(<span class="string">"href"</span>);
+element.removeAttribute(<span class="string">"disabled"</span>);
+
+<span class="comment">// Create new element</span>
+<span class="keyword">const</span> newDiv = document.createElement(<span class="string">"div"</span>);
+newDiv.textContent = <span class="string">"I'm a new element!"</span>;
+newDiv.classList.add(<span class="string">"card"</span>);
+
+<span class="comment">// Add to page</span>
+document.body.appendChild(newDiv);         <span class="comment">// Add at end</span>
+parent.insertBefore(newDiv, referenceNode);<span class="comment">// Add before</span>
+
+<span class="comment">// Remove element</span>
+element.remove();</code></pre>
+      </div>
+
+      <h2 id="events"><span class="icon">⚡</span> Event Handling</h2>
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">JavaScript</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="keyword">const</span> button = document.querySelector(<span class="string">"#myButton"</span>);
+
+<span class="comment">// addEventListener — Best practice!</span>
+button.addEventListener(<span class="string">"click"</span>, <span class="keyword">function</span>(event) {
+  console.log(<span class="string">"Button clicked!"</span>);
+  console.log(event.target); <span class="comment">// The element that was clicked</span>
+});
+
+<span class="comment">// Arrow function version</span>
+button.addEventListener(<span class="string">"click"</span>, (e) => {
+  e.target.textContent = <span class="string">"Clicked!"</span>;
+});
+
+<span class="comment">// Remove event listener</span>
+<span class="keyword">function</span> <span class="func">handleClick</span>() {
+  console.log(<span class="string">"Clicked!"</span>);
+}
+button.addEventListener(<span class="string">"click"</span>, handleClick);
+button.removeEventListener(<span class="string">"click"</span>, handleClick);</code></pre>
+      </div>
+
+      <h3>Common Event Types</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Event</th><th>Triggers When</th><th>Use Case</th></tr></thead>
+          <tbody>
+            <tr><td><code>click</code></td><td>Element is clicked</td><td>Buttons, links, cards</td></tr>
+            <tr><td><code>dblclick</code></td><td>Element is double-clicked</td><td>Edit mode toggle</td></tr>
+            <tr><td><code>mouseover</code></td><td>Mouse enters element</td><td>Hover effects, tooltips</td></tr>
+            <tr><td><code>mouseout</code></td><td>Mouse leaves element</td><td>Reset hover state</td></tr>
+            <tr><td><code>keydown</code></td><td>Keyboard key pressed</td><td>Keyboard shortcuts, game controls</td></tr>
+            <tr><td><code>keyup</code></td><td>Keyboard key released</td><td>Search-as-you-type</td></tr>
+            <tr><td><code>input</code></td><td>Input value changes</td><td>Real-time form validation</td></tr>
+            <tr><td><code>change</code></td><td>Input value committed</td><td>Dropdown, checkbox changes</td></tr>
+            <tr><td><code>submit</code></td><td>Form is submitted</td><td>Form processing</td></tr>
+            <tr><td><code>focus</code></td><td>Element gains focus</td><td>Input field activated</td></tr>
+            <tr><td><code>blur</code></td><td>Element loses focus</td><td>Validate on leaving field</td></tr>
+            <tr><td><code>scroll</code></td><td>Page is scrolled</td><td>Scroll animations, lazy loading</td></tr>
+            <tr><td><code>load</code></td><td>Page/resource loaded</td><td>Initialize app, show content</td></tr>
+            <tr><td><code>resize</code></td><td>Window is resized</td><td>Responsive adjustments</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="examples"><span class="icon">💡</span> Practical Examples</h2>
+
+      <h3>Example 1: Dark Mode Toggle</h3>
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">JavaScript</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="keyword">const</span> toggleBtn = document.querySelector(<span class="string">"#theme-toggle"</span>);
+<span class="keyword">const</span> body = document.body;
+
+toggleBtn.addEventListener(<span class="string">"click"</span>, () => {
+  body.classList.toggle(<span class="string">"dark-mode"</span>);
+
+  <span class="comment">// Save preference to localStorage</span>
+  <span class="keyword">const</span> isDark = body.classList.contains(<span class="string">"dark-mode"</span>);
+  localStorage.setItem(<span class="string">"theme"</span>, isDark ? <span class="string">"dark"</span> : <span class="string">"light"</span>);
+
+  <span class="comment">// Update button text</span>
+  toggleBtn.textContent = isDark ? <span class="string">"☀️"</span> : <span class="string">"🌙"</span>;
+});
+
+<span class="comment">// Load saved theme on page load</span>
+<span class="keyword">if</span> (localStorage.getItem(<span class="string">"theme"</span>) === <span class="string">"dark"</span>) {
+  body.classList.add(<span class="string">"dark-mode"</span>);
+}</code></pre>
+      </div>
+
+      <h3>Example 2: Form Validation</h3>
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">JavaScript</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="keyword">const</span> form = document.querySelector(<span class="string">"#contact-form"</span>);
+<span class="keyword">const</span> emailInput = document.querySelector(<span class="string">"#email"</span>);
+<span class="keyword">const</span> errorMsg = document.querySelector(<span class="string">"#error-message"</span>);
+
+form.addEventListener(<span class="string">"submit"</span>, (e) => {
+  e.preventDefault(); <span class="comment">// Stop form from submitting</span>
+
+  <span class="keyword">const</span> email = emailInput.value.trim();
+
+  <span class="keyword">if</span> (!email) {
+    errorMsg.textContent = <span class="string">"Email is required!"</span>;
+    emailInput.classList.add(<span class="string">"error"</span>);
+    <span class="keyword">return</span>;
+  }
+
+  <span class="keyword">if</span> (!email.includes(<span class="string">"@"</span>)) {
+    errorMsg.textContent = <span class="string">"Please enter a valid email!"</span>;
+    emailInput.classList.add(<span class="string">"error"</span>);
+    <span class="keyword">return</span>;
+  }
+
+  <span class="comment">// Success</span>
+  errorMsg.textContent = <span class="string">""</span>;
+  emailInput.classList.remove(<span class="string">"error"</span>);
+  console.log(<span class="string">"Form submitted successfully!"</span>);
+});</code></pre>
+      </div>
+
+      <h3>Example 3: Dynamic Content (To-Do List)</h3>
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">JavaScript</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="keyword">const</span> input = document.querySelector(<span class="string">"#todo-input"</span>);
+<span class="keyword">const</span> addBtn = document.querySelector(<span class="string">"#add-btn"</span>);
+<span class="keyword">const</span> list = document.querySelector(<span class="string">"#todo-list"</span>);
+
+addBtn.addEventListener(<span class="string">"click"</span>, () => {
+  <span class="keyword">const</span> text = input.value.trim();
+  <span class="keyword">if</span> (!text) <span class="keyword">return</span>;
+
+  <span class="comment">// Create new list item</span>
+  <span class="keyword">const</span> li = document.createElement(<span class="string">"li"</span>);
+  li.textContent = text;
+
+  <span class="comment">// Add delete button</span>
+  <span class="keyword">const</span> deleteBtn = document.createElement(<span class="string">"button"</span>);
+  deleteBtn.textContent = <span class="string">"❌"</span>;
+  deleteBtn.addEventListener(<span class="string">"click"</span>, () => li.remove());
+
+  li.appendChild(deleteBtn);
+  list.appendChild(li);
+  input.value = <span class="string">""</span>; <span class="comment">// Clear input</span>
+});</code></pre>
+      </div>
+
+      <h2 id="evidence"><span class="icon">📊</span> Evidence Guide</h2>
+      <div class="accordion">
+        <div class="accordion-item open">
+          <div class="accordion-header"><span>Critical Aspects of Competency</span><span class="arrow">▼</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">
+            <ul>
+              <li>Demonstrated understanding of JavaScript data types, variables, and operators</li>
+              <li>Correctly applied control structures (if/else, switch, loops) for logic flow</li>
+              <li>Wrote reusable functions with parameters, return values, and default parameters</li>
+              <li>Selected and manipulated DOM elements using JavaScript methods</li>
+              <li>Implemented event listeners for user interactions (click, input, submit)</li>
+              <li>Built functional interactive components (forms, toggles, dynamic content)</li>
+              <li>Debugged JavaScript code using browser console and developer tools</li>
+            </ul>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header"><span>Underpinning Knowledge</span><span class="arrow">▼</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">
+            <ul>
+              <li>JavaScript syntax, variables, and primitive data types</li>
+              <li>Control flow using conditionals and loops</li>
+              <li>Function declarations, expressions, arrow functions, and scope</li>
+              <li>DOM structure, traversal, and manipulation methods</li>
+              <li>Event model (event listeners, event object, event delegation)</li>
+              <li>Error handling with try/catch</li>
+              <li>Browser console for debugging</li>
+              <li>JSON data format for data exchange</li>
+            </ul>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header"><span>Assessment Methods</span><span class="arrow">▼</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">
+            <ul>
+              <li>Demonstration with oral questioning</li>
+              <li>On-the-job observation with oral questioning</li>
+              <li>Written test</li>
+              <li>Portfolio — interactive web pages with JavaScript functionality</li>
+            </ul>
+          </div></div>
+        </div>
+      </div>
+
+      <div class="unit-nav">
+        <a href="unit8-design-to-web.html"><span class="unit-nav-label">← Previous</span><span class="unit-nav-title">Perform Design to Web</span></a>
+        <a href="index.html"><span class="unit-nav-label">Back to →</span><span class="unit-nav-title">Home Page</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-brand"><h3>NSDA <span>Web Design</span> Level 3</h3><p>Complete Guidebook for National Skills Certificate in Web Design under BNQF.</p></div>
+    <div><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="unit6-html.html">HTML</a></li><li><a href="unit7-css.html">CSS</a></li><li><a href="unit8-design-to-web.html">Design to Web</a></li></ul></div>
+    <div><h4>Resources</h4><ul class="footer-links"><li><a href="https://nsda.gov.bd" target="_blank">NSDA Website</a></li><li><a href="https://github.com/ninazmul" target="_blank">Author GitHub</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 NSDA Web Design Level 3 Guidebook</span>
+    <div class="footer-author"><span>Created by <a href="https://github.com/ninazmul" target="_blank"><strong>N.I. Nazmul</strong></a></span><span>— Full-Stack Developer (MERN Stack & Next.js Specialist)</span></div>
+  </div>
+</footer>
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>

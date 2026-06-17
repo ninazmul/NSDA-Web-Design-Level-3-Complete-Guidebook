@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Unit 4: Visual Design Principles and Color Sense — OU-ICT-WD-01-L3-V2. Complete guide on design principles, color theory, psychology, and web-safe palettes.">
+  <title>Unit 4: Visual Design Principles & Color Sense — NSDA Web Design L3</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="scroll-progress"></div>
+<header class="header">
+  <a href="index.html" class="header-logo"><div class="header-logo-icon">W3</div><div class="header-logo-text">NSDA <span>Web Design</span> L3</div></a>
+  <nav class="header-nav">
+    <a href="index.html">Home</a><a href="unit3-documents.html">Unit 3</a><a href="unit4-visual-design.html" class="active">Unit 4</a><a href="unit5-environment.html">Unit 5</a>
+  </nav>
+  <div style="display:flex;align-items:center;gap:8px;">
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Home</a><a href="unit1-negotiation.html">Unit 1</a><a href="unit2-osh.html">Unit 2</a><a href="unit3-documents.html">Unit 3</a><a href="unit4-visual-design.html">Unit 4</a><a href="unit5-environment.html">Unit 5</a><a href="unit6-html.html">Unit 6</a><a href="unit7-css.html">Unit 7</a><a href="unit8-design-to-web.html">Unit 8</a><a href="unit9-javascript.html">Unit 9</a>
+</nav>
+
+<div class="page-layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-title">On This Page</div>
+    <nav class="sidebar-nav">
+      <a href="#overview">Overview</a>
+      <a href="#element1">1. Design Principles for Web</a>
+      <a href="#principles">Web Design Principles</a>
+      <a href="#element2">2. Visual Elements in UI</a>
+      <a href="#interactive">Interactive Elements</a>
+      <a href="#element3">3. Color Concepts</a>
+      <a href="#color-wheel">Color Wheel</a>
+      <a href="#color-harmony">Color Harmony</a>
+      <a href="#color-modes">Color Modes</a>
+      <a href="#color-psychology">Color Psychology</a>
+      <a href="#element4">4. Prepare & Apply Color</a>
+      <a href="#evidence">Evidence Guide</a>
+    </nav>
+  </aside>
+
+  <div class="page-content">
+    <div class="content">
+
+      <div class="unit-header">
+        <div class="unit-header-meta">
+          <span class="unit-badge badge-occupation">Occupation Unit</span>
+          <span class="unit-badge badge-hours">⏱ 35 Hours</span>
+        </div>
+        <h1>Unit 4: Interpret Visual Design Principles and Apply Color Sense for Web Design</h1>
+        <p class="unit-header-desc">
+          <strong>Unit Code:</strong> OU-ICT-WD-01-L3-V2<br>
+          This unit covers foundational visual design knowledge and skills for effective web design, including design principles, visual elements, color theory, and preparing web-safe color schemes with emphasis on usability, aesthetics, and accessibility.
+        </p>
+      </div>
+
+      <h2 id="overview"><span class="icon">📋</span> Overview</h2>
+      <p>Visual design is the backbone of web design. Understanding principles like balance, contrast, and hierarchy — combined with color theory — enables you to create websites that are not only beautiful but functional, accessible, and user-friendly.</p>
+
+      <h2 id="element1"><span class="icon">🎨</span> Element 1: Interpret Design Principles for Web Layout</h2>
+
+      <div class="pc-card">
+        <div class="pc-card-id">PC 1.1 – 1.5</div>
+        <h4>Key Performance Criteria</h4>
+        <ul>
+          <li>Web design principles are identified and explained in the context of UI</li>
+          <li>Application of design principles is analyzed from existing website layouts</li>
+          <li>Misuse of web layout principles is identified and corrective decisions proposed</li>
+          <li>Consistency, responsiveness, and readability are evaluated against user-centered standards</li>
+          <li>Design improvements are recommended to enhance layout functionality and aesthetics</li>
+        </ul>
+      </div>
+
+      <h2 id="principles"><span class="icon">📐</span> Web Design Principles (Detailed)</h2>
+
+      <div class="pc-card">
+        <h4>1. Grid Systems</h4>
+        <p>Grids provide structure and alignment. They divide a page into columns and rows, creating a consistent framework for placing content. Most modern websites use a <strong>12-column grid</strong> (like Bootstrap) for flexibility.</p>
+        <p><strong>Example:</strong> A header spans 12 columns, the main content uses 8 columns, and a sidebar uses 4 columns.</p>
+      </div>
+
+      <div class="pc-card">
+        <h4>2. Balance</h4>
+        <p>Balance ensures visual elements are distributed evenly across a layout. There are two types:</p>
+        <ul>
+          <li><strong>Symmetrical balance:</strong> Equal weight on both sides (formal, stable feel)</li>
+          <li><strong>Asymmetrical balance:</strong> Different elements that still feel balanced (dynamic, modern feel)</li>
+        </ul>
+      </div>
+
+      <div class="pc-card">
+        <h4>3. Contrast</h4>
+        <p>Contrast draws attention to important elements by making them stand out. Achieved through:</p>
+        <ul>
+          <li>Color differences (dark text on light background)</li>
+          <li>Size differences (large heading vs. small body text)</li>
+          <li>Font weight (bold titles vs. regular text)</li>
+          <li>Shape differences (rounded buttons on angular layouts)</li>
+        </ul>
+      </div>
+
+      <div class="pc-card">
+        <h4>4. Emphasis</h4>
+        <p>Emphasis creates a focal point — the first thing users notice. Achieved through size, color, position, or isolation. For example, a large hero image or a brightly colored CTA button.</p>
+      </div>
+
+      <div class="pc-card">
+        <h4>5. Proximity</h4>
+        <p>Related elements should be placed close together, and unrelated elements farther apart. This helps users understand the relationship between content items.</p>
+        <p><strong>Example:</strong> A product image, name, price, and "Add to Cart" button should be grouped closely together.</p>
+      </div>
+
+      <div class="pc-card">
+        <h4>6. Proportion</h4>
+        <p>Proportion refers to the relative size of elements. Important elements should be larger, supporting elements smaller. The <strong>Golden Ratio (1:1.618)</strong> is often used for aesthetically pleasing proportions.</p>
+      </div>
+
+      <div class="pc-card">
+        <h4>7. Hierarchy</h4>
+        <p>Visual hierarchy guides the user's eye through content in order of importance. Established through:</p>
+        <ul>
+          <li>Size (H1 > H2 > H3 > body text)</li>
+          <li>Color (brighter colors draw more attention)</li>
+          <li>Position (top-left is typically seen first in LTR languages)</li>
+          <li>Spacing (more space around important elements)</li>
+        </ul>
+      </div>
+
+      <div class="pc-card">
+        <h4>8. Repetition</h4>
+        <p>Repeating visual elements (colors, fonts, shapes, spacing) creates consistency and reinforces brand identity across pages.</p>
+      </div>
+
+      <div class="pc-card">
+        <h4>9. Alignment</h4>
+        <p>Every element should have a visual connection to something else on the page. Proper alignment creates a clean, organized appearance. Avoid placing elements randomly.</p>
+      </div>
+
+      <div class="pc-card">
+        <h4>10. Unity</h4>
+        <p>All elements should work together as a cohesive whole. The design should feel unified — consistent styling, colors, and typography across all pages.</p>
+      </div>
+
+      <div class="pc-card">
+        <h4>11. Whitespace (Negative Space)</h4>
+        <p>Empty space between elements is not wasted space — it improves readability, reduces visual clutter, and creates a premium feel. Apple's website is a famous example of effective whitespace usage.</p>
+      </div>
+
+      <h2 id="element2"><span class="icon">🖼️</span> Element 2: Visual Elements in Web Interfaces</h2>
+
+      <h3>Core Visual Elements</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Element</th><th>Description</th><th>Usage in Web Design</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Text</strong></td><td>Written content, headlines, paragraphs</td><td>Information delivery, SEO content</td></tr>
+            <tr><td><strong>Image</strong></td><td>Photos, illustrations, screenshots</td><td>Visual storytelling, product showcase</td></tr>
+            <tr><td><strong>Line</strong></td><td>Dividers, borders, underlines</td><td>Separating sections, creating structure</td></tr>
+            <tr><td><strong>Shape</strong></td><td>Rectangles, circles, polygons</td><td>Buttons, cards, badges, decorative elements</td></tr>
+            <tr><td><strong>Form</strong></td><td>3D appearance of 2D shapes</td><td>Shadows, gradients creating depth</td></tr>
+            <tr><td><strong>Space</strong></td><td>Positive and negative space</td><td>Layout breathing room, visual hierarchy</td></tr>
+            <tr><td><strong>Icon</strong></td><td>Small symbolic graphics</td><td>Navigation, feature indicators, action cues</td></tr>
+            <tr><td><strong>Typography</strong></td><td>Font selection and pairing</td><td>Brand identity, readability, mood setting</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="interactive"><span class="icon">🖱️</span> Interactive Visual Elements</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Element</th><th>Purpose</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Buttons</strong></td><td>Trigger actions (submit, navigate, toggle)</td></tr>
+            <tr><td><strong>Navigation menus</strong></td><td>Guide users to different sections/pages</td></tr>
+            <tr><td><strong>Hover states</strong></td><td>Visual feedback when mouse hovers over elements</td></tr>
+            <tr><td><strong>Click effects</strong></td><td>Visual confirmation of user interactions</td></tr>
+            <tr><td><strong>Dropdowns</strong></td><td>Reveal additional options on click/hover</td></tr>
+            <tr><td><strong>Toggles & switches</strong></td><td>On/Off states (dark mode, settings)</td></tr>
+            <tr><td><strong>Tabs</strong></td><td>Switch between content panels</td></tr>
+            <tr><td><strong>Modals & popups</strong></td><td>Overlay content requiring attention</td></tr>
+            <tr><td><strong>Tooltips</strong></td><td>Brief info on hover</td></tr>
+            <tr><td><strong>Sliders</strong></td><td>Content carousels, range selectors</td></tr>
+            <tr><td><strong>Accordion panels</strong></td><td>Expandable/collapsible content sections</td></tr>
+            <tr><td><strong>Progress bars</strong></td><td>Show completion status</td></tr>
+            <tr><td><strong>Form inputs with validation</strong></td><td>User data entry with feedback messages</td></tr>
+            <tr><td><strong>Micro-interactions</strong></td><td>Subtle animations enhancing user experience</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="element3"><span class="icon">🌈</span> Element 3: Interpret Color Concepts for the Web</h2>
+
+      <h2 id="color-wheel"><span class="icon">🎡</span> The Color Wheel</h2>
+
+      <h3>Primary Colors</h3>
+      <div class="color-palette">
+        <div class="color-swatch"><div class="color-swatch-preview" style="background:#ef4444;"></div><div class="color-swatch-info"><div class="color-swatch-name">Red</div><div class="color-swatch-code">#EF4444</div></div></div>
+        <div class="color-swatch"><div class="color-swatch-preview" style="background:#eab308;"></div><div class="color-swatch-info"><div class="color-swatch-name">Yellow</div><div class="color-swatch-code">#EAB308</div></div></div>
+        <div class="color-swatch"><div class="color-swatch-preview" style="background:#3b82f6;"></div><div class="color-swatch-info"><div class="color-swatch-name">Blue</div><div class="color-swatch-code">#3B82F6</div></div></div>
+      </div>
+
+      <h3>Secondary Colors</h3>
+      <p>Created by mixing two primary colors:</p>
+      <div class="color-palette">
+        <div class="color-swatch"><div class="color-swatch-preview" style="background:#22c55e;"></div><div class="color-swatch-info"><div class="color-swatch-name">Green</div><div class="color-swatch-code">Blue + Yellow</div></div></div>
+        <div class="color-swatch"><div class="color-swatch-preview" style="background:#f97316;"></div><div class="color-swatch-info"><div class="color-swatch-name">Orange</div><div class="color-swatch-code">Red + Yellow</div></div></div>
+        <div class="color-swatch"><div class="color-swatch-preview" style="background:#a855f7;"></div><div class="color-swatch-info"><div class="color-swatch-name">Purple</div><div class="color-swatch-code">Red + Blue</div></div></div>
+      </div>
+
+      <h3>Tertiary Colors</h3>
+      <p>Created by mixing a primary with an adjacent secondary:</p>
+      <div class="color-palette">
+        <div class="color-swatch"><div class="color-swatch-preview" style="background:#84cc16;"></div><div class="color-swatch-info"><div class="color-swatch-name">Yellow-Green</div><div class="color-swatch-code">#84CC16</div></div></div>
+        <div class="color-swatch"><div class="color-swatch-preview" style="background:#f59e0b;"></div><div class="color-swatch-info"><div class="color-swatch-name">Yellow-Orange</div><div class="color-swatch-code">#F59E0B</div></div></div>
+        <div class="color-swatch"><div class="color-swatch-preview" style="background:#ef4444;"></div><div class="color-swatch-info"><div class="color-swatch-name">Red-Orange</div><div class="color-swatch-code">#EF4444</div></div></div>
+        <div class="color-swatch"><div class="color-swatch-preview" style="background:#ec4899;"></div><div class="color-swatch-info"><div class="color-swatch-name">Red-Purple</div><div class="color-swatch-code">#EC4899</div></div></div>
+        <div class="color-swatch"><div class="color-swatch-preview" style="background:#8b5cf6;"></div><div class="color-swatch-info"><div class="color-swatch-name">Blue-Purple</div><div class="color-swatch-code">#8B5CF6</div></div></div>
+        <div class="color-swatch"><div class="color-swatch-preview" style="background:#06b6d4;"></div><div class="color-swatch-info"><div class="color-swatch-name">Blue-Green</div><div class="color-swatch-code">#06B6D4</div></div></div>
+      </div>
+
+      <h3>Color Temperature</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Type</th><th>Colors</th><th>Feeling</th><th>Use Case</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Warm Colors</strong></td><td>Red, Orange, Yellow</td><td>Energy, passion, excitement</td><td>CTA buttons, sale banners, food websites</td></tr>
+            <tr><td><strong>Cool Colors</strong></td><td>Blue, Green, Purple</td><td>Calm, trust, professionalism</td><td>Corporate sites, healthcare, finance</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="color-harmony"><span class="icon">🎵</span> Color Harmony</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Scheme</th><th>Definition</th><th>Example</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Complementary</strong></td><td>Colors opposite on the color wheel</td><td>Blue & Orange, Red & Green</td></tr>
+            <tr><td><strong>Analogous</strong></td><td>Colors adjacent on the wheel</td><td>Blue, Blue-Green, Green</td></tr>
+            <tr><td><strong>Monochromatic</strong></td><td>Different shades/tints of one color</td><td>Light blue, medium blue, dark blue</td></tr>
+            <tr><td><strong>Triadic</strong></td><td>Three colors equally spaced on wheel</td><td>Red, Yellow, Blue</td></tr>
+            <tr><td><strong>Neutral</strong></td><td>Black, white, gray, beige</td><td>Professional, minimalist designs</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Hue, Saturation, Value (HSV)</h3>
+      <ul>
+        <li><strong>Hue:</strong> The pure color (position on color wheel, 0°–360°)</li>
+        <li><strong>Saturation:</strong> Intensity/purity (0% = gray, 100% = vivid)</li>
+        <li><strong>Value/Brightness:</strong> Lightness or darkness (0% = black, 100% = brightest)</li>
+      </ul>
+
+      <h3>Shade, Tone, Tint</h3>
+      <ul>
+        <li><strong>Shade:</strong> Color + Black (makes it darker)</li>
+        <li><strong>Tint:</strong> Color + White (makes it lighter)</li>
+        <li><strong>Tone:</strong> Color + Gray (makes it muted/subtle)</li>
+      </ul>
+
+      <h2 id="color-modes"><span class="icon">💻</span> Color Modes for Web</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Mode</th><th>Format</th><th>Example</th><th>Use Case</th></tr></thead>
+          <tbody>
+            <tr><td><strong>RGB</strong></td><td>rgb(R, G, B)</td><td><code>rgb(56, 189, 248)</code></td><td>Standard web color</td></tr>
+            <tr><td><strong>RGBA</strong></td><td>rgba(R, G, B, A)</td><td><code>rgba(56, 189, 248, 0.5)</code></td><td>With transparency</td></tr>
+            <tr><td><strong>HEX</strong></td><td>#RRGGBB</td><td><code>#38bdf8</code></td><td>Most common in CSS</td></tr>
+            <tr><td><strong>HSL</strong></td><td>hsl(H, S%, L%)</td><td><code>hsl(199, 89%, 48%)</code></td><td>Intuitive color adjustments</td></tr>
+            <tr><td><strong>HSLA</strong></td><td>hsla(H, S%, L%, A)</td><td><code>hsla(199, 89%, 48%, 0.5)</code></td><td>HSL with transparency</td></tr>
+            <tr><td><strong>Named</strong></td><td>color name</td><td><code>skyblue</code></td><td>Quick prototyping</td></tr>
+            <tr><td><strong>Lab</strong></td><td>lab(L a b)</td><td><code>lab(75 -20 50)</code></td><td>Perceptually uniform</td></tr>
+            <tr><td><strong>LCH</strong></td><td>lch(L C H)</td><td><code>lch(75 60 200)</code></td><td>Modern CSS color</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">CSS</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="comment">/* Different ways to define the same cyan color in CSS */</span>
+<span class="selector">.element</span> {
+  <span class="property">color</span>: <span class="value">#38bdf8</span>;               <span class="comment">/* HEX */</span>
+  <span class="property">color</span>: <span class="value">rgb(56, 189, 248)</span>;      <span class="comment">/* RGB */</span>
+  <span class="property">color</span>: <span class="value">rgba(56, 189, 248, 0.8)</span>; <span class="comment">/* RGBA with 80% opacity */</span>
+  <span class="property">color</span>: <span class="value">hsl(199, 89%, 48%)</span>;     <span class="comment">/* HSL */</span>
+  <span class="property">color</span>: <span class="value">hsla(199, 89%, 48%, 0.8)</span>;<span class="comment">/* HSLA */</span>
+}</code></pre>
+      </div>
+
+      <h2 id="color-psychology"><span class="icon">🧠</span> Color Psychology</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Color</th><th>Emotions / Meaning</th><th>Industry Use</th></tr></thead>
+          <tbody>
+            <tr><td style="color:#ef4444;">🔴 <strong>Red</strong></td><td>Energy, urgency, passion, danger</td><td>Food (McDonald's), sales, gaming</td></tr>
+            <tr><td style="color:#3b82f6;">🔵 <strong>Blue</strong></td><td>Trust, calm, professionalism, security</td><td>Finance (PayPal), tech (Facebook), healthcare</td></tr>
+            <tr><td style="color:#22c55e;">🟢 <strong>Green</strong></td><td>Growth, nature, health, money</td><td>Environment, organic food, banking</td></tr>
+            <tr><td style="color:#eab308;">🟡 <strong>Yellow</strong></td><td>Happiness, warmth, optimism, attention</td><td>Children's products, creative brands</td></tr>
+            <tr><td style="color:#f97316;">🟠 <strong>Orange</strong></td><td>Enthusiasm, creativity, friendliness</td><td>E-commerce, entertainment, food</td></tr>
+            <tr><td style="color:#a855f7;">🟣 <strong>Purple</strong></td><td>Luxury, royalty, creativity, mystery</td><td>Beauty, luxury brands, spirituality</td></tr>
+            <tr><td><strong>⚫ Black</strong></td><td>Elegance, power, sophistication</td><td>Luxury fashion, premium brands</td></tr>
+            <tr><td><strong>⚪ White</strong></td><td>Purity, cleanliness, simplicity</td><td>Healthcare, minimalist tech brands</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="element4"><span class="icon">🛠️</span> Element 4: Prepare and Apply Color for Web Design</h2>
+
+      <div class="pc-card">
+        <div class="pc-card-id">PC 4.1 – 4.6</div>
+        <h4>Creating Your Web Color Palette</h4>
+        <p><strong>Step 1:</strong> Select primary, secondary, and accent colors using tools like <strong>Adobe Color</strong>, <strong>Coolors</strong>, or <strong>Tailwind CSS color palette</strong>.</p>
+        <p><strong>Step 2:</strong> Create tints (lighter) and shades (darker) for visual hierarchy.</p>
+        <p><strong>Step 3:</strong> Generate color schemes for different layout sections (header, body, footer, CTA).</p>
+        <p><strong>Step 4:</strong> Test across devices for consistency and accessibility.</p>
+        <p><strong>Step 5:</strong> Document in a design system or style guide.</p>
+        <p><strong>Step 6:</strong> Adjust contrast for legibility — minimum <strong>4.5:1 ratio</strong> for normal text (WCAG 2.1 AA).</p>
+      </div>
+
+      <div class="info-box tip">
+        <div class="info-box-title">💡 WCAG Accessibility Color Standards</div>
+        <p><strong>AA Standard:</strong> Normal text needs a minimum contrast ratio of <strong>4.5:1</strong>. Large text (18pt+) needs <strong>3:1</strong>.</p>
+        <p><strong>AAA Standard:</strong> Normal text needs <strong>7:1</strong>. Large text needs <strong>4.5:1</strong>.</p>
+        <p>Use tools like <strong>WebAIM Contrast Checker</strong> to verify your color combinations meet accessibility standards.</p>
+      </div>
+
+      <h2 id="evidence"><span class="icon">📊</span> Evidence Guide</h2>
+      <div class="accordion">
+        <div class="accordion-item open">
+          <div class="accordion-header"><span>Critical Aspects of Competency</span><span class="arrow">▼</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">
+            <ul>
+              <li>Correctly interpreted visual design principles relevant to web layout and UI</li>
+              <li>Evaluated and critiqued existing web designs based on visual design effectiveness</li>
+              <li>Applied appropriate color schemes enhancing readability, accessibility, and branding</li>
+              <li>Prepared consistent color palettes documented in a digital style guide</li>
+              <li>Ensured visual balance and hierarchy using appropriate elements and grid systems</li>
+              <li>Tested and refined color usage for web accessibility compliance (WCAG 2.1)</li>
+              <li>Adapted visual elements for different screen sizes, resolutions, and devices</li>
+            </ul>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header"><span>Underpinning Knowledge</span><span class="arrow">▼</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">
+            <ul>
+              <li>Basic principles of web design and UI layout</li>
+              <li>Common visual elements and their interactions</li>
+              <li>Color theory and psychology in digital products</li>
+              <li>Color spaces: RGB, HEX, HSL, HSLA, RGBA, Lab, LCH</li>
+              <li>Accessibility requirements for web color usage</li>
+              <li>Modern color tools (Tailwind, Adobe Color, Coolors)</li>
+              <li>Design consistency across pages and devices</li>
+            </ul>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header"><span>Assessment Methods</span><span class="arrow">▼</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">
+            <ul>
+              <li>Demonstration with oral questioning</li>
+              <li>On-the-job observation with oral questioning</li>
+              <li>Written test</li>
+              <li>Portfolio of color palettes and design critiques</li>
+            </ul>
+          </div></div>
+        </div>
+      </div>
+
+      <div class="unit-nav">
+        <a href="unit3-documents.html"><span class="unit-nav-label">← Previous</span><span class="unit-nav-title">Documents & Presentations</span></a>
+        <a href="unit5-environment.html"><span class="unit-nav-label">Next Unit →</span><span class="unit-nav-title">Setup Web Design Environment</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-brand"><h3>NSDA <span>Web Design</span> Level 3</h3><p>Complete Guidebook for National Skills Certificate in Web Design under BNQF.</p></div>
+    <div><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="unit6-html.html">HTML</a></li><li><a href="unit7-css.html">CSS</a></li><li><a href="unit9-javascript.html">JavaScript</a></li></ul></div>
+    <div><h4>Resources</h4><ul class="footer-links"><li><a href="https://nsda.gov.bd" target="_blank">NSDA Website</a></li><li><a href="https://github.com/ninazmul" target="_blank">Author GitHub</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 NSDA Web Design Level 3 Guidebook</span>
+    <div class="footer-author"><span>Created by <a href="https://github.com/ninazmul" target="_blank"><strong>N.I. Nazmul</strong></a></span><span>— Full-Stack Developer (MERN Stack & Next.js Specialist)</span></div>
+  </div>
+</footer>
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>

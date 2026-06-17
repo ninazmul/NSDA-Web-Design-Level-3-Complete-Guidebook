@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Unit 7: Work with CSS and CSS Frameworks — OU-ICT-WD-04-L3-V2. Complete guide on CSS styling, selectors, box model, responsive design, Grid, Bootstrap, and Tailwind.">
+  <title>Unit 7: Work with CSS & CSS Frameworks — NSDA Web Design L3</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="scroll-progress"></div>
+<header class="header">
+  <a href="index.html" class="header-logo"><div class="header-logo-icon">W3</div><div class="header-logo-text">NSDA <span>Web Design</span> L3</div></a>
+  <nav class="header-nav">
+    <a href="index.html">Home</a><a href="unit6-html.html">Unit 6</a><a href="unit7-css.html" class="active">Unit 7</a><a href="unit8-design-to-web.html">Unit 8</a>
+  </nav>
+  <div style="display:flex;align-items:center;gap:8px;">
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Home</a><a href="unit1-negotiation.html">Unit 1</a><a href="unit2-osh.html">Unit 2</a><a href="unit3-documents.html">Unit 3</a><a href="unit4-visual-design.html">Unit 4</a><a href="unit5-environment.html">Unit 5</a><a href="unit6-html.html">Unit 6</a><a href="unit7-css.html">Unit 7</a><a href="unit8-design-to-web.html">Unit 8</a><a href="unit9-javascript.html">Unit 9</a>
+</nav>
+
+<div class="page-layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-title">On This Page</div>
+    <nav class="sidebar-nav">
+      <a href="#overview">Overview</a>
+      <a href="#element1">1. Interpret CSS</a>
+      <a href="#types">Types of CSS</a>
+      <a href="#selectors">CSS Selectors</a>
+      <a href="#element2">2. Layout & Styling</a>
+      <a href="#box-model">Box Model</a>
+      <a href="#positioning">Positioning</a>
+      <a href="#transitions">Transitions & Animations</a>
+      <a href="#element3">3. Responsive Design</a>
+      <a href="#media-queries">Media Queries</a>
+      <a href="#element4">4. CSS Grid</a>
+      <a href="#element5">5. CSS Frameworks</a>
+      <a href="#bootstrap">Bootstrap</a>
+      <a href="#components">Framework Components</a>
+      <a href="#element6">6. Testing & Optimization</a>
+      <a href="#evidence">Evidence Guide</a>
+    </nav>
+  </aside>
+
+  <div class="page-content">
+    <div class="content">
+
+      <div class="unit-header">
+        <div class="unit-header-meta">
+          <span class="unit-badge badge-occupation">Occupation Unit</span>
+          <span class="unit-badge badge-hours">⏱ 45 Hours</span>
+        </div>
+        <h1>Unit 7: Work with CSS and Use CSS Framework for Web Design</h1>
+        <p class="unit-header-desc">
+          <strong>Unit Code:</strong> OU-ICT-WD-04-L3-V2<br>
+          This unit covers interpreting and applying CSS, using responsive design, CSS Grid, transitions, animations, and CSS frameworks like Bootstrap and Tailwind CSS.
+        </p>
+      </div>
+
+      <h2 id="overview"><span class="icon">📋</span> Overview</h2>
+      <p>CSS (Cascading Style Sheets) controls the visual presentation of web pages. From colors and fonts to complex layouts and animations, CSS transforms plain HTML into beautiful, responsive websites.</p>
+
+      <h2 id="element1"><span class="icon">🎨</span> Element 1: Interpret and Structure CSS</h2>
+
+      <h3>CSS Syntax</h3>
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">CSS</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="comment">/* CSS Rule Structure */</span>
+<span class="selector">selector</span> {
+  <span class="property">property</span>: <span class="value">value</span>;
+  <span class="property">another-property</span>: <span class="value">another-value</span>;
+}
+
+<span class="comment">/* Example */</span>
+<span class="selector">h1</span> {
+  <span class="property">color</span>: <span class="value">#38bdf8</span>;
+  <span class="property">font-size</span>: <span class="value">2.5rem</span>;
+  <span class="property">font-weight</span>: <span class="value">700</span>;
+  <span class="property">margin-bottom</span>: <span class="value">1rem</span>;
+}</code></pre>
+      </div>
+
+      <h2 id="types"><span class="icon">📄</span> Types of CSS</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Type</th><th>Where</th><th>Example</th><th>Best For</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Inline</strong></td><td>Inside HTML element</td><td><code>&lt;p style="color:red;"&gt;</code></td><td>Quick, one-off styling (avoid in production)</td></tr>
+            <tr><td><strong>Internal/Embedded</strong></td><td>In <code>&lt;style&gt;</code> tag in <code>&lt;head&gt;</code></td><td><code>&lt;style&gt; p { color: red; } &lt;/style&gt;</code></td><td>Single-page styles</td></tr>
+            <tr><td><strong>External</strong></td><td>Separate .css file</td><td><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></td><td>Best practice for all projects ⭐</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="selectors"><span class="icon">🎯</span> CSS Selectors</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Selector</th><th>Syntax</th><th>Example</th><th>Selects</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Universal</strong></td><td><code>*</code></td><td><code>* { margin: 0; }</code></td><td>All elements</td></tr>
+            <tr><td><strong>Element</strong></td><td><code>tag</code></td><td><code>p { color: blue; }</code></td><td>All &lt;p&gt; elements</td></tr>
+            <tr><td><strong>Class</strong></td><td><code>.name</code></td><td><code>.card { padding: 1rem; }</code></td><td>Elements with class="card"</td></tr>
+            <tr><td><strong>ID</strong></td><td><code>#name</code></td><td><code>#header { height: 70px; }</code></td><td>Element with id="header"</td></tr>
+            <tr><td><strong>Pseudo-class</strong></td><td><code>:state</code></td><td><code>a:hover { color: red; }</code></td><td>Elements in a specific state</td></tr>
+            <tr><td><strong>Group</strong></td><td><code>a, b</code></td><td><code>h1, h2 { font-weight: bold; }</code></td><td>Multiple selectors at once</td></tr>
+            <tr><td><strong>Descendant</strong></td><td><code>a b</code></td><td><code>nav a { color: white; }</code></td><td>Elements nested inside another</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="element2"><span class="icon">📐</span> Element 2: Apply CSS for Layout and Styling</h2>
+
+      <h2 id="box-model"><span class="icon">📦</span> The CSS Box Model</h2>
+      <div class="info-box">
+        <div class="info-box-title">📦 Every HTML element is a box with 4 layers:</div>
+        <p><strong>Content</strong> → The actual text, image, or element content</p>
+        <p><strong>Padding</strong> → Space between content and border (inside the box)</p>
+        <p><strong>Border</strong> → The visible edge of the box</p>
+        <p><strong>Margin</strong> → Space outside the border (between this box and others)</p>
+      </div>
+
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">CSS</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="selector">.card</span> {
+  <span class="property">width</span>: <span class="value">300px</span>;
+  <span class="property">padding</span>: <span class="value">20px</span>;          <span class="comment">/* Inside space */</span>
+  <span class="property">border</span>: <span class="value">1px solid #ccc</span>;  <span class="comment">/* Visible edge */</span>
+  <span class="property">margin</span>: <span class="value">16px</span>;           <span class="comment">/* Outside space */</span>
+  <span class="property">box-sizing</span>: <span class="value">border-box</span>; <span class="comment">/* Include padding in width */</span>
+}</code></pre>
+      </div>
+
+      <h2 id="positioning"><span class="icon">📍</span> CSS Positioning</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Position</th><th>Behavior</th><th>Use Case</th></tr></thead>
+          <tbody>
+            <tr><td><code>static</code></td><td>Default flow (no special positioning)</td><td>Normal elements</td></tr>
+            <tr><td><code>relative</code></td><td>Positioned relative to its normal position</td><td>Fine-tuning, creating context for absolute children</td></tr>
+            <tr><td><code>absolute</code></td><td>Positioned relative to nearest positioned ancestor</td><td>Dropdowns, tooltips, badges</td></tr>
+            <tr><td><code>fixed</code></td><td>Positioned relative to viewport (stays on scroll)</td><td>Fixed headers, back-to-top buttons</td></tr>
+            <tr><td><code>sticky</code></td><td>Toggles between relative and fixed</td><td>Sticky navigation, sidebar headings</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="transitions"><span class="icon">✨</span> Transitions, Gradients & Animations</h2>
+
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">CSS</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="comment">/* Transition — smooth state changes */</span>
+<span class="selector">.button</span> {
+  <span class="property">background</span>: <span class="value">#38bdf8</span>;
+  <span class="property">transition</span>: <span class="value">all 0.3s ease</span>;
+}
+<span class="selector">.button:hover</span> {
+  <span class="property">background</span>: <span class="value">#0ea5e9</span>;
+  <span class="property">transform</span>: <span class="value">translateY(-2px)</span>;
+  <span class="property">box-shadow</span>: <span class="value">0 4px 12px rgba(56, 189, 248, 0.3)</span>;
+}
+
+<span class="comment">/* Gradient — smooth color blends */</span>
+<span class="selector">.hero</span> {
+  <span class="property">background</span>: <span class="value">linear-gradient(135deg, #38bdf8, #a78bfa)</span>;
+}
+
+<span class="comment">/* Animation — keyframe-based */</span>
+<span class="keyword">@keyframes</span> <span class="func">fadeIn</span> {
+  <span class="selector">from</span> { <span class="property">opacity</span>: <span class="value">0</span>; <span class="property">transform</span>: <span class="value">translateY(20px)</span>; }
+  <span class="selector">to</span> { <span class="property">opacity</span>: <span class="value">1</span>; <span class="property">transform</span>: <span class="value">translateY(0)</span>; }
+}
+<span class="selector">.card</span> {
+  <span class="property">animation</span>: <span class="value">fadeIn 0.6s ease forwards</span>;
+}
+
+<span class="comment">/* 2D Transform */</span>
+<span class="selector">.rotate</span> { <span class="property">transform</span>: <span class="value">rotate(45deg)</span>; }
+<span class="selector">.scale</span> { <span class="property">transform</span>: <span class="value">scale(1.1)</span>; }
+
+<span class="comment">/* 3D Transform */</span>
+<span class="selector">.flip</span> { <span class="property">transform</span>: <span class="value">perspective(600px) rotateY(180deg)</span>; }</code></pre>
+      </div>
+
+      <h2 id="element3"><span class="icon">📱</span> Element 3: Responsive Design with Media Queries</h2>
+
+      <h2 id="media-queries"><span class="icon">📐</span> Media Queries & Breakpoints</h2>
+
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Device</th><th>Breakpoint</th><th>Target</th></tr></thead>
+          <tbody>
+            <tr><td>📱 Mobile</td><td>≤ 576px</td><td>Small phones</td></tr>
+            <tr><td>📱 Mobile (Large)</td><td>≤ 768px</td><td>Large phones, small tablets</td></tr>
+            <tr><td>📋 Tablet</td><td>768px – 991px</td><td>Tablets, portrait iPads</td></tr>
+            <tr><td>💻 Desktop</td><td>≥ 992px</td><td>Laptops, desktops</td></tr>
+            <tr><td>🖥️ Large Desktop</td><td>≥ 1200px</td><td>Large monitors</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">CSS</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="comment">/* Mobile-first approach (recommended) */</span>
+<span class="selector">.container</span> {
+  <span class="property">width</span>: <span class="value">100%</span>;
+  <span class="property">padding</span>: <span class="value">1rem</span>;
+}
+
+<span class="comment">/* Tablet */</span>
+<span class="keyword">@media</span> (<span class="property">min-width</span>: <span class="value">768px</span>) {
+  <span class="selector">.container</span> {
+    <span class="property">max-width</span>: <span class="value">720px</span>;
+    <span class="property">margin</span>: <span class="value">0 auto</span>;
+  }
+}
+
+<span class="comment">/* Desktop */</span>
+<span class="keyword">@media</span> (<span class="property">min-width</span>: <span class="value">992px</span>) {
+  <span class="selector">.container</span> {
+    <span class="property">max-width</span>: <span class="value">960px</span>;
+  }
+}
+
+<span class="comment">/* Responsive techniques */</span>
+<span class="selector">img</span> {
+  <span class="property">max-width</span>: <span class="value">100%</span>;      <span class="comment">/* Flexible images */</span>
+  <span class="property">height</span>: <span class="value">auto</span>;
+}</code></pre>
+      </div>
+
+      <h2 id="element4"><span class="icon">🔲</span> Element 4: CSS Grid System</h2>
+
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">CSS</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="comment">/* CSS Grid — Create a 3-column layout */</span>
+<span class="selector">.grid-container</span> {
+  <span class="property">display</span>: <span class="value">grid</span>;
+  <span class="property">grid-template-columns</span>: <span class="value">repeat(3, 1fr)</span>;  <span class="comment">/* 3 equal columns */</span>
+  <span class="property">grid-gap</span>: <span class="value">1.5rem</span>;                       <span class="comment">/* Space between items */</span>
+}
+
+<span class="comment">/* Responsive Grid */</span>
+<span class="selector">.responsive-grid</span> {
+  <span class="property">display</span>: <span class="value">grid</span>;
+  <span class="property">grid-template-columns</span>: <span class="value">repeat(auto-fill, minmax(300px, 1fr))</span>;
+  <span class="property">gap</span>: <span class="value">1rem</span>;
+}
+
+<span class="comment">/* Grid Areas — complex layouts */</span>
+<span class="selector">.page</span> {
+  <span class="property">display</span>: <span class="value">grid</span>;
+  <span class="property">grid-template-areas</span>:
+    <span class="string">"header header"</span>
+    <span class="string">"sidebar main"</span>
+    <span class="string">"footer footer"</span>;
+  <span class="property">grid-template-columns</span>: <span class="value">250px 1fr</span>;
+}
+<span class="selector">.header</span> { <span class="property">grid-area</span>: <span class="value">header</span>; }
+<span class="selector">.sidebar</span> { <span class="property">grid-area</span>: <span class="value">sidebar</span>; }
+<span class="selector">.main</span> { <span class="property">grid-area</span>: <span class="value">main</span>; }
+<span class="selector">.footer</span> { <span class="property">grid-area</span>: <span class="value">footer</span>; }
+
+<span class="comment">/* Flexbox — for one-dimensional layouts */</span>
+<span class="selector">.flex-container</span> {
+  <span class="property">display</span>: <span class="value">flex</span>;
+  <span class="property">justify-content</span>: <span class="value">space-between</span>;
+  <span class="property">align-items</span>: <span class="value">center</span>;
+  <span class="property">gap</span>: <span class="value">1rem</span>;
+  <span class="property">flex-wrap</span>: <span class="value">wrap</span>;
+}</code></pre>
+      </div>
+
+      <h2 id="element5"><span class="icon">🏗️</span> Element 5: CSS Frameworks</h2>
+
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Framework</th><th>Approach</th><th>Best For</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Bootstrap</strong></td><td>Component-based, responsive grid</td><td>Rapid prototyping, admin panels ⭐</td></tr>
+            <tr><td><strong>Tailwind CSS</strong></td><td>Utility-first classes</td><td>Custom designs with speed ⭐</td></tr>
+            <tr><td><strong>Foundation</strong></td><td>Responsive framework</td><td>Enterprise-level projects</td></tr>
+            <tr><td><strong>Material UI</strong></td><td>Google's design system</td><td>Material Design-based apps</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="bootstrap"><span class="icon">🅱️</span> Bootstrap Example</h2>
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">HTML</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="comment">&lt;!-- Bootstrap CDN Link --&gt;</span>
+<span class="tag">&lt;link</span> <span class="attr">href</span>=<span class="val">"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"</span>
+  <span class="attr">rel</span>=<span class="val">"stylesheet"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Bootstrap Responsive Grid --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="val">"container"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="val">"row"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="val">"col-12 col-md-6 col-lg-4"</span><span class="tag">&gt;</span>Column 1<span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="val">"col-12 col-md-6 col-lg-4"</span><span class="tag">&gt;</span>Column 2<span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="val">"col-12 col-md-12 col-lg-4"</span><span class="tag">&gt;</span>Column 3<span class="tag">&lt;/div&gt;</span>
+  <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="comment">&lt;!-- Bootstrap Card Component --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="val">"card"</span> <span class="attr">style</span>=<span class="val">"width: 18rem;"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;img</span> <span class="attr">src</span>=<span class="val">"image.jpg"</span> <span class="attr">class</span>=<span class="val">"card-img-top"</span> <span class="attr">alt</span>=<span class="val">"Card image"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;div</span> <span class="attr">class</span>=<span class="val">"card-body"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;h5</span> <span class="attr">class</span>=<span class="val">"card-title"</span><span class="tag">&gt;</span>Card Title<span class="tag">&lt;/h5&gt;</span>
+    <span class="tag">&lt;p</span> <span class="attr">class</span>=<span class="val">"card-text"</span><span class="tag">&gt;</span>Card description text.<span class="tag">&lt;/p&gt;</span>
+    <span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="val">"#"</span> <span class="attr">class</span>=<span class="val">"btn btn-primary"</span><span class="tag">&gt;</span>Learn More<span class="tag">&lt;/a&gt;</span>
+  <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="comment">&lt;!-- Bootstrap Navbar --&gt;</span>
+<span class="tag">&lt;nav</span> <span class="attr">class</span>=<span class="val">"navbar navbar-expand-lg navbar-dark bg-dark"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;a</span> <span class="attr">class</span>=<span class="val">"navbar-brand"</span> <span class="attr">href</span>=<span class="val">"#"</span><span class="tag">&gt;</span>My Site<span class="tag">&lt;/a&gt;</span>
+  <span class="tag">&lt;button</span> <span class="attr">class</span>=<span class="val">"navbar-toggler"</span> <span class="attr">data-bs-toggle</span>=<span class="val">"collapse"</span> <span class="attr">data-bs-target</span>=<span class="val">"#navMenu"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;span</span> <span class="attr">class</span>=<span class="val">"navbar-toggler-icon"</span><span class="tag">&gt;&lt;/span&gt;</span>
+  <span class="tag">&lt;/button&gt;</span>
+<span class="tag">&lt;/nav&gt;</span></code></pre>
+      </div>
+
+      <h2 id="components"><span class="icon">🧩</span> Framework Components Reference</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Component</th><th>Bootstrap Class</th><th>Purpose</th></tr></thead>
+          <tbody>
+            <tr><td>Navbar</td><td><code>.navbar</code></td><td>Responsive navigation bar</td></tr>
+            <tr><td>Modal</td><td><code>.modal</code></td><td>Popup dialog boxes</td></tr>
+            <tr><td>Carousel</td><td><code>.carousel</code></td><td>Image/content slider</td></tr>
+            <tr><td>Card</td><td><code>.card</code></td><td>Flexible content container</td></tr>
+            <tr><td>Accordion</td><td><code>.accordion</code></td><td>Collapsible content panels</td></tr>
+            <tr><td>Toast</td><td><code>.toast</code></td><td>Small notification popup</td></tr>
+            <tr><td>Offcanvas</td><td><code>.offcanvas</code></td><td>Slide-out sidebar panel</td></tr>
+            <tr><td>Tooltip</td><td><code>data-bs-toggle="tooltip"</code></td><td>Hover information text</td></tr>
+            <tr><td>Dropdown</td><td><code>.dropdown</code></td><td>Toggle menu lists</td></tr>
+            <tr><td>Progress Bar</td><td><code>.progress</code></td><td>Visual progress indicator</td></tr>
+            <tr><td>Alert</td><td><code>.alert</code></td><td>Status/feedback messages</td></tr>
+            <tr><td>Badge</td><td><code>.badge</code></td><td>Small labels/counts</td></tr>
+            <tr><td>Buttons</td><td><code>.btn .btn-primary</code></td><td>Action buttons with variants</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="element6"><span class="icon">🧪</span> Element 6: Testing & Optimization</h2>
+
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Technique</th><th>Tool</th><th>Purpose</th></tr></thead>
+          <tbody>
+            <tr><td>Minifying CSS/JS</td><td>Online minifiers, build tools</td><td>Reduce file size for faster loading</td></tr>
+            <tr><td>Lazy Loading</td><td><code>loading="lazy"</code> attribute</td><td>Load images only when visible</td></tr>
+            <tr><td>Removing Unused CSS</td><td>PurgeCSS, Chrome Coverage</td><td>Eliminate dead CSS code</td></tr>
+            <tr><td>Image Optimization</td><td>WebP format, compression</td><td>Reduce image file sizes</td></tr>
+            <tr><td>Lighthouse Audit</td><td>Chrome DevTools > Lighthouse</td><td>Performance, accessibility, SEO scores</td></tr>
+            <tr><td>Cross-browser Testing</td><td>Chrome, Firefox, Safari, Edge</td><td>Ensure consistent rendering</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="evidence"><span class="icon">📊</span> Evidence Guide</h2>
+      <div class="accordion">
+        <div class="accordion-item open">
+          <div class="accordion-header"><span>Critical Aspects of Competency</span><span class="arrow">▼</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">
+            <ul>
+              <li>Correctly interpreted and applied CSS syntax, selectors, and styles</li>
+              <li>Implemented responsive web design using media queries</li>
+              <li>Used CSS Grid to build flexible and structured layouts</li>
+              <li>Integrated and configured a CSS framework</li>
+              <li>Applied transitions, animations, and transform properties</li>
+              <li>Validated and tested designs across multiple devices and browsers</li>
+              <li>Optimized CSS-based web page performance</li>
+            </ul>
+          </div></div>
+        </div>
+      </div>
+
+      <div class="unit-nav">
+        <a href="unit6-html.html"><span class="unit-nav-label">← Previous</span><span class="unit-nav-title">Work with HTML</span></a>
+        <a href="unit8-design-to-web.html"><span class="unit-nav-label">Next Unit →</span><span class="unit-nav-title">Perform Design to Web</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-brand"><h3>NSDA <span>Web Design</span> Level 3</h3><p>Complete Guidebook for National Skills Certificate in Web Design under BNQF.</p></div>
+    <div><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="unit6-html.html">HTML</a></li><li><a href="unit9-javascript.html">JavaScript</a></li></ul></div>
+    <div><h4>Resources</h4><ul class="footer-links"><li><a href="https://nsda.gov.bd" target="_blank">NSDA Website</a></li><li><a href="https://github.com/ninazmul" target="_blank">Author GitHub</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 NSDA Web Design Level 3 Guidebook</span>
+    <div class="footer-author"><span>Created by <a href="https://github.com/ninazmul" target="_blank"><strong>N.I. Nazmul</strong></a></span><span>— Full-Stack Developer (MERN Stack & Next.js Specialist)</span></div>
+  </div>
+</footer>
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>

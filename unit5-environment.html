@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Unit 5: Setup Web Design Environment — OU-ICT-WD-02-L3-V2. Complete guide on code editors, file structure, local servers, hosting, Git, and data layers.">
+  <title>Unit 5: Setup Web Design Environment — NSDA Web Design L3</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="scroll-progress"></div>
+<header class="header">
+  <a href="index.html" class="header-logo"><div class="header-logo-icon">W3</div><div class="header-logo-text">NSDA <span>Web Design</span> L3</div></a>
+  <nav class="header-nav">
+    <a href="index.html">Home</a><a href="unit4-visual-design.html">Unit 4</a><a href="unit5-environment.html" class="active">Unit 5</a><a href="unit6-html.html">Unit 6</a>
+  </nav>
+  <div style="display:flex;align-items:center;gap:8px;">
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Home</a><a href="unit1-negotiation.html">Unit 1</a><a href="unit2-osh.html">Unit 2</a><a href="unit3-documents.html">Unit 3</a><a href="unit4-visual-design.html">Unit 4</a><a href="unit5-environment.html">Unit 5</a><a href="unit6-html.html">Unit 6</a><a href="unit7-css.html">Unit 7</a><a href="unit8-design-to-web.html">Unit 8</a><a href="unit9-javascript.html">Unit 9</a>
+</nav>
+
+<div class="page-layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-title">On This Page</div>
+    <nav class="sidebar-nav">
+      <a href="#overview">Overview</a>
+      <a href="#element1">1. Web Development Tools</a>
+      <a href="#editors">Code Editors Comparison</a>
+      <a href="#extensions">Essential Extensions</a>
+      <a href="#element2">2. File & Folder Structure</a>
+      <a href="#element3">3. Local Development</a>
+      <a href="#element4">4. Live Environment</a>
+      <a href="#element5">5. Data Layer</a>
+      <a href="#element6">6. Version Control (Git)</a>
+      <a href="#git-commands">Git Commands Reference</a>
+      <a href="#evidence">Evidence Guide</a>
+    </nav>
+  </aside>
+
+  <div class="page-content">
+    <div class="content">
+
+      <div class="unit-header">
+        <div class="unit-header-meta">
+          <span class="unit-badge badge-occupation">Occupation Unit</span>
+          <span class="unit-badge badge-hours">⏱ 40 Hours</span>
+        </div>
+        <h1>Unit 5: Setup Web Design Environment</h1>
+        <p class="unit-header-desc">
+          <strong>Unit Code:</strong> OU-ICT-WD-02-L3-V2<br>
+          This unit covers installing code editors and tools, configuring browsers and extensions, organizing files and folders, using version control systems, and setting up both local and live development environments.
+        </p>
+      </div>
+
+      <h2 id="overview"><span class="icon">📋</span> Overview</h2>
+      <p>A well-configured development environment is essential for efficient web design. This unit teaches you to set up everything from code editors to live hosting, ensuring you can build, test, and deploy web projects professionally.</p>
+
+      <h2 id="element1"><span class="icon">🛠️</span> Element 1: Select and Install Web Development Tools</h2>
+
+      <h2 id="editors"><span class="icon">📝</span> Code Editors Comparison</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Editor</th><th>Type</th><th>Key Features</th><th>Best For</th></tr></thead>
+          <tbody>
+            <tr><td><strong>VS Code</strong></td><td>Free, Open Source</td><td>Extensions, IntelliSense, Git integration, terminal</td><td>Best all-around choice ⭐</td></tr>
+            <tr><td><strong>Sublime Text</strong></td><td>Paid (free trial)</td><td>Lightning fast, multiple cursors, distraction-free</td><td>Speed and simplicity</td></tr>
+            <tr><td><strong>Atom</strong></td><td>Free, Open Source</td><td>Customizable, GitHub integration, packages</td><td>GitHub-centric workflows</td></tr>
+            <tr><td><strong>Brackets</strong></td><td>Free, Open Source</td><td>Live preview, inline editors, preprocessor support</td><td>Visual web design</td></tr>
+            <tr><td><strong>Notepad++</strong></td><td>Free (Windows)</td><td>Lightweight, syntax highlighting, plugins</td><td>Quick edits, Windows users</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="extensions"><span class="icon">🧩</span> Essential VS Code Extensions</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Extension</th><th>Purpose</th><th>Why It's Essential</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Emmet</strong></td><td>HTML/CSS shortcuts</td><td>Type <code>div.container>ul>li*5</code> and press Tab to generate HTML instantly</td></tr>
+            <tr><td><strong>Live Server</strong></td><td>Local development server</td><td>Auto-refreshes browser when you save changes</td></tr>
+            <tr><td><strong>Prettier</strong></td><td>Code formatter</td><td>Automatically formats code for consistency</td></tr>
+            <tr><td><strong>ESLint</strong></td><td>JavaScript linter</td><td>Finds and fixes errors in your JavaScript code</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Browser Developer Tools</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Browser</th><th>DevTools Access</th><th>Key Features</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Chrome DevTools</strong></td><td>F12 or Ctrl+Shift+I</td><td>Elements, Console, Network, Performance, Lighthouse</td></tr>
+            <tr><td><strong>Firefox Inspector</strong></td><td>F12 or Ctrl+Shift+I</td><td>CSS Grid inspector, Accessibility panel</td></tr>
+            <tr><td><strong>Safari Web Inspector</strong></td><td>Cmd+Option+I</td><td>iOS device debugging, timeline</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="element2"><span class="icon">📁</span> Element 2: Organize File and Folder Structure</h2>
+
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">Project Structure</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code>my-website/
+├── index.html              <span class="comment"># Main entry page</span>
+├── about.html              <span class="comment"># About page</span>
+├── contact.html            <span class="comment"># Contact page</span>
+├── css/
+│   ├── styles.css          <span class="comment"># Main stylesheet</span>
+│   └── responsive.css      <span class="comment"># Media queries</span>
+├── js/
+│   ├── main.js             <span class="comment"># Main JavaScript</span>
+│   └── utils.js            <span class="comment"># Utility functions</span>
+├── images/
+│   ├── logo.png            <span class="comment"># Site logo</span>
+│   ├── hero-banner.jpg     <span class="comment"># Hero image</span>
+│   └── icons/              <span class="comment"># Icon files</span>
+├── fonts/                  <span class="comment"># Custom fonts</span>
+├── assets/                 <span class="comment"># Other assets</span>
+└── README.md               <span class="comment"># Project documentation</span></code></pre>
+      </div>
+
+      <h3>Naming Conventions</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Convention</th><th>Example</th><th>Use Case</th></tr></thead>
+          <tbody>
+            <tr><td><strong>kebab-case</strong></td><td><code>my-website</code>, <code>hero-banner.jpg</code></td><td>File names, CSS classes (recommended for web)</td></tr>
+            <tr><td><strong>snake_case</strong></td><td><code>my_website</code>, <code>hero_banner.jpg</code></td><td>Python files, database fields</td></tr>
+            <tr><td><strong>camelCase</strong></td><td><code>myWebsite</code>, <code>heroBanner</code></td><td>JavaScript variables and functions</td></tr>
+            <tr><td><strong>PascalCase</strong></td><td><code>MyWebsite</code>, <code>HeroBanner</code></td><td>JavaScript classes, React components</td></tr>
+            <tr><td><strong>lowercase</strong></td><td><code>mywebsite</code>, <code>herobanner</code></td><td>Domain names, simple file names</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="element3"><span class="icon">💻</span> Element 3: Configure Local Development Environment</h2>
+
+      <h3>Local Server Options</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Server</th><th>Type</th><th>Best For</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Live Server (VS Code)</strong></td><td>Extension</td><td>Quick static site preview with auto-reload ⭐</td></tr>
+            <tr><td><strong>XAMPP</strong></td><td>Full Stack (Apache + MySQL + PHP)</td><td>PHP/MySQL projects, WordPress development</td></tr>
+            <tr><td><strong>WAMP / MAMP / LAMP</strong></td><td>Full Stack</td><td>Windows (WAMP), Mac (MAMP), Linux (LAMP)</td></tr>
+            <tr><td><strong>Node.js</strong></td><td>JavaScript runtime</td><td>JavaScript-based servers, APIs, build tools</td></tr>
+            <tr><td><strong>IIS</strong></td><td>Microsoft server</td><td>Windows-based web hosting, .NET applications</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>VS Code Settings for Productivity</h3>
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">JSON (VS Code settings.json)</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code>{
+  <span class="string">"editor.formatOnSave"</span>: <span class="keyword">true</span>,
+  <span class="string">"editor.tabSize"</span>: <span class="number">2</span>,
+  <span class="string">"editor.wordWrap"</span>: <span class="string">"on"</span>,
+  <span class="string">"editor.minimap.enabled"</span>: <span class="keyword">false</span>,
+  <span class="string">"files.autoSave"</span>: <span class="string">"afterDelay"</span>,
+  <span class="string">"liveServer.settings.donotShowInfoMsg"</span>: <span class="keyword">true</span>,
+  <span class="string">"emmet.includeLanguages"</span>: {
+    <span class="string">"javascript"</span>: <span class="string">"html"</span>
+  }
+}</code></pre>
+      </div>
+
+      <h2 id="element4"><span class="icon">🌐</span> Element 4: Configure Live Development Environment</h2>
+
+      <div class="pc-card">
+        <h4>Steps to Deploy a Website Live</h4>
+        <ol>
+          <li><strong>Choose hosting provider</strong> — Research and select (shared hosting, VPS, or cloud)</li>
+          <li><strong>Register domain name</strong> — Purchase a domain (e.g., example.com)</li>
+          <li><strong>Configure DNS</strong> — Point domain to hosting server's IP address</li>
+          <li><strong>Configure web server</strong> — Apache or Nginx settings</li>
+          <li><strong>Upload files</strong> — Using FTP/SFTP (FileZilla) or Git deployment</li>
+          <li><strong>Verify structure</strong> — Ensure file/folder paths match hosting requirements</li>
+          <li><strong>Configure database</strong> — If applicable, set up MySQL/PostgreSQL</li>
+          <li><strong>Test thoroughly</strong> — Check across devices and browsers</li>
+          <li><strong>Security settings:</strong>
+            <ul>
+              <li><strong>SSL Certificate:</strong> Enable HTTPS (Let's Encrypt is free)</li>
+              <li><strong>File permissions:</strong> Set correct chmod permissions (644 for files, 755 for folders)</li>
+              <li><strong>Firewall:</strong> Configure server firewall rules</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+
+      <h2 id="element5"><span class="icon">📊</span> Element 5: Interpret Data Layer</h2>
+
+      <div class="pc-card">
+        <h4>What is a Data Layer?</h4>
+        <p>A data layer is a structured way to pass information between the frontend UI and backend services. In web development, it typically involves JSON data, JavaScript objects, and API calls.</p>
+      </div>
+
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">JavaScript</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="comment">// Example: JSON data structure</span>
+<span class="keyword">const</span> <span class="func">userData</span> = {
+  <span class="string">"name"</span>: <span class="string">"N.I. Nazmul"</span>,
+  <span class="string">"role"</span>: <span class="string">"Full-Stack Developer"</span>,
+  <span class="string">"skills"</span>: [<span class="string">"HTML"</span>, <span class="string">"CSS"</span>, <span class="string">"JavaScript"</span>, <span class="string">"React"</span>, <span class="string">"Next.js"</span>]
+};
+
+<span class="comment">// Example: Fetching data from an API</span>
+<span class="keyword">async function</span> <span class="func">fetchData</span>() {
+  <span class="keyword">const</span> response = <span class="keyword">await</span> <span class="func">fetch</span>(<span class="string">'https://api.example.com/data'</span>);
+  <span class="keyword">const</span> data = <span class="keyword">await</span> response.<span class="func">json</span>();
+  console.<span class="func">log</span>(data);
+}
+<span class="func">fetchData</span>();</code></pre>
+      </div>
+
+      <h2 id="element6"><span class="icon">🔀</span> Element 6: Setup Version Control (Git)</h2>
+
+      <div class="info-box tip">
+        <div class="info-box-title">💡 Why Version Control?</div>
+        <p>Version control tracks every change you make to your code, lets you revert to previous versions, and enables team collaboration. <strong>Git</strong> is the industry standard, and <strong>GitHub</strong> is the most popular platform for hosting Git repositories.</p>
+      </div>
+
+      <h2 id="git-commands"><span class="icon">⌨️</span> Git Commands Reference</h2>
+
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Command</th><th>Purpose</th><th>Example</th></tr></thead>
+          <tbody>
+            <tr><td><code>git init</code></td><td>Initialize a new Git repository</td><td><code>git init</code></td></tr>
+            <tr><td><code>git clone</code></td><td>Clone a remote repository</td><td><code>git clone https://github.com/user/repo.git</code></td></tr>
+            <tr><td><code>git add</code></td><td>Stage changes for commit</td><td><code>git add .</code> (all files) or <code>git add index.html</code></td></tr>
+            <tr><td><code>git commit</code></td><td>Save staged changes</td><td><code>git commit -m "Add homepage"</code></td></tr>
+            <tr><td><code>git status</code></td><td>Check current status</td><td><code>git status</code></td></tr>
+            <tr><td><code>git log</code></td><td>View commit history</td><td><code>git log --oneline</code></td></tr>
+            <tr><td><code>git push</code></td><td>Upload commits to remote</td><td><code>git push origin main</code></td></tr>
+            <tr><td><code>git pull</code></td><td>Download changes from remote</td><td><code>git pull origin main</code></td></tr>
+            <tr><td><code>git branch</code></td><td>Create/list branches</td><td><code>git branch feature-nav</code></td></tr>
+            <tr><td><code>git checkout</code></td><td>Switch branches</td><td><code>git checkout feature-nav</code></td></tr>
+            <tr><td><code>git merge</code></td><td>Merge branches</td><td><code>git merge feature-nav</code></td></tr>
+            <tr><td><code>git reset</code></td><td>Undo changes</td><td><code>git reset --hard HEAD~1</code></td></tr>
+            <tr><td><code>git rm</code></td><td>Remove files from tracking</td><td><code>git rm old-file.html</code></td></tr>
+            <tr><td><code>git mv</code></td><td>Rename/move tracked files</td><td><code>git mv old.html new.html</code></td></tr>
+            <tr><td><code>git tag</code></td><td>Mark release versions</td><td><code>git tag v1.0.0</code></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Typical Git Workflow</h3>
+      <div class="code-block">
+        <div class="code-block-header"><span class="code-block-lang">Terminal</span><button class="code-block-copy">📋 Copy</button></div>
+        <pre><code><span class="comment"># 1. Initialize project</span>
+git init
+git remote add origin https://github.com/ninazmul/my-project.git
+
+<span class="comment"># 2. Stage and commit changes</span>
+git add .
+git commit -m <span class="string">"Initial commit: project setup"</span>
+
+<span class="comment"># 3. Push to GitHub</span>
+git push -u origin main
+
+<span class="comment"># 4. Create a feature branch</span>
+git checkout -b feature/homepage
+
+<span class="comment"># 5. Make changes, then commit</span>
+git add .
+git commit -m <span class="string">"Add homepage layout"</span>
+
+<span class="comment"># 6. Merge back to main</span>
+git checkout main
+git merge feature/homepage
+git push origin main</code></pre>
+      </div>
+
+      <h2 id="evidence"><span class="icon">📊</span> Evidence Guide</h2>
+      <div class="accordion">
+        <div class="accordion-item open">
+          <div class="accordion-header"><span>Critical Aspects of Competency</span><span class="arrow">▼</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">
+            <ul>
+              <li>Correctly installed and configured a code editor and browser tools</li>
+              <li>Created organized file and folder structure per project standards</li>
+              <li>Configured local development environment for real-time preview</li>
+              <li>Applied consistent file naming conventions and correct resource linking</li>
+              <li>Uploaded and configured web files on a live server securely</li>
+              <li>Applied SSL and security settings for secure deployment</li>
+              <li>Set up and used Git with remote repository connection</li>
+            </ul>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header"><span>Assessment Methods</span><span class="arrow">▼</span></div>
+          <div class="accordion-body"><div class="accordion-body-inner">
+            <ul>
+              <li>Demonstration with oral questioning</li>
+              <li>On-the-job observation with oral questioning</li>
+              <li>Written test</li>
+              <li>Portfolio (configured environment, deployed project, Git history)</li>
+            </ul>
+          </div></div>
+        </div>
+      </div>
+
+      <div class="unit-nav">
+        <a href="unit4-visual-design.html"><span class="unit-nav-label">← Previous</span><span class="unit-nav-title">Visual Design & Color</span></a>
+        <a href="unit6-html.html"><span class="unit-nav-label">Next Unit →</span><span class="unit-nav-title">Work with HTML</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-brand"><h3>NSDA <span>Web Design</span> Level 3</h3><p>Complete Guidebook for National Skills Certificate in Web Design under BNQF.</p></div>
+    <div><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="unit6-html.html">HTML</a></li><li><a href="unit7-css.html">CSS</a></li><li><a href="unit9-javascript.html">JavaScript</a></li></ul></div>
+    <div><h4>Resources</h4><ul class="footer-links"><li><a href="https://nsda.gov.bd" target="_blank">NSDA Website</a></li><li><a href="https://github.com/ninazmul" target="_blank">Author GitHub</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 NSDA Web Design Level 3 Guidebook</span>
+    <div class="footer-author"><span>Created by <a href="https://github.com/ninazmul" target="_blank"><strong>N.I. Nazmul</strong></a></span><span>— Full-Stack Developer (MERN Stack & Next.js Specialist)</span></div>
+  </div>
+</footer>
+<button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
