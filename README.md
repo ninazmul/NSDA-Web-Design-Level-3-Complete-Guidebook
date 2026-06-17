@@ -273,7 +273,7 @@ This guidebook is created for educational purposes based on the publicly availab
 ---
 
 <p align="center">
-  <strong>Built with ❤️ by <a href="https://github.com/ninazmul">N.I. Nazmul</a></strong><br />
+  <strong>Built with ❤️ by <a href="https://github.com/ninazmul">N.I. Nazmul (Nazmul Islam)</a></strong><br />
   <em>Full-Stack Developer (MERN Stack & Next.js Specialist)</em>
 </p>
 
