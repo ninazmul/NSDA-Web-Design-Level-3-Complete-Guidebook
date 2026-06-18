@@ -27,6 +27,191 @@ document.addEventListener('DOMContentLoaded', () => {
     themeToggle.innerHTML = theme === 'dark' ? '☀️' : '🌙';
   }
 
+  // --- AI/Machine Translation (English/Bengali) ---
+  const LANGUAGE_STORAGE_KEY = 'guidebook-language';
+  const DEFAULT_LANGUAGE = 'en';
+  const TRANSLATED_LANGUAGE = 'bn';
+  let translateLoader = null;
+
+  document.querySelectorAll('pre, code, .code-block, .code-block-copy, .header-logo, .header-logo-icon').forEach(el => {
+    el.classList.add('notranslate');
+    el.setAttribute('translate', 'no');
+  });
+
+  const headerActions = themeToggle ? themeToggle.parentElement : document.querySelector('.header > div:last-child');
+  const languageTools = document.createElement('div');
+  languageTools.className = 'language-tools notranslate';
+  languageTools.setAttribute('translate', 'no');
+  languageTools.innerHTML = `
+    <span class="language-tools-label">AI Translate</span>
+    <button type="button" class="language-btn active" data-language="en" aria-label="Show English" aria-pressed="true">EN</button>
+    <button type="button" class="language-btn" data-language="bn" aria-label="Translate to Bengali" aria-pressed="false">বাংলা</button>
+    <span class="language-status" role="status" aria-live="polite"></span>
+    <div id="google_translate_element" aria-hidden="true"></div>
+  `;
+
+  if (headerActions) {
+    headerActions.insertBefore(languageTools, themeToggle || headerActions.firstChild);
+  }
+
+  const languageButtons = languageTools.querySelectorAll('.language-btn');
+  const languageStatus = languageTools.querySelector('.language-status');
+  const savedLanguage = localStorage.getItem(LANGUAGE_STORAGE_KEY) === TRANSLATED_LANGUAGE ? TRANSLATED_LANGUAGE : DEFAULT_LANGUAGE;
+
+  function setLanguageButtonState(language, state = 'idle') {
+    languageTools.dataset.state = state;
+    languageButtons.forEach(btn => {
+      const isActive = btn.dataset.language === language;
+      btn.classList.toggle('active', isActive);
+      btn.disabled = state === 'loading';
+      btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    });
+
+    if (!languageStatus) return;
+    languageStatus.textContent = state === 'loading'
+      ? 'Loading translation'
+      : state === 'error'
+        ? 'Translation unavailable'
+        : '';
+  }
+
+  function setDocumentLanguage(language) {
+    document.documentElement.lang = language;
+    document.documentElement.dataset.language = language;
+  }
+
+  function clearTranslateCookie() {
+    const expires = 'expires=Thu, 01 Jan 1970 00:00:00 GMT';
+    const domains = [location.hostname, `.${location.hostname}`].filter(Boolean);
+    document.cookie = `googtrans=; ${expires}; path=/`;
+    domains.forEach(domain => {
+      document.cookie = `googtrans=; ${expires}; path=/; domain=${domain}`;
+    });
+  }
+
+  function setTranslateCookie(language) {
+    document.cookie = `googtrans=/en/${language}; path=/`;
+    if (location.hostname) {
+      document.cookie = `googtrans=/en/${language}; path=/; domain=${location.hostname}`;
+    }
+  }
+
+  function applyGoogleLanguage(language) {
+    const combo = document.querySelector('.goog-te-combo');
+    if (!combo) return false;
+    combo.value = language === DEFAULT_LANGUAGE ? '' : language;
+    combo.dispatchEvent(new Event('change', { bubbles: true }));
+    return true;
+  }
+
+  function loadGoogleTranslate() {
+    if (translateLoader) return translateLoader;
+
+    translateLoader = new Promise((resolve, reject) => {
+      const translateElement = document.getElementById('google_translate_element');
+      if (!translateElement) {
+        reject(new Error('Google Translate target is missing.'));
+        return;
+      }
+
+      window.googleTranslateElementInit = () => {
+        if (!window.google?.translate?.TranslateElement) {
+          reject(new Error('Google Translate did not initialize.'));
+          return;
+        }
+
+        new window.google.translate.TranslateElement({
+          pageLanguage: DEFAULT_LANGUAGE,
+          includedLanguages: TRANSLATED_LANGUAGE,
+          autoDisplay: false
+        }, 'google_translate_element');
+
+        resolve();
+      };
+
+      if (window.google?.translate?.TranslateElement) {
+        window.googleTranslateElementInit();
+        return;
+      }
+
+      const existingScript = document.querySelector('script[data-google-translate]');
+      if (existingScript) {
+        existingScript.addEventListener('load', () => resolve(), { once: true });
+        existingScript.addEventListener('error', () => reject(new Error('Google Translate script failed to load.')), { once: true });
+        return;
+      }
+
+      const script = document.createElement('script');
+      script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+      script.async = true;
+      script.dataset.googleTranslate = 'true';
+      script.onerror = () => reject(new Error('Google Translate script failed to load.'));
+      document.head.appendChild(script);
+    });
+
+    return translateLoader;
+  }
+
+  function waitForTranslatedLanguage(language) {
+    return new Promise((resolve, reject) => {
+      let attempts = 0;
+      const timer = window.setInterval(() => {
+        attempts += 1;
+        if (applyGoogleLanguage(language)) {
+          window.clearInterval(timer);
+          resolve();
+        }
+
+        if (attempts > 40) {
+          window.clearInterval(timer);
+          reject(new Error('Google Translate language selector was not ready.'));
+        }
+      }, 250);
+    });
+  }
+
+  async function changeLanguage(language) {
+    setLanguageButtonState(language, 'loading');
+    localStorage.setItem(LANGUAGE_STORAGE_KEY, language);
+    setDocumentLanguage(language);
+
+    if (language === DEFAULT_LANGUAGE) {
+      clearTranslateCookie();
+      setLanguageButtonState(language);
+      window.location.reload();
+      return;
+    }
+
+    try {
+      setTranslateCookie(language);
+      await loadGoogleTranslate();
+      await waitForTranslatedLanguage(language);
+      setLanguageButtonState(language);
+    } catch (error) {
+      console.warn(error);
+      translateLoader = null;
+      setLanguageButtonState(language, 'error');
+    }
+  }
+
+  languageButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const language = button.dataset.language;
+      if (!language || button.disabled) return;
+      if (language === document.documentElement.dataset.language && languageTools.dataset.state !== 'error') {
+        return;
+      }
+      changeLanguage(language);
+    });
+  });
+
+  setLanguageButtonState(savedLanguage);
+  setDocumentLanguage(savedLanguage);
+  if (savedLanguage === TRANSLATED_LANGUAGE) {
+    setTranslateCookie(TRANSLATED_LANGUAGE);
+    changeLanguage(TRANSLATED_LANGUAGE);
+  }
+
   // --- Scroll Progress Bar ---
   const scrollProgress = document.getElementById('scroll-progress');
   if (scrollProgress) {
