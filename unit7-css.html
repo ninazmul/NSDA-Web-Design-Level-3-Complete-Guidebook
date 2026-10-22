@@ -384,13 +384,13 @@
            NSDA EXAM PREPARATION: MCQS & QUESTION BANK
            ============================================ -->
       <h2 id="exam-prep"><span class="icon">🎯</span> NSDA Exam Preparation: Question Bank & MCQs</h2>
-      <p>High-yield exam questions covering CSS3 layouts, Grid/Flexbox, responsive design, and CSS frameworks for NSDA Level 3 certification.</p>
+      <p>High-yield exam questions covering CSS3 layouts, Grid/Flexbox, responsive design, and CSS frameworks for NSDA Level 3 certification. Total 37 practice items (25 MCQs + 12 Structured Q&As).</p>
 
       <h3>Part 1: Multiple Choice Questions (MCQs)</h3>
 
       <div class="mcq-card">
         <span class="exam-level-tag exam-level-basic">Basic</span>
-        <div class="mcq-title"><span class="mcq-num">1.</span> Why is <code>* { box-sizing: border-box; }</code> universally applied as the standard CSS reset in modern web design?</div>
+        <div class="mcq-title"><span class="mcq-num">1.</span> Why is '* { box-sizing: border-box; }' universally applied as the standard CSS reset in modern web design?</div>
         <div class="mcq-options-list">
           <div class="mcq-opt"><span class="mcq-opt-key">A</span> It converts all elements into inline spans</div>
           <div class="mcq-opt"><span class="mcq-opt-key">B</span> It includes padding and borders inside an element's total declared width and height, preventing layout breakage</div>
@@ -400,45 +400,415 @@
         <details class="exam-reveal">
           <summary>View Correct Answer & Explanation</summary>
           <div class="exam-reveal-body">
-            <strong>Correct Answer: B</strong> — Under default <code>content-box</code>, adding padding or border expands the element beyond its set width. <code>border-box</code> absorbs padding/border within the width.
+            <strong>Correct Answer: B</strong> — Under default content-box, adding padding or border expands the element beyond its set width. border-box absorbs padding and border within the declared width/height.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="mcq-title"><span class="mcq-num">2.</span> Which CSS property and value is the standard one-line solution to horizontally and vertically center a child element inside a flex container?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> margin: auto; on parent container</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> justify-content: center; align-items: center; on a display: flex; parent</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> text-align: center; vertical-align: middle;</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> float: center;</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — display: flex; combined with justify-content: center (main axis) and align-items: center (cross axis) centers any child element perfectly.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="mcq-title"><span class="mcq-num">3.</span> What is the difference between 'rem' and 'em' relative units in CSS typography?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> rem is relative to the root &lt;html&gt; font-size; em is relative to the font-size of its immediate parent element</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> rem is only for mobile phones; em is for desktop screens</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> rem is a fixed pixel unit; em is a percentage</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> They are identical in all circumstances</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: A</strong> — rem (root em) always scales relative to the root &lt;html&gt; font-size (typically 16px). em scales relative to its parent element's font-size, which can cause compound scaling issues when nested.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="mcq-title"><span class="mcq-num">4.</span> Which CSS position value keeps an element pinned to a specific coordinate relative to the browser viewport even when the user scrolls down the page?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> position: static;</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> position: relative;</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> position: fixed;</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> position: absolute;</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: C</strong> — position: fixed removes the element from normal document flow and anchors it to viewport coordinates (top/right/bottom/left), keeping it visible during page scrolling.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="mcq-title"><span class="mcq-num">5.</span> In the standard CSS Box Model, what is the correct order of layers from innermost to outermost?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> Margin -&gt; Border -&gt; Padding -&gt; Content</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> Content -&gt; Padding -&gt; Border -&gt; Margin</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> Padding -&gt; Content -&gt; Border -&gt; Margin</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> Content -&gt; Margin -&gt; Padding -&gt; Border</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — Innermost is the Content (text/media), surrounded by Padding (internal clearance), surrounded by Border, surrounded by Margin (external spacing).
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="mcq-title"><span class="mcq-num">6.</span> Which CSS property is used to create space between adjacent grid columns and rows without adding margins to child items?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> spacing</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> gap (or grid-gap)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> padding-between</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> margin-gutter</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — gap (formerly grid-gap) defines gutters between grid and flexbox items cleanly without requiring margin hacks on perimeter children.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="mcq-title"><span class="mcq-num">7.</span> What is the purpose of the CSS pseudo-element '::before' or '::after'?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> To check browser history before page load</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> To insert decorative cosmetic content or icons via CSS using the 'content' property without adding extra HTML tags</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> To run JavaScript before CSS loads</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> To style visited links</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — ::before and ::after generate pseudo-elements as the first or last child of the selected element, requiring content: '' to render decorative graphics or badges.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="mcq-title"><span class="mcq-num">8.</span> How do you select only an '&lt;a&gt;' element when a user hovers their mouse pointer over it?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> a::hover</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> a:hover</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> a.hover</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> a:focus</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — :hover is a CSS pseudo-class that targets elements during mouse pointer hover interactions.
           </div>
         </details>
       </div>
 
       <div class="mcq-card">
         <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
-        <div class="mcq-title"><span class="mcq-num">2.</span> Which CSS Grid declaration creates an auto-responsive multi-column card grid that wraps columns automatically without requiring explicit media query breakpoints?</div>
+        <div class="mcq-title"><span class="mcq-num">9.</span> Which CSS Grid declaration creates an auto-responsive multi-column card grid that wraps columns automatically without requiring explicit media query breakpoints?</div>
         <div class="mcq-options-list">
-          <div class="mcq-opt"><span class="mcq-opt-key">A</span> <code>grid-template-columns: repeat(3, 1fr);</code></div>
-          <div class="mcq-opt"><span class="mcq-opt-key">B</span> <code>grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));</code></div>
-          <div class="mcq-opt"><span class="mcq-opt-key">C</span> <code>grid-template-columns: 280px auto;</code></div>
-          <div class="mcq-opt"><span class="mcq-opt-key">D</span> <code>display: flex; flex-direction: row;</code></div>
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> grid-template-columns: repeat(3, 1fr);</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> grid-template-columns: 280px auto;</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> display: flex; flex-direction: row;</div>
         </div>
         <details class="exam-reveal">
           <summary>View Correct Answer & Explanation</summary>
           <div class="exam-reveal-body">
-            <strong>Correct Answer: B</strong> — <code>repeat(auto-fit, minmax(280px, 1fr))</code> dynamically fits as many 280px+ columns as possible on screen, expanding each proportionally with <code>1fr</code>.
+            <strong>Correct Answer: B</strong> — repeat(auto-fit, minmax(280px, 1fr)) dynamically fits as many 280px+ columns as possible on screen, expanding each proportionally with 1fr.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">10.</span> In a 'Mobile-First' responsive workflow, which media query syntax should be used to apply styles for tablets and desktop displays?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> @media (max-width: 768px)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> @media (min-width: 768px)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> @media (device-width: 768px)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> @media (orientation: landscape)</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — Mobile-First writes base CSS for phones without queries, then progressively enhances larger viewports using @media (min-width: ...).
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">11.</span> In Bootstrap 5's 12-column grid system, which class combination makes a column span full-width on mobile phones and 4 columns (1/3 width) on medium screens (&gt;= 768px)?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> col-12 col-md-4</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> col-6 col-md-6</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> col-mobile-12 col-desktop-4</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> col-sm-4 col-lg-12</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: A</strong> — col-12 sets a 12-column (100%) width on mobile by default, and col-md-4 switches to 4 columns (4/12 = 33.333%) at the 768px md breakpoint.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">12.</span> What is the CSS 'clamp()' function and what are its three arguments?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> clamp(color, opacity, blur)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> clamp(minimum, preferred, maximum)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> clamp(x, y, z)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> clamp(width, height, radius)</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — clamp(MIN, PREFERRED, MAX) restricts a value between an absolute floor and ceiling while allowing fluid scaling in between (e.g., font-size: clamp(1rem, 2.5vw, 2.5rem);).
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">13.</span> Which CSS selector targets an '&lt;input&gt;' element ONLY when it is directly preceded by a specific sibling label?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> label input (Descendant)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> label &gt; input (Child)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> label + input (Adjacent Sibling)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> label ~ input (General Sibling)</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: C</strong> — The adjacent sibling combinator (+) targets an element that immediately follows another specified element in HTML source order.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">14.</span> What happens when an element with 'position: absolute' is placed inside a parent container that has 'position: static'?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> It aligns to the top of its static parent</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> It searches up the DOM tree for the nearest ancestor with a non-static position; if none exists, it positions itself relative to the initial containing block (&lt;html&gt;)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> The browser throws a CSS syntax error</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> It converts to position: fixed automatically</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — An absolutely positioned element looks up the ancestor tree for the nearest positioned ancestor (relative, absolute, fixed, or sticky). If none is found, it anchors to the document viewport.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">15.</span> Which CSS property allows an element to toggle between relative and fixed positioning based on the user's scroll position (ideal for sticky navigation bars)?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> position: fixed;</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> position: sticky; (paired with a threshold like top: 0;)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> position: float;</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> position: anchor;</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — position: sticky behaves like position: relative until its scroll position reaches the designated threshold (e.g. top: 0), where it 'sticks' in place until its parent container ends.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">16.</span> What is the primary architectural concept behind utility-first CSS frameworks like Tailwind CSS?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> Writing heavy pre-packaged semantic component classes like .card and .btn in separate CSS files</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> Building bespoke user interfaces directly in HTML using atomic single-purpose utility classes (e.g. 'flex items-center justify-between p-4 bg-blue-600')</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> Replacing HTML completely with JSON</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> Compiling CSS into WebAssembly</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — Utility-first frameworks provide low-level atomic classes that compose custom designs directly in markup without writing separate CSS stylesheets for every component.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">17.</span> How do you declare and reference a global CSS Custom Property (Variable) in standard CSS?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> $primary-color: #2563eb; color: $primary-color;</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> :root { --primary-color: #2563eb; } and color: var(--primary-color);</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> @define primary #2563eb; and color: @primary;</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> var primary = #2563eb; and color: eval(primary);</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — CSS custom properties use the double-dash prefix (--name) declared typically in :root and accessed via the var(--name) function.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">18.</span> What is 'Margin Collapsing' in CSS and under what conditions does it occur?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> When margins become negative due to window resize</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> When vertical top and bottom margins of adjacent block-level elements combine into a single margin equal to the larger of the two</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> When margins exceed 100px and wrap into padding</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> When horizontal margins overlap in flexbox</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — Margin collapsing occurs when the vertical margins of two adjacent in-flow block elements touch. Instead of adding together (e.g. 20px + 30px = 50px), they collapse to the maximum value (30px).
           </div>
         </details>
       </div>
 
       <div class="mcq-card">
         <span class="exam-level-tag exam-level-advanced">Advanced</span>
-        <div class="mcq-title"><span class="mcq-num">3.</span> Between the two CSS rules below, which style will take precedence on a link with ID <code>#nav-link</code> and class <code>.active</code>?</div>
-        <div class="code-block">
-          <pre><code><span class="comment">/* Rule 1: */</span> header nav a.active { color: red; }
-<span class="comment">/* Rule 2: */</span> #nav-link { color: blue; }</code></pre>
-        </div>
+        <div class="mcq-title"><span class="mcq-num">19.</span> Between the two CSS rules below, which style will take precedence on an element with id='nav-link' and class='active'?</div>
         <div class="mcq-options-list">
-          <div class="mcq-opt"><span class="mcq-opt-key">A</span> Rule 1 (Red) because it contains more selectors</div>
-          <div class="mcq-opt"><span class="mcq-opt-key">B</span> Rule 2 (Blue) because an ID selector (0,1,0,0) outweighs classes and elements (0,0,1,3)</div>
-          <div class="mcq-opt"><span class="mcq-opt-key">C</span> Whichever rule appears later in the stylesheet</div>
-          <div class="mcq-opt"><span class="mcq-opt-key">D</span> Both colors combine into purple</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> Rule 1: 'header nav a.active { color: red; }' because it has more combined selectors</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> Rule 2: '#nav-link { color: blue; }' because an ID selector (0,1,0,0) outweighs classes and elements (0,0,1,3)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> Whichever rule is written later in the CSS file</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> They have equal specificity and cancel each other out</div>
         </div>
         <details class="exam-reveal">
           <summary>View Correct Answer & Explanation</summary>
           <div class="exam-reveal-body">
-            <strong>Correct Answer: B</strong> — Specificity math: Rule 1 has 1 class + 3 elements = <code>0,0,1,3</code> (score 13). Rule 2 has 1 ID = <code>0,1,0,0</code> (score 100). ID always defeats any quantity of class or element selectors.
+            <strong>Correct Answer: B</strong> — Specificity calculation: Rule 1 has 1 class + 3 elements = (0,0,1,3 / score 13). Rule 2 has 1 ID = (0,1,0,0 / score 100). An ID selector always defeats any quantity of class or element selectors.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="mcq-title"><span class="mcq-num">20.</span> Why should high-performance CSS animations favor animating 'transform' and 'opacity' over properties like 'width', 'height', 'top', or 'left'?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> transform and opacity are supported on older browsers</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> transform and opacity do not trigger expensive browser Layout or Paint recalculations; they are offloaded directly to the GPU compositor thread for smooth 60fps performance</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> Animating width requires JavaScript</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> CSS cannot animate margins</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — Properties like top, left, width, and height trigger CPU layout reflows and paint recalculations. transform and opacity run purely on the GPU compositor thread without reflow.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="mcq-title"><span class="mcq-num">21.</span> What is the difference between 'auto-fit' and 'auto-fill' in CSS Grid when there are fewer items than available column slots?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> auto-fit expands existing items to stretch and fill all available remaining row width; auto-fill maintains item column widths and reserves empty ghost tracks for future items</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> auto-fill is only for images; auto-fit is for text</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> auto-fit requires media queries; auto-fill does not</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> They are identical synonyms in CSS Grid specification</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: A</strong> — When extra room exists, auto-fit collapses empty tracks to 0px and stretches active items to occupy the full width. auto-fill creates empty column tracks preserving exact minmax widths.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="mcq-title"><span class="mcq-num">22.</span> How does the CSS ':focus-visible' pseudo-class improve user experience compared to the legacy ':focus' pseudo-class?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> It shows focus outlines only on high-DPI displays</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> It applies focus styling only when the user navigates via keyboard (Tab key) or assistive device, avoiding unsightly focus rings during mouse clicks while preserving accessibility</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> It hides passwords while typing</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> It enables camera focus on mobile phones</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — :focus-visible intelligently displays outline rings when user intent indicates non-pointer navigation (e.g. keyboard Tab), satisfying WCAG without annoying mouse users.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="mcq-title"><span class="mcq-num">23.</span> What is a CSS 'Stacking Context' and which CSS property is commonly used to create a new isolated stacking context on a parent element?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> display: block;</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> isolation: isolate; (or transform, opacity &lt; 1, or positioned with z-index)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> overflow: visible;</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> box-sizing: content-box;</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — A stacking context contains child z-indexes within an isolated 3D layer. Using 'isolation: isolate' creates a clean stacking context without side-effects like unwanted positioning or opacity.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="mcq-title"><span class="mcq-num">24.</span> What is the specificity weight of the modern CSS ':where()' pseudo-class compared to ':is()'?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> :where() has an ID specificity; :is() has element specificity</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> :where() always has 0 specificity (0,0,0,0); :is() takes on the specificity of its highest-specificity argument</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> :where() cannot be used in web browsers</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> Both have identical class-level specificity (0,0,1,0)</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — :where() has zero specificity (0,0,0,0), making it ideal for base resets and design systems that must be trivially easy to override downstream without !important.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="mcq-title"><span class="mcq-num">25.</span> What does the CSS media query '@media (prefers-reduced-motion: reduce)' enable web developers to do?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> Slow down video download speeds</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> Detect if the user has requested the operating system to minimize non-essential animations, allowing developers to disable or tone down motion sickness-inducing transitions</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> Compress CSS stylesheets</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> Turn off mouse cursor movement</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — prefers-reduced-motion detects accessibility system preferences for users with vestibular disorders or motion sensitivities, allowing developers to replace jarring spins/parallaxes with gentle fades.
           </div>
         </details>
       </div>
@@ -449,31 +819,98 @@
         <span class="exam-level-tag exam-level-basic">Basic</span>
         <div class="qa-question"><span class="qa-qnum">Q1:</span> Compare the difference between Flexbox and CSS Grid. When should a web designer choose one over the other?</div>
         <div class="qa-answer">
-          <p><strong>Flexbox (Flexible Box Layout):</strong> A <strong>one-dimensional</strong> layout system designed for distributing space along either a single row OR a single column. Best for: navigation bars, aligning buttons inside headers, pill badges, and centering single cards.</p>
-          <p><strong>CSS Grid:</strong> A <strong>two-dimensional</strong> layout system designed for controlling both columns AND rows simultaneously. Best for: complete page scaffoldings, photo galleries, dashboard widget layouts, and responsive card grids.</p>
+          <p><strong>Flexbox (Flexible Box Layout):</strong> A <strong>one-dimensional</strong> layout system designed for distributing space along either a single row OR a single column at a time. Content-driven. Best for: navigation bars, button groups, badge chips, card headers, and centering items.</p><p><strong>CSS Grid:</strong> A <strong>two-dimensional</strong> layout system designed for controlling both columns AND rows simultaneously. Layout-driven. Best for: complete page scaffolding, complex magazine layouts, dashboard widget grids, and responsive multi-column card galleries.</p>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="qa-question"><span class="qa-qnum">Q2:</span> Explain the CSS Box Model and calculate the total rendered width of a container with: width: 300px; padding: 20px; border: 5px solid; margin: 15px; under both content-box and border-box.</div>
+        <div class="qa-answer">
+          <p><strong>Box Model Components:</strong> Content -> Padding -> Border -> Margin.</p><p><strong>Calculation under <code>box-sizing: content-box</code> (Default):</strong></p><ul><li>Total Width = width + padding-left + padding-right + border-left + border-right</li><li>Total Width = 300 + 20 + 20 + 5 + 5 = <strong>350px</strong> (Margin adds 15+15=30px of exterior space).</li></ul><p><strong>Calculation under <code>box-sizing: border-box</code> (Modern Standard):</strong></p><ul><li>Total Width = declared width = <strong>300px</strong>. (Padding and borders are absorbed inside the 300px, leaving 300 - 40 - 10 = 250px for content).</li></ul>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="qa-question"><span class="qa-qnum">Q3:</span> What are the differences between 'display: none', 'visibility: hidden', and 'opacity: 0'?</div>
+        <div class="qa-answer">
+          <ul><li><strong><code>display: none;</code>:</strong> Completely removes the element from document layout flow. It takes up 0px space, cannot be clicked, and is invisible to screen readers.</li><li><strong><code>visibility: hidden;</code>:</strong> Hides the element visually, but <em>preserves its physical footprint/space</em> in the page layout. It cannot receive mouse events.</li><li><strong><code>opacity: 0;</code>:</strong> Makes the element 100% transparent. It still occupies space AND <em>remains fully interactive/clickable</em> unless disabled with <code>pointer-events: none;</code>. Can be smoothly animated with CSS transitions.</li></ul>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="qa-question"><span class="qa-qnum">Q4:</span> List the five standard CSS position property values and describe how each influences element layout.</div>
+        <div class="qa-answer">
+          <ul><li><strong><code>static</code>:</strong> Default browser flow. Top, right, bottom, left, and z-index properties have no effect.</li><li><strong><code>relative</code>:</strong> Positioned relative to its normal position in flow without affecting surrounding elements. Creates a positioning context for absolute children.</li><li><strong><code>absolute</code>:</strong> Pulled out of document flow and positioned relative to the nearest positioned ancestor (non-static).</li><li><strong><code>fixed</code>:</strong> Pulled out of document flow and anchored relative to the browser viewport window; remains stationary on scroll.</li><li><strong><code>sticky</code>:</strong> Hybrid behavior: flows normally until reaching a designated scroll offset (e.g. <code>top: 0</code>), then sticks to the viewport until its parent container ends.</li></ul>
         </div>
       </div>
 
       <div class="qa-card">
         <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
-        <div class="qa-question"><span class="qa-qnum">Q2:</span> What is "Mobile-First" Responsive Web Design, and how does it determine the choice between <code>min-width</code> and <code>max-width</code> media queries?</div>
+        <div class="qa-question"><span class="qa-qnum">Q5:</span> What is 'Mobile-First' Responsive Web Design, and how does it determine the choice between 'min-width' and 'max-width' media queries?</div>
         <div class="qa-answer">
-          <p><strong>Mobile-First Design:</strong> Writing default base CSS styles for mobile/handheld screens first (simple single-column layouts, touch targets), and progressively layering enhanced styles as the viewport widens.</p>
-          <p><strong>Media Query Implementation:</strong> Always use <code>@media (min-width: 768px)</code> rather than <code>max-width</code>. This ensures lower-powered mobile devices parse the leanest CSS rules without having to override heavy desktop styles.</p>
+          <p><strong>Mobile-First Design:</strong> Writing default base CSS styles for mobile/handheld screens first (simple single-column layouts, touch targets), and progressively layering enhanced styles as the viewport widens.</p><p><strong>Media Query Implementation:</strong> Always use <code>@media (min-width: 768px)</code> rather than <code>max-width</code>. This ensures lower-powered mobile devices parse the leanest CSS rules without having to override heavy desktop styles. Desktop styles progressively enhance layouts with multi-column grids and hover micro-interactions.</p>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="qa-question"><span class="qa-qnum">Q6:</span> How does Specificity Math work in CSS? Calculate and rank the specificity of four sample selectors.</div>
+        <div class="qa-answer">
+          <p>Specificity is calculated as a 4-tier tuple: <strong>(Inline, ID, Class/Pseudo-class/Attribute, Element/Pseudo-element)</strong>:</p><ol><li><code>#nav .link:hover</code> &rarr; 1 ID, 1 Class, 1 Pseudo-class = <strong>(0, 1, 2, 0)</strong> &rarr; Score 120.</li><li><code>#header nav ul li a</code> &rarr; 1 ID, 4 Elements = <strong>(0, 1, 0, 4)</strong> &rarr; Score 104.</li><li><code>header.site-header nav a.active</code> &rarr; 2 Classes, 3 Elements = <strong>(0, 0, 2, 3)</strong> &rarr; Score 23.</li><li><code>nav ul li a</code> &rarr; 4 Elements = <strong>(0, 0, 0, 4)</strong> &rarr; Score 4.</li></ol><p><em>Rank order:</em> Selector #1 wins because (0,1,2,0) beats (0,1,0,4). An ID always trumps any number of classes, and a class always trumps any number of elements.</p>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="qa-question"><span class="qa-qnum">Q7:</span> Explain how Bootstrap's 12-column grid works with responsive container, row, and column classes.</div>
+        <div class="qa-answer">
+          <p>Bootstrap uses a nested flexbox grid architecture:</p><ol><li><strong><code>.container</code> (or <code>.container-fluid</code>):</strong> Centers content horizontally with responsive padding and max-widths tied to device breakpoints.</li><li><strong><code>.row</code>:</strong> A flexbox wrapper with negative margins (e.g. -0.75rem) that neutralizes column gutters, keeping outer edges aligned with the container.</li><li><strong><code>.col-[breakpoint]-[spans]</code>:</strong> Columns that sit inside rows. Breakpoints include: <code>col-</code> (&lt; 576px), <code>col-sm-</code> (&ge; 576px), <code>col-md-</code> (&ge; 768px), <code>col-lg-</code> (&ge; 992px), <code>col-xl-</code> (&ge; 1200px).</li></ol><p><em>Example:</em> <code>&lt;div class="col-12 col-md-6 col-lg-4"&gt;</code> renders 1 column on mobile (12/12 = 100%), 2 columns on tablets (6/12 = 50%), and 3 columns on desktop (4/12 = 33.333%).</p>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="qa-question"><span class="qa-qnum">Q8:</span> How do you implement fluid responsive typography using the CSS 'clamp()' function?</div>
+        <div class="qa-answer">
+          <p>Traditional media query breakpoints cause jarring jumps in font sizes at arbitrary widths. <code>clamp()</code> smoothly interpolates font size:</p><pre><code>h1 {
+  /* clamp(MINIMUM, FLUID PREFERRED, MAXIMUM) */
+  font-size: clamp(2rem, 1.25rem + 3vw, 3.75rem);
+}</code></pre><p><strong>Explanation:</strong></p><ul><li>On small mobile phones (320px), the font size never shrinks below <strong>2rem (32px)</strong>.</li><li>On large desktop monitors (1920px+), the font size caps at <strong>3.75rem (60px)</strong>.</li><li>On viewports in between, <code>3vw</code> dynamically scales font size continuously with every single pixel change in window width, providing seamless fluid responsiveness without media queries.</li></ul>
         </div>
       </div>
 
       <div class="qa-card">
         <span class="exam-level-tag exam-level-advanced">Advanced</span>
-        <div class="qa-question"><span class="qa-qnum">Q3:</span> How do CSS Custom Properties (Variables) improve front-end maintainability and enable real-time dynamic dark/light theme switching?</div>
+        <div class="qa-question"><span class="qa-qnum">Q9:</span> How do CSS Custom Properties (Variables) improve front-end maintainability and enable real-time dynamic dark/light theme switching?</div>
         <div class="qa-answer">
-          <p>CSS variables (declared via <code>--name: value;</code> and referenced with <code>var(--name)</code>) are scoped to the DOM tree and dynamically inherit down the hierarchy.</p>
-          <p><strong>Theme Switching Pattern:</strong></p>
-          <ul>
-            <li>Define semantic color tokens under <code>:root</code> for the default dark theme (e.g. <code>--bg-primary: #0a0e1a; --text-primary: #f1f5f9;</code>).</li>
-            <li>Override those exact variable definitions under a <code>[data-theme="light"]</code> attribute selector (e.g. <code>--bg-primary: #ffffff; --text-primary: #0f172a;</code>).</li>
-            <li>Toggling <code>document.documentElement.setAttribute('data-theme', 'light')</code> with JavaScript instantly updates the entire website without rewriting component classes or triggering costly style recalculations.</li>
-          </ul>
+          <p>CSS variables (declared via <code>--name: value;</code> and referenced with <code>var(--name)</code>) are scoped to the DOM tree and dynamically inherit down the hierarchy.</p><p><strong>Theme Switching Pattern:</strong></p><ul><li>Define semantic design tokens under <code>:root</code> for the default dark theme (e.g. <code>--bg-primary: #0a0e1a; --text-primary: #f1f5f9;</code>).</li><li>Override those exact variable definitions under a <code>[data-theme="light"]</code> attribute selector (e.g. <code>--bg-primary: #ffffff; --text-primary: #0f172a;</code>).</li><li>Toggling <code>document.documentElement.setAttribute('data-theme', 'light')</code> with JavaScript instantly updates the entire website without rewriting component classes or triggering costly style recalculations.</li></ul>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="qa-question"><span class="qa-qnum">Q10:</span> What causes CSS animation jank, and how do you optimize animations to achieve locked 60 frames per second (fps)?</div>
+        <div class="qa-answer">
+          <p><strong>Causes of Animation Jank:</strong></p><p>Browsers render pages in 4 stages: <strong>JavaScript -> Style -> Layout (Reflow) -> Paint -> Composite</strong>. Animating geometric properties (like <code>margin</code>, <code>padding</code>, <code>top</code>, <code>left</code>, <code>width</code>, <code>height</code>) forces the browser to recalculate layout for the entire page, dropping frame rates from 60fps down to 15-20fps ('jank').</p><p><strong>Optimization Strategies:</strong></p><ul><li><strong>Animate Only Compositor Properties:</strong> Strictly animate <code>transform</code> (translate, scale, rotate) and <code>opacity</code>. These properties bypass Layout and Paint, rendering directly on the GPU compositor.</li><li><strong>Promote to Hardware Layer:</strong> Use <code>will-change: transform;</code> or <code>transform: translateZ(0);</code> to notify the GPU to create a dedicated composite layer ahead of time.</li><li><strong>Respect Accessibility:</strong> Always wrap high-motion animations inside <code>@media (prefers-reduced-motion: no-preference)</code>.</li></ul>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="qa-question"><span class="qa-qnum">Q11:</span> Explain CSS Stacking Contexts and how to debug tricky z-index layering bugs.</div>
+        <div class="qa-answer">
+          <p>A <strong>Stacking Context</strong> is a three-dimensional conceptualization of HTML elements along an imaginary z-axis relative to the user.</p><p><strong>How a New Stacking Context is Formed:</strong></p><ul><li>The root element (<code>&lt;html&gt;</code>).</li><li>An element with <code>position: relative/absolute/fixed/sticky</code> AND a <code>z-index</code> other than <code>auto</code>.</li><li>An element with <code>opacity</code> less than <code>1.0</code>.</li><li>An element with <code>transform</code>, <code>filter</code>, or <code>clip-path</code>.</li><li>Explicitly declared via <code>isolation: isolate;</code>.</li></ul><p><strong>Debugging z-index Bugs:</strong> A child element with <code>z-index: 999999</code> can NEVER appear above an outside element with <code>z-index: 1</code> if the child's parent belongs to a stacking context that is below the outside element. Fix this by lifting the parent's stacking context or applying <code>isolation: isolate</code> to prevent bleed-through.</p>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="qa-question"><span class="qa-qnum">Q12:</span> Compare the architectural pros and cons of Vanilla CSS vs Bootstrap vs Tailwind CSS for production enterprise websites.</div>
+        <div class="qa-answer">
+          <p><strong>1. Vanilla CSS with Modern Architecture (CSS Modules / Custom Properties):</strong></p><ul><li><em>Pros:</em> Zero build step or runtime dependencies; 100% bespoke control over styling; minimal file size.</li><li><em>Cons:</em> Requires disciplined naming conventions (BEM) to avoid specificity wars; slower initial prototyping speed.</li></ul><p><strong>2. Bootstrap 5:</strong></p><ul><li><em>Pros:</em> Instant out-of-the-box pre-styled accessible components (Modals, Navbars, Carousels, Forms); highly standardized across large teams; 12-column grid.</li><li><em>Cons:</em> Can produce generic 'Bootstrap look' unless heavily customized; overriding Sass variables requires build tooling.</li></ul><p><strong>3. Tailwind CSS:</strong></p><ul><li><em>Pros:</em> Maximum development velocity without leaving HTML; zero unused CSS in production via JIT purging; fully consistent design tokens (spacing, colors, typography).</li><li><em>Cons:</em> HTML class attribute clutter; steep initial learning curve for utility class names; requires Node.js build pipeline.</li></ul>
         </div>
       </div>
 

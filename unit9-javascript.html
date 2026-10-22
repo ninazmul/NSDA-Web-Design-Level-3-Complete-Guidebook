@@ -612,49 +612,321 @@ addBtn.addEventListener(<span class="string">"click"</span>, () => {
            NSDA EXAM PREPARATION: MCQS & QUESTION BANK
            ============================================ -->
       <h2 id="exam-prep"><span class="icon">🎯</span> NSDA Exam Preparation: Question Bank & MCQs</h2>
-      <p>Master these core JavaScript written examination and oral demonstration questions (Basic to Advanced) for NSDA Level 3 certification.</p>
+      <p>Master these core JavaScript written examination and oral demonstration questions (Basic to Advanced) for NSDA Level 3 certification. Total 37 practice items (25 MCQs + 12 Structured Q&As).</p>
 
       <h3>Part 1: Multiple Choice Questions (MCQs)</h3>
 
       <div class="mcq-card">
         <span class="exam-level-tag exam-level-basic">Basic</span>
-        <div class="mcq-title"><span class="mcq-num">1.</span> In modern JavaScript (ES6+), what is the difference between declaring a variable with <code>const</code> versus <code>let</code>?</div>
+        <div class="mcq-title"><span class="mcq-num">1.</span> In modern JavaScript (ES6+), what is the difference between declaring a variable with 'const' versus 'let'?</div>
         <div class="mcq-options-list">
-          <div class="mcq-opt"><span class="mcq-opt-key">A</span> <code>const</code> variables have global scope, while <code>let</code> variables have function scope</div>
-          <div class="mcq-opt"><span class="mcq-opt-key">B</span> <code>const</code> creates a block-scoped variable that cannot be reassigned, while <code>let</code> can be reassigned</div>
-          <div class="mcq-opt"><span class="mcq-opt-key">C</span> <code>const</code> can only store numbers, while <code>let</code> can store strings</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> const variables have global scope, while let variables have function scope</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> const creates a block-scoped variable that cannot be reassigned, while let can be reassigned</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> const can only store numbers, while let can store strings</div>
           <div class="mcq-opt"><span class="mcq-opt-key">D</span> There is no difference</div>
         </div>
         <details class="exam-reveal">
           <summary>View Correct Answer & Explanation</summary>
           <div class="exam-reveal-body">
-            <strong>Correct Answer: B</strong> — Both <code>let</code> and <code>const</code> are block-scoped, but variables declared with <code>const</code> cannot be reassigned (though properties of <code>const</code> objects/arrays can be mutated).
+            <strong>Correct Answer: B</strong> — Both let and const are block-scoped, but variables declared with const cannot be reassigned (though properties of const objects/arrays can be mutated).
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="mcq-title"><span class="mcq-num">2.</span> Which operator performs strict equality comparison in JavaScript, verifying that both the value and the data type match without type coercion?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> =</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> ==</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> ===</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> !=</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: C</strong> — === compares both value and type without coercion. For example, 5 === '5' evaluates to false, whereas 5 == '5' evaluates to true.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="mcq-title"><span class="mcq-num">3.</span> Which DOM selection method returns the first element matching a specified CSS selector string (such as '.card-title' or '#submit-btn')?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> document.selectFirst()</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> document.querySelector()</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> document.getElementsByClassName()</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> document.search()</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — document.querySelector() accepts any standard CSS selector string and returns the first matching element in the DOM (or null if none found).
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="mcq-title"><span class="mcq-num">4.</span> How do you add a CSS class named 'active' to an HTML element stored in variable 'myElement'?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> myElement.className('active')</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> myElement.classList.add('active')</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> myElement.style.class = 'active'</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> myElement.addClass('active')</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — element.classList.add('active') cleanly appends the class name without overwriting existing classes on that element.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="mcq-title"><span class="mcq-num">5.</span> Which JavaScript method is used to attach an event handler function to a DOM element without overriding existing event listeners?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> element.attach()</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> element.addEventListener('click', handler)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> element.onclick = handler</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> element.listen('click')</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — addEventListener() registers an event listener callback cleanly, allowing multiple independent handlers to listen to the same event on a single element.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="mcq-title"><span class="mcq-num">6.</span> What is the output of the expression 'typeof [1, 2, 3]' in JavaScript?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> "array"</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> "object"</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> "list"</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> "collection"</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — In JavaScript, arrays are technically special objects. typeof [] returns 'object'. To specifically check for an array, use Array.isArray([1, 2, 3]).
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="mcq-title"><span class="mcq-num">7.</span> Which built-in browser storage mechanism stores data permanently on the client device until explicitly deleted by the user or code, persisting across browser restarts?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> sessionStorage</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> localStorage</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> RAM Cache</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> Temporary Session Cookie</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — localStorage persists key-value string data with no expiration time, remaining intact even after the browser window or computer is closed.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="mcq-title"><span class="mcq-num">8.</span> How do you safely convert a JavaScript object into a JSON string formatted for transmission over an API?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> JSON.parse(obj)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> JSON.stringify(obj)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> obj.toJSONString()</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> String.fromJSON(obj)</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — JSON.stringify(obj) serializes a JavaScript object or array into a standard JSON string. JSON.parse(str) converts a JSON string back into an object.
           </div>
         </details>
       </div>
 
       <div class="mcq-card">
         <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
-        <div class="mcq-title"><span class="mcq-num">2.</span> What is the output of the following JavaScript code expression: <code>console.log(typeof ("5" + 2));</code> and <code>console.log("5" - 2);</code>?</div>
+        <div class="mcq-title"><span class="mcq-num">9.</span> What is the output of the following JavaScript code expression: 'typeof ("5" + 2)' and '"5" - 2'?</div>
         <div class="mcq-options-list">
-          <div class="mcq-opt"><span class="mcq-opt-key">A</span> <code>"string"</code> and <code>3</code></div>
-          <div class="mcq-opt"><span class="mcq-opt-key">B</span> <code>"number"</code> and <code>"52"</code></div>
-          <div class="mcq-opt"><span class="mcq-opt-key">C</span> <code>"string"</code> and <code>NaN</code></div>
-          <div class="mcq-opt"><span class="mcq-opt-key">D</span> <code>"number"</code> and <code>3</code></div>
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> "string" and 3</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> "number" and "52"</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> "string" and NaN</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> "number" and 3</div>
         </div>
         <details class="exam-reveal">
           <summary>View Correct Answer & Explanation</summary>
           <div class="exam-reveal-body">
-            <strong>Correct Answer: A</strong> — The <code>+</code> operator triggers string concatenation (<code>"52"</code>, type: string). The <code>-</code> subtraction operator forces numeric coercion (<code>5 - 2 = 3</code>, type: number).
+            <strong>Correct Answer: A</strong> — The + operator with a string triggers string concatenation ('52', type: string). The - subtraction operator forces numeric coercion (5 - 2 = 3, type: number).
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">10.</span> Which Array method executes a callback function on each item and returns a brand new array containing only elements that pass a boolean condition?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> forEach()</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> filter()</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> map()</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> find()</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — filter() evaluates each element with a predicate function, returning a new array containing all elements for which the callback returned true.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">11.</span> What is the primary difference between 'map()' and 'forEach()' array methods?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> forEach() returns a new array; map() returns undefined</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> map() returns a new array containing the transformed values; forEach() returns undefined and is used only for side-effects</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> map() mutates the original array; forEach() does not</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> forEach() is asynchronous; map() is synchronous</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — map() transforms each element and returns a new array of the same length without mutating original data. forEach() executes side-effects and returns undefined.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">12.</span> In an HTML form submit event handler, which method call prevents the browser from reloading the entire page or submitting default HTTP requests?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> event.stopPropagation()</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> event.preventDefault()</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> event.stopImmediatePropagation()</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> return null</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — event.preventDefault() cancels the default browser action belonging to that event, preventing form reload so AJAX/Fetch JavaScript can handle submission.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">13.</span> Which ES6 syntax allows unpacking properties from objects or elements from arrays into distinct local variables with one line of code?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> De-referencing</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> Destructuring Assignment (e.g. const { title, price } = product;)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> Spread Expansion</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> Object Reflection</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — Destructuring syntax (const { a, b } = obj; or const [x, y] = arr;) unpacks values directly into distinct variables cleanly.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">14.</span> What does the Nullish Coalescing operator ('??') evaluate to in the expression: 'const result = userInput ?? "Default Value";'?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> It returns 'Default Value' if userInput is any falsy value (0, '', false, null, undefined)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> It returns 'Default Value' ONLY if userInput is strictly null or undefined</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> It always returns 'Default Value'</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> It throws a syntax error</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — ?? checks specifically for null or undefined. Unlike || (OR), ?? preserves valid falsy values like 0, false, or '' (empty string).
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">15.</span> How do arrow functions handle the 'this' keyword differently from traditional 'function' declarations?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> Arrow functions bind 'this' to the global window object always</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> Arrow functions do not have their own 'this'; they lexically inherit 'this' from their enclosing parent scope</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> Arrow functions cannot access outer variables</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> Traditional functions cannot use 'this'</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — Arrow functions lack their own this context. They lexically inherit this from the surrounding scope, eliminating the need for that = this or .bind(this).
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">16.</span> Which JavaScript method is used to schedule a single function execution after a specified delay in milliseconds?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> setInterval()</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> setTimeout(callback, delayMs)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> requestAnimationFrame()</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> sleep()</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — setTimeout() executes a timer that invokes the callback function once after delayMs milliseconds elapse.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">17.</span> Which array method checks if at least ONE item in an array satisfies a testing condition, returning true immediately upon first match?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> every()</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> some()</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> includes()</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> indexOf()</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — some() returns true if any element passes the predicate test; every() requires all elements to pass.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">18.</span> What happens when you declare a variable with 'var' inside an 'if' block?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> It is scoped exclusively to that 'if' block</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> It is function-scoped (or globally scoped if outside a function), leaking outside the 'if' block</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> It causes a syntax error</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> It becomes an immutable constant</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — var is function-scoped, not block-scoped. Variables declared with var inside if/for blocks bleed out into the surrounding function scope, risking accidental variable collisions.
           </div>
         </details>
       </div>
 
       <div class="mcq-card">
         <span class="exam-level-tag exam-level-advanced">Advanced</span>
-        <div class="mcq-title"><span class="mcq-num">3.</span> What programming technique allows a single event listener placed on a common parent element (e.g. <code>&lt;ul&gt;</code>) to handle click events triggered by any current or dynamically added child elements (e.g. <code>&lt;li&gt;</code>)?</div>
+        <div class="mcq-title"><span class="mcq-num">19.</span> What programming technique allows a single event listener placed on a common parent element (e.g. &lt;ul&gt;) to handle click events triggered by any current or dynamically added child elements (e.g. &lt;li&gt;)?</div>
         <div class="mcq-options-list">
-          <div class="mcq-opt"><span class="mcq-opt-key">A</span> Event Bubbling & Delegation via <code>event.target</code></div>
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> Event Bubbling &amp; Delegation via event.target</div>
           <div class="mcq-opt"><span class="mcq-opt-key">B</span> Synchronous Polling</div>
           <div class="mcq-opt"><span class="mcq-opt-key">C</span> DOM Mutation Observer</div>
           <div class="mcq-opt"><span class="mcq-opt-key">D</span> Event Hoisting</div>
@@ -662,7 +934,109 @@ addBtn.addEventListener(<span class="string">"click"</span>, () => {
         <details class="exam-reveal">
           <summary>View Correct Answer & Explanation</summary>
           <div class="exam-reveal-body">
-            <strong>Correct Answer: A</strong> — <strong>Event Delegation</strong> leverages the event bubbling phase, listening on the parent and identifying the clicked item using <code>event.target</code>. This saves memory and works automatically for dynamically inserted nodes.
+            <strong>Correct Answer: A</strong> — Event Delegation leverages the event bubbling phase, listening on the parent and identifying the clicked item using event.target. This saves memory and works automatically for dynamically inserted nodes.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="mcq-title"><span class="mcq-num">20.</span> What is a JavaScript Closure?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> A statement that terminates a running program</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> A function bundled together with references to its surrounding lexical environment, allowing the inner function to access outer variables even after the outer function has completed execution</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> A syntax error that occurs when closing brackets are missing</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> A method that empties an array</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — A closure gives an inner function persistent access to an outer function's scope. Closures enable private variables, data encapsulation, and factory functions.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="mcq-title"><span class="mcq-num">21.</span> When fetching data using the modern 'fetch()' API, why does a network response with HTTP 404 or 500 error NOT trigger the '.catch()' block?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> fetch() automatically converts HTTP 404 to 200</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> The Promise returned by fetch() only rejects on real network failures (DNS lookup failure, offline connection). It resolves successfully for HTTP 404/500, requiring developers to inspect 'response.ok'</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> fetch() is synchronous</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> catch() only works with XMLHttpRequests</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — fetch() promises resolve successfully as long as a response is received from the server. Developers must check if (!response.ok) { throw new Error(...) } to capture HTTP error codes.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="mcq-title"><span class="mcq-num">22.</span> What is the Temporal Dead Zone (TDZ) in JavaScript?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> The time required for an async function to resolve</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> The region of code from the start of a block until the line where a 'let' or 'const' variable is declared, accessing the variable within which throws a ReferenceError</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> The delay between setTimeout calls</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> The timeout period of an API request</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — let and const variables are hoisted but remain uninitialized in the TDZ until execution reaches their declaration line. Referencing them before that line throws ReferenceError.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="mcq-title"><span class="mcq-num">23.</span> What is the primary difference between 'Debounce' and 'Throttle' utility patterns when handling high-frequency events like window resize or mouse scroll?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> Debounce postpones execution until a specified quiet period with no new events occurs; Throttle guarantees execution at regulated fixed time intervals at most once per timeframe</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> Throttle is for strings; Debounce is for numbers</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> Debounce increases event frequency; Throttle stops events completely</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> They are identical algorithms</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: A</strong> — Debounce waits for user activity to pause (e.g. search autocomplete input after 300ms pause). Throttle paces execution at fixed periodic intervals (e.g. scroll updates once every 100ms).
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="mcq-title"><span class="mcq-num">24.</span> How does 'Array.prototype.reduce()' calculate an accumulated total across an array of objects: '[{price: 10}, {price: 25}, {price: 5}]'?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> items.reduce((total, item) =&gt; total + item.price, 0)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> items.reduce(total += item.price)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> items.reduce((total) =&gt; total.price)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> items.sum('price')</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: A</strong> — reduce() takes an accumulator callback and initial value (0). It iterates through items, adding item.price to total sequentially.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="mcq-title"><span class="mcq-num">25.</span> What is the difference between 'event.target' and 'event.currentTarget' inside an event listener callback?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> event.target is the specific element that actually triggered the event (the clicked leaf node); event.currentTarget is the element to which the event handler is currently attached</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> event.target is only available in Chrome</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> event.currentTarget is always null</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> They are always identical in every situation</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: A</strong> — target is the exact source node where the user clicked. currentTarget is the container element currently processing the event handler in the bubbling path.
           </div>
         </details>
       </div>
@@ -671,36 +1045,104 @@ addBtn.addEventListener(<span class="string">"click"</span>, () => {
 
       <div class="qa-card">
         <span class="exam-level-tag exam-level-basic">Basic</span>
-        <div class="qa-question"><span class="qa-qnum">Q1:</span> Explain the difference between strict equality (<code>===</code>) and loose equality (<code>==</code>) in JavaScript with examples.</div>
+        <div class="qa-question"><span class="qa-qnum">Q1:</span> Explain the difference between strict equality (===) and loose equality (==) in JavaScript with examples.</div>
         <div class="qa-answer">
-          <p><strong>Loose Equality (<code>==</code>):</strong> Compares two values for equality <em>after</em> performing implicit type coercion if the data types differ.</p>
-          <p><em>Example:</em> <code>5 == "5"</code> evaluates to <strong>true</strong> because the string <code>"5"</code> is coerced to number <code>5</code>.</p>
-          <p><strong>Strict Equality (<code>===</code>):</strong> Compares both the <strong>value</strong> AND the <strong>data type</strong> without type conversion. If types differ, it immediately returns false.</p>
-          <p><em>Example:</em> <code>5 === "5"</code> evaluates to <strong>false</strong> (Number vs String). Strict equality is the required standard in professional development to avoid insidious bugs.</p>
+          <p><strong>Loose Equality (<code>==</code>):</strong> Compares two values for equality <em>after</em> performing implicit type coercion if the data types differ.</p><p><em>Example:</em> <code>5 == "5"</code> evaluates to <strong>true</strong> because the string <code>"5"</code> is coerced to number <code>5</code>.</p><p><strong>Strict Equality (<code>===</code>):</strong> Compares both the <strong>value</strong> AND the <strong>data type</strong> without type conversion. If types differ, it immediately returns false.</p><p><em>Example:</em> <code>5 === "5"</code> evaluates to <strong>false</strong> (Number vs String). Strict equality is the required standard in professional development to avoid insidious bugs.</p>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="qa-question"><span class="qa-qnum">Q2:</span> Compare the scope, reassignment, and hoisting characteristics of 'var', 'let', and 'const'.</div>
+        <div class="qa-answer">
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+<thead><tr style="background:rgba(255,255,255,0.05); text-align:left;"><th style="padding:6px; border:1px solid rgba(255,255,255,0.1);">Keyword</th><th style="padding:6px; border:1px solid rgba(255,255,255,0.1);">Scope</th><th style="padding:6px; border:1px solid rgba(255,255,255,0.1);">Reassignable</th><th style="padding:6px; border:1px solid rgba(255,255,255,0.1);">Hoisting Behavior</th></tr></thead>
+<tbody>
+<tr><td style="padding:6px; border:1px solid rgba(255,255,255,0.1);"><code>var</code></td><td style="padding:6px; border:1px solid rgba(255,255,255,0.1);">Function scope</td><td style="padding:6px; border:1px solid rgba(255,255,255,0.1);">Yes</td><td style="padding:6px; border:1px solid rgba(255,255,255,0.1);">Hoisted, initialized as <code>undefined</code></td></tr>
+<tr><td style="padding:6px; border:1px solid rgba(255,255,255,0.1);"><code>let</code></td><td style="padding:6px; border:1px solid rgba(255,255,255,0.1);">Block scope <code>{}</code></td><td style="padding:6px; border:1px solid rgba(255,255,255,0.1);">Yes</td><td style="padding:6px; border:1px solid rgba(255,255,255,0.1);">Hoisted into TDZ (throws ReferenceError)</td></tr>
+<tr><td style="padding:6px; border:1px solid rgba(255,255,255,0.1);"><code>const</code></td><td style="padding:6px; border:1px solid rgba(255,255,255,0.1);">Block scope <code>{}</code></td><td style="padding:6px; border:1px solid rgba(255,255,255,0.1);">No (Immutable reference)</td><td style="padding:6px; border:1px solid rgba(255,255,255,0.1);">Hoisted into TDZ (throws ReferenceError)</td></tr>
+</tbody>
+</table>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="qa-question"><span class="qa-qnum">Q3:</span> What are the eight fundamental data types in modern JavaScript?</div>
+        <div class="qa-answer">
+          <p>JavaScript contains <strong>7 Primitive data types</strong> and <strong>1 Reference data type</strong>:</p><ul><li><strong>1. String:</strong> Textual characters (e.g. <code>"hello"</code>).</li><li><strong>2. Number:</strong> Integers and floating-point values (e.g. <code>42</code>, <code>3.14</code>).</li><li><strong>3. BigInt:</strong> Arbitrary-precision integers exceeding safe integer limit (e.g. <code>9007199254740991n</code>).</li><li><strong>4. Boolean:</strong> Logical entity: <code>true</code> or <code>false</code>.</li><li><strong>5. Undefined:</strong> Variable declared but not assigned a value.</li><li><strong>6. Null:</strong> Intentional intentional absence of any object value.</li><li><strong>7. Symbol:</strong> Unique, immutable identifier token.</li><li><strong>8. Object (Reference Type):</strong> Collections of key-value pairs (includes plain Objects, Arrays, and Functions).</li></ul>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="qa-question"><span class="qa-qnum">Q4:</span> What is the difference between 'null' and 'undefined' in JavaScript?</div>
+        <div class="qa-answer">
+          <p><strong><code>undefined</code>:</strong> The default value automatically assigned by JavaScript when a variable is declared but has not yet been initialized with a value, or when a function does not return an explicit value.</p><p><strong><code>null</code>:</strong> An intentional assignment representing the deliberate absence of an object or value. A developer writes <code>let currentUser = null;</code> to explicitly indicate 'nobody is logged in'.</p><p><em>Comparison:</em> <code>null == undefined</code> evaluates to <strong>true</strong>, but <code>null === undefined</code> evaluates to <strong>false</strong>.</p>
         </div>
       </div>
 
       <div class="qa-card">
         <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
-        <div class="qa-question"><span class="qa-qnum">Q2:</span> Describe the differences between the array methods <code>map()</code>, <code>filter()</code>, and <code>forEach()</code>.</div>
+        <div class="qa-question"><span class="qa-qnum">Q5:</span> Describe the differences between the array methods 'map()', 'filter()', and 'forEach()'.</div>
         <div class="qa-answer">
-          <ul>
-            <li><strong><code>forEach(callback)</code>:</strong> Executes a provided function once for each array element. It returns <code>undefined</code> and is strictly used for side effects (e.g. logging or appending DOM nodes).</li>
-            <li><strong><code>map(callback)</code>:</strong> Transforms each item and returns a <strong>new array of the exact same length</strong> containing the transformed values. Does not mutate the original array.</li>
-            <li><strong><code>filter(callback)</code>:</strong> Tests each item with a boolean condition and returns a <strong>new array containing only elements that evaluate to true</strong>.</li>
-          </ul>
+          <ul><li><strong><code>forEach(callback)</code>:</strong> Executes a provided function once for each array element. It returns <code>undefined</code> and is strictly used for side effects (e.g. logging or appending DOM nodes).</li><li><strong><code>map(callback)</code>:</strong> Transforms each item and returns a <strong>new array of the exact same length</strong> containing the transformed values. Does not mutate the original array.</li><li><strong><code>filter(callback)</code>:</strong> Tests each item with a boolean condition and returns a <strong>new array containing only elements that evaluate to true</strong>.</li></ul>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="qa-question"><span class="qa-qnum">Q6:</span> Explain Event Bubbling, Event Capturing, and how to implement the Event Delegation pattern.</div>
+        <div class="qa-answer">
+          <p><strong>Event Phases:</strong></p><ol><li><strong>Capturing Phase:</strong> Event travels down from <code>window</code> &rarr; <code>document</code> &rarr; parent nodes &rarr; target node.</li><li><strong>Target Phase:</strong> Event triggers on the actual clicked node.</li><li><strong>Bubbling Phase (Default):</strong> Event bubbles up from target node &rarr; parent &rarr; <code>document</code>.</li></ol><p><strong>Event Delegation Pattern:</strong> Instead of attaching 100 event listeners to 100 individual list items (<code>&lt;li&gt;</code>), attach ONE listener to their common parent (<code>&lt;ul&gt;</code>). In the handler, check <code>e.target.closest('li')</code> to identify the clicked child. This conserves browser memory and automatically supports dynamically added items without reattaching listeners.</p>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="qa-question"><span class="qa-qnum">Q7:</span> How do you fetch JSON data from a RESTful API using 'async/await' and handle HTTP errors properly?</div>
+        <div class="qa-answer">
+          <p>Standard production pattern for async fetch with error checking:</p><pre><code>async function fetchUserData(userId) {
+  try {
+    const response = await fetch(`https://api.example.com/users/${userId}`);
+    
+    // Mandatory: check response.ok (HTTP 200-299)
+    if (!response.ok) {
+      throw new Error(`HTTP Error: ${response.status} ${response.statusText}`);
+    }
+    
+    const data = await response.json();
+    console.log("User data loaded:", data);
+    return data;
+  } catch (error) {
+    console.error("Network or API failure:", error.message);
+    // Render user-friendly error UI
+  }
+}</code></pre>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="qa-question"><span class="qa-qnum">Q8:</span> Compare localStorage, sessionStorage, and Cookies in terms of capacity, lifespan, and server accessibility.</div>
+        <div class="qa-answer">
+          <table style="width:100%; border-collapse:collapse; margin-top:0.5rem;">
+<thead><tr style="background:rgba(255,255,255,0.05); text-align:left;"><th style="padding:6px; border:1px solid rgba(255,255,255,0.1);">Feature</th><th style="padding:6px; border:1px solid rgba(255,255,255,0.1);">localStorage</th><th style="padding:6px; border:1px solid rgba(255,255,255,0.1);">sessionStorage</th><th style="padding:6px; border:1px solid rgba(255,255,255,0.1);">Cookies</th></tr></thead>
+<tbody>
+<tr><td style="padding:6px; border:1px solid rgba(255,255,255,0.1);">Capacity</td><td style="padding:6px; border:1px solid rgba(255,255,255,0.1);">~5 MB - 10 MB</td><td style="padding:6px; border:1px solid rgba(255,255,255,0.1);">~5 MB</td><td style="padding:6px; border:1px solid rgba(255,255,255,0.1);">~4 KB</td></tr>
+<tr><td style="padding:6px; border:1px solid rgba(255,255,255,0.1);">Lifespan</td><td style="padding:6px; border:1px solid rgba(255,255,255,0.1);">Permanent (until cleared)</td><td style="padding:6px; border:1px solid rgba(255,255,255,0.1);">Tab session only</td><td style="padding:6px; border:1px solid rgba(255,255,255,0.1);">Set via Expires / Max-Age</td></tr>
+<tr><td style="padding:6px; border:1px solid rgba(255,255,255,0.1);">Sent to Server?</td><td style="padding:6px; border:1px solid rgba(255,255,255,0.1);">No (Client-side only)</td><td style="padding:6px; border:1px solid rgba(255,255,255,0.1);">No (Client-side only)</td><td style="padding:6px; border:1px solid rgba(255,255,255,0.1);">Yes (With every HTTP header)</td></tr>
+</tbody>
+</table>
         </div>
       </div>
 
       <div class="qa-card">
         <span class="exam-level-tag exam-level-advanced">Advanced</span>
-        <div class="qa-question"><span class="qa-qnum">Q3:</span> What is a JavaScript Closure? Provide a practical code example where closures are utilized in front-end development.</div>
+        <div class="qa-question"><span class="qa-qnum">Q9:</span> What is a JavaScript Closure? Provide a practical code example where closures are utilized in front-end development.</div>
         <div class="qa-answer">
-          <p><strong>Definition:</strong> A closure is a function bundled together with references to its surrounding lexical state. In JavaScript, an inner function maintains access to variables declared in its outer enclosing function even after the outer function has finished executing.</p>
-          <p><strong>Practical Application (Counter / Private State):</strong></p>
-          <div class="code-block">
-            <pre><code>function createCartManager() {
-  let itemCount = 0; <span class="comment">// Private variable protected from global scope</span>
+          <p><strong>Definition:</strong> A closure is a function bundled together with references to its surrounding lexical state. In JavaScript, an inner function maintains access to variables declared in its outer enclosing function even after the outer function has finished executing.</p><p><strong>Practical Application (Counter / Private State):</strong></p><pre><code>function createCartManager() {
+  let itemCount = 0; // Private variable protected from global scope
   return {
     addItem: () => { itemCount++; return itemCount; },
     getCount: () => itemCount
@@ -708,10 +1150,47 @@ addBtn.addEventListener(<span class="string">"click"</span>, () => {
 }
 
 const myCart = createCartManager();
-console.log(myCart.addItem()); <span class="comment">// 1</span>
-console.log(myCart.addItem()); <span class="comment">// 2</span>
-console.log(myCart.itemCount); <span class="comment">// undefined (safely encapsulated)</span></code></pre>
-          </div>
+console.log(myCart.addItem()); // 1
+console.log(myCart.addItem()); // 2
+console.log(myCart.itemCount); // undefined (safely encapsulated)</code></pre>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="qa-question"><span class="qa-qnum">Q10:</span> Implement a custom Debounce utility function and explain its role in preventing performance degradation during search input.</div>
+        <div class="qa-answer">
+          <p><strong>Debounce Implementation:</strong></p><pre><code>function debounce(callback, delayMs = 300) {
+  let timerId;
+  return function (...args) {
+    clearTimeout(timerId);
+    timerId = setTimeout(() => {
+      callback.apply(this, args);
+    }, delayMs);
+  };
+}
+
+// Usage on a search input:
+const searchInput = document.querySelector('#search');
+searchInput.addEventListener('input', debounce((e) => {
+  console.log('Sending search query to API for:', e.target.value);
+}, 400));</code></pre><p><strong>Why Essential:</strong> Without debouncing, typing 'javascript' triggers 10 rapid API requests on every single keystroke. Debouncing delays execution until the user pauses typing for 400ms, collapsing 10 expensive network requests into a single request.</p>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="qa-question"><span class="qa-qnum">Q11:</span> Explain the JavaScript Event Loop, Call Stack, Web APIs, and Microtask vs Macrotask Queues.</div>
+        <div class="qa-answer">
+          <p>JavaScript is single-threaded, executing one operation at a time on its <strong>Call Stack</strong>.</p><ul><li><strong>Call Stack:</strong> Executes synchronous code frames in LIFO (Last In, First Out) order.</li><li><strong>Web APIs:</strong> Browser background threads that handle asynchronous timers (<code>setTimeout</code>), network requests (<code>fetch</code>), and DOM events.</li><li><strong>Microtask Queue (High Priority):</strong> Houses Promise callbacks (<code>.then</code>, <code>catch</code>, <code>await</code> resumption) and <code>MutationObserver</code>. The Event Loop drains the ENTIRE microtask queue before rendering or touching macrotasks.</li><li><strong>Macrotask Queue (Task Queue):</strong> Houses <code>setTimeout</code>, <code>setInterval</code>, and UI events. Processed one task at a time after the microtask queue is empty.</li></ul>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="qa-question"><span class="qa-qnum">Q12:</span> How do you identify and prevent memory leaks in single-page JavaScript applications?</div>
+        <div class="qa-answer">
+          <p><strong>Common Causes of Memory Leaks:</strong></p><ol><li><strong>Dangling Event Listeners:</strong> Attaching listeners to DOM elements without calling <code>removeEventListener</code> when those elements are removed from the page.</li><li><strong>Uncleared Timers:</strong> Running <code>setInterval</code> loops that reference variables long after the containing component has unmounted.</li><li><strong>Accidental Global Variables:</strong> Assigning to undeclared variables (e.g. <code>leakVar = 'data'</code> instead of <code>const leakVar</code>), pinning data to the global <code>window</code> object permanently.</li><li><strong>Detached DOM Tree References:</strong> Storing references to removed DOM nodes in an array or cache object, preventing garbage collection.</li></ol><p><strong>Prevention & Diagnostics:</strong> Always cleanup timers (<code>clearInterval</code>) and listeners upon unmount. Use Chrome DevTools <em>Memory</em> panel to take Heap Snapshots and inspect detached elements.</p>
         </div>
       </div>
 

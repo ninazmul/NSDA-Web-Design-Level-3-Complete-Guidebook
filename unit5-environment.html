@@ -1166,7 +1166,7 @@ git push origin main</code></pre>
            NSDA EXAM PREPARATION: MCQS & QUESTION BANK
            ============================================ -->
       <h2 id="exam-prep"><span class="icon">🎯</span> NSDA Exam Preparation: Question Bank & MCQs</h2>
-      <p>High-frequency exam questions (Basic to Advanced) reflecting both modern CS V2 criteria and CBLM core competencies.</p>
+      <p>High-frequency exam questions (Basic to Advanced) reflecting both modern CS V2 criteria and CBLM core competencies. Total 37 practice items (25 MCQs + 12 Structured Q&As).</p>
 
       <h3>Part 1: Multiple Choice Questions (MCQs)</h3>
 
@@ -1174,22 +1174,90 @@ git push origin main</code></pre>
         <span class="exam-level-tag exam-level-basic">Basic</span>
         <div class="mcq-title"><span class="mcq-num">1.</span> What is the default root document directory for web pages hosted on a standard local XAMPP installation on Windows?</div>
         <div class="mcq-options-list">
-          <div class="mcq-opt"><span class="mcq-opt-key">A</span> <code>C:\xampp\www\</code></div>
-          <div class="mcq-opt"><span class="mcq-opt-key">B</span> <code>C:\xampp\htdocs\</code></div>
-          <div class="mcq-opt"><span class="mcq-opt-key">C</span> <code>C:\Program Files\Apache\web\</code></div>
-          <div class="mcq-opt"><span class="mcq-opt-key">D</span> <code>C:\Users\Public\Documents\</code></div>
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> C:\xampp\www\</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> C:\xampp\htdocs\</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> C:\Program Files\Apache\web\</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> C:\Users\Public\Documents\</div>
         </div>
         <details class="exam-reveal">
           <summary>View Correct Answer & Explanation</summary>
           <div class="exam-reveal-body">
-            <strong>Correct Answer: B</strong> — <code>C:\xampp\htdocs\</code> is Apache's primary DocumentRoot. Files placed inside are accessed in your browser via <code>http://localhost/filename.html</code>.
+            <strong>Correct Answer: B</strong> — C:\xampp\htdocs\ is Apache's default DocumentRoot in XAMPP. Files placed inside are accessed in the web browser via http://localhost/filename.html.
           </div>
         </details>
       </div>
 
       <div class="mcq-card">
-        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
-        <div class="mcq-title"><span class="mcq-num">2.</span> Which standard network port is designated for unencrypted FTP file transfers, and which port is used for secure SFTP (SSH File Transfer Protocol)?</div>
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="mcq-title"><span class="mcq-num">2.</span> Which loopback IP address and hostname represent your local computer when testing local web servers?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> 192.168.1.1 and gateway.local</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> 127.0.0.1 and localhost</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> 255.255.255.0 and subnet</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> 8.8.8.8 and google.dns</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — 127.0.0.1 is the universal IPv4 loopback address, mapped to the hostname 'localhost' in the operating system's hosts file.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="mcq-title"><span class="mcq-num">3.</span> Which default TCP port is utilized by Apache for unencrypted HTTP traffic, and which port is used for encrypted HTTPS traffic?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> HTTP: 21; HTTPS: 22</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> HTTP: 80; HTTPS: 443</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> HTTP: 3306; HTTPS: 8080</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> HTTP: 25; HTTPS: 110</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — Standard web communications use Port 80 for HTTP and Port 443 for TLS/SSL encrypted HTTPS connections.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="mcq-title"><span class="mcq-num">4.</span> What default port number is assigned to the MySQL/MariaDB database server in XAMPP?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> 80</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> 3306</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> 21</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> 8080</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — MySQL and MariaDB listen on TCP port 3306 by default for database queries and connections from applications like phpMyAdmin.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="mcq-title"><span class="mcq-num">5.</span> Which web-based administrative graphical tool is bundled with XAMPP to manage MySQL databases, tables, and SQL queries?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> FileZilla</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> phpMyAdmin</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> Mercury Mail</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> Tomcat</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — phpMyAdmin is a free web-based utility written in PHP for managing MySQL/MariaDB databases directly via browser at http://localhost/phpmyadmin.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="mcq-title"><span class="mcq-num">6.</span> Which standard network port is designated for unencrypted FTP file transfers, and which port is used for secure SFTP (SSH File Transfer Protocol)?</div>
         <div class="mcq-options-list">
           <div class="mcq-opt"><span class="mcq-opt-key">A</span> FTP: Port 80; SFTP: Port 443</div>
           <div class="mcq-opt"><span class="mcq-opt-key">B</span> FTP: Port 21; SFTP: Port 22</div>
@@ -1199,14 +1267,48 @@ git push origin main</code></pre>
         <details class="exam-reveal">
           <summary>View Correct Answer & Explanation</summary>
           <div class="exam-reveal-body">
-            <strong>Correct Answer: B</strong> — Standard FTP operates on <strong>Port 21</strong>. SFTP operates over an encrypted SSH connection on <strong>Port 22</strong>.
+            <strong>Correct Answer: B</strong> — Standard FTP operates on Port 21. SFTP operates over an encrypted SSH connection on Port 22.
           </div>
         </details>
       </div>
 
       <div class="mcq-card">
-        <span class="exam-level-tag exam-level-advanced">Advanced</span>
-        <div class="mcq-title"><span class="mcq-num">3.</span> When deploying a web application to an Apache/Linux production web server, what are the recommended secure file permissions (chmod) for web assets (HTML/CSS/JS) and directories?</div>
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="mcq-title"><span class="mcq-num">7.</span> What command initializes a brand new, empty Git repository inside your current working directory?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> git start</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> git init</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> git create</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> git new</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — 'git init' creates a hidden .git directory that begins tracking version history for all files in that project folder.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="mcq-title"><span class="mcq-num">8.</span> Which Git command moves all modified and newly created files in the working directory into the Staging Area (Index)?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> git commit -m 'all'</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> git add .</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> git push</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> git checkout</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — 'git add .' (or 'git add -A') stages all changes in the current directory and subdirectories for the next commit snapshot.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">9.</span> When deploying a web application to an Apache/Linux production web server, what are the recommended secure file permissions (chmod) for web assets (HTML/CSS/JS) and directories?</div>
         <div class="mcq-options-list">
           <div class="mcq-opt"><span class="mcq-opt-key">A</span> Files: 777; Directories: 777</div>
           <div class="mcq-opt"><span class="mcq-opt-key">B</span> Files: 644; Directories: 755</div>
@@ -1216,7 +1318,279 @@ git push origin main</code></pre>
         <details class="exam-reveal">
           <summary>View Correct Answer & Explanation</summary>
           <div class="exam-reveal-body">
-            <strong>Correct Answer: B</strong> — <code>chmod 644</code> allows read/write for owner and read-only for others; <code>chmod 755</code> allows directory traversing and reading without granting malicious write access. Setting 777 is a dangerous security hazard.
+            <strong>Correct Answer: B</strong> — chmod 644 grants read/write to the owner and read-only to others; chmod 755 allows directory traversing and reading without granting external users write access. Setting 777 is an extreme security risk.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">10.</span> What is the primary function of a '.gitignore' file in a web development repository?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> To speed up Git network transfer by compressing images</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> To specify intentionally untracked files (such as node_modules/, .env secrets, and OS temp files) that Git should ignore</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> To block unauthorized users from reading public code</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> To delete unused files automatically from the hard drive</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — .gitignore lists patterns of files and directories that Git will never track or commit, preventing sensitive API credentials (.env) or bulky dependencies (node_modules/) from being uploaded.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">11.</span> In FileZilla FTP client, where should you configure and store client server credentials (Host, Protocol, Port, Logon Type, User, and Password) for instant, one-click reconnections?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> Transfer Queue</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> Site Manager (Ctrl + S)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> Directory Comparison</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> Filter Manager</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — FileZilla's Site Manager stores host addresses, encryption protocols (SFTP/FTP), usernames, and passwords securely for easy profile management across multiple client servers.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">12.</span> Which Apache configuration file located in website root folders allows web designers to override global server settings for URL rewriting, custom 404 pages, and security rules?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> php.ini</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> .htaccess</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> httpd.conf</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> my.ini</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — .htaccess is a directory-level configuration file supported by Apache web servers to configure redirects, authentication, caching, and mod_rewrite rules on a per-folder basis.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">13.</span> What directive in an '.htaccess' file prevents visitors from seeing an index directory listing of all files when no index.html is present?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> RewriteEngine On</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> Options -Indexes</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> Deny from all</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> Header set Cache-Control</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — 'Options -Indexes' disables directory browsing, preventing visitors and malicious bots from viewing directory listings and downloading raw assets.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">14.</span> Which Git command is used to temporarily shelve (save aside) uncommitted changes in your working directory without committing them, so you can work on another branch cleanly?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> git discard</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> git stash</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> git pause</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> git hide</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — 'git stash' records the current state of the working directory and index on a temporary stack, reverting to the clean HEAD commit until restored via 'git stash pop'.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">15.</span> In cPanel web hosting environments, what is the default public folder where live website files must be uploaded to be accessible via the domain name?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> /var/log/</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> public_html (or www)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> /etc/apache2/</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> /home/mail/</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — cPanel maps primary domain names directly to the 'public_html' directory. Files placed outside this folder are not accessible via standard HTTP/HTTPS web requests.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">16.</span> Which HTTP status code indicates that a client requested a web resource that exists, but the server forbids access due to insufficient permissions?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> 200 OK</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> 403 Forbidden</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> 404 Not Found</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> 500 Internal Server Error</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — HTTP 403 Forbidden indicates the server understands the request, but refuses to authorize access (commonly caused by incorrect file permissions like chmod 000 or IP restrictions).
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">17.</span> In RESTful API design, which HTTP method is explicitly designed to retrieve resources from a server without modifying server state (idempotent and safe)?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> POST</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> GET</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> DELETE</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> PATCH</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — GET requests retrieve data representations from a web server without altering underlying database records, making it a safe, read-only operation.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">18.</span> Which standard DNS record maps a domain name (e.g. 'example.com') directly to an IPv4 server address (e.g. '192.0.2.1')?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> MX Record</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> A Record</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> CNAME Record</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> TXT Record</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — The 'A' (Address) record is the core DNS record that translates human-readable hostnames into 32-bit IPv4 network addresses.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="mcq-title"><span class="mcq-num">19.</span> When starting Apache in XAMPP, you receive the error: 'Port 80 in use by Unable to open process'. What is the most common cause and technical fix on a Windows machine?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> RAM is completely full; reboot the PC</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> Another service (such as World Wide Web Publishing Service / IIS or Skype) is binding Port 80; disable the conflicting service in Services.msc or change Apache's Listen port to 8080 in httpd.conf</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> The hard drive is infected with ransomware</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> XAMPP requires a commercial license</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — Windows IIS or Skype frequently reserve Port 80. Disabling IIS in Windows Features or changing 'Listen 80' to 'Listen 8080' in httpd.conf frees Apache to bind and start.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="mcq-title"><span class="mcq-num">20.</span> What is the primary difference between Relational (SQL) databases like MySQL and NoSQL databases like MongoDB?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> SQL stores data in strict, structured tables with predefined schemas and foreign key relationships; NoSQL stores data in flexible, schema-less JSON/BSON documents or key-value pairs</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> SQL is only used on Macs; NoSQL is only used on Linux</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> SQL cannot handle numbers; NoSQL can only handle text</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> SQL does not require a database server</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: A</strong> — Relational databases (MySQL/PostgreSQL) enforce schema rigidity, ACID transactions, and table joins. NoSQL (MongoDB/Redis) provides dynamic schemas optimized for horizontal scaling and document storage.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="mcq-title"><span class="mcq-num">21.</span> In Git version control, what is the critical difference between 'git merge' and 'git rebase'?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> git merge deletes branches; git rebase recovers deleted files</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> git merge creates a non-destructive 3-way merge commit preserving exact branch timeline history; git rebase rewrites project history by moving your feature commits onto the tip of the target branch in a linear sequence</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> git merge is used for local code; git rebase is only for remote GitHub</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> git rebase can only be run once per year</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — Merge retains complete branch lineage via a merge commit; rebase replays your commits one by one on top of the base branch, producing a clean, straight linear Git history.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="mcq-title"><span class="mcq-num">22.</span> What is the security purpose of configuring an automated 301 Permanent Redirect in Apache from HTTP to HTTPS?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> To reduce web server CPU usage by 50%</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> To guarantee that all unencrypted traffic is automatically upgraded to TLS encryption, preventing man-in-the-middle (MITM) eavesdropping and preserving SEO ranking equity</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> To disable JavaScript execution on client browsers</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> To hide the website's IP address from DNS lookups</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — A 301 redirect forces all insecure HTTP requests into encrypted HTTPS channels, protecting user passwords and session cookies while signaling search engines that the canonical URL is secure.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="mcq-title"><span class="mcq-num">23.</span> How does GraphQL solve the classic 'over-fetching' and 'under-fetching' problems inherent to traditional RESTful APIs?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> GraphQL disables database indexing</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> GraphQL allows the client to declare a precise JSON query requesting only the specific fields needed across multiple resources in a single HTTP POST request</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> GraphQL replaces the browser DOM entirely</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> GraphQL converts all backend data into plain text files</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — In REST, endpoints return fixed payloads (over-fetching) or require multiple round trips for nested data (under-fetching). GraphQL lets clients request exactly what is needed in a single query.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="mcq-title"><span class="mcq-num">24.</span> What does Linux file permission 'chmod 755' calculate to in binary and read/write/execute permissions?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> Owner: rwx (7), Group: r-x (5), Others: r-x (5)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> Owner: r-- (4), Group: -w- (2), Others: --x (1)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> Owner: rw- (6), Group: rw- (6), Others: rw- (6)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> Owner: rwx (7), Group: rwx (7), Others: rwx (7)</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: A</strong> — Read=4, Write=2, Execute=1. 7 = 4+2+1 (rwx). 5 = 4+0+1 (r-x). 755 grants the owner full control (rwx) and group/others read and execute access (r-x).
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="mcq-title"><span class="mcq-num">25.</span> You make a commit with an accidental typo in the message. How do you correct the commit message before pushing to remote repository?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> git commit --amend -m 'new corrected message'</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> git delete HEAD</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> git reset --hard origin/main</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> Reinstall Git</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: A</strong> — 'git commit --amend' replaces the most recent unpushed commit with a new commit, allowing you to modify the message or stage missed file changes.
           </div>
         </details>
       </div>
@@ -1227,36 +1601,105 @@ git push origin main</code></pre>
         <span class="exam-level-tag exam-level-basic">Basic</span>
         <div class="qa-question"><span class="qa-qnum">Q1:</span> List the five standard Git states and describe the step-by-step procedure to stage, commit, and push new code to GitHub.</div>
         <div class="qa-answer">
-          <p><strong>The Five Git States:</strong> Untracked, Working Directory (Modified), Staging Area (Index), Local Repository (Committed), and Remote Repository.</p>
-          <p><strong>Deployment Procedure:</strong></p>
-          <ol>
-            <li>Check status: <code>git status</code> (inspect changed files).</li>
-            <li>Stage files: <code>git add .</code> (moves changes to Staging Area).</li>
-            <li>Commit: <code>git commit -m "feat: complete responsive header"</code> (creates an immutable snapshot).</li>
-            <li>Push: <code>git push origin main</code> (synchronizes commits with remote GitHub repository).</li>
-          </ol>
+          <p><strong>The Five Git States:</strong></p><ol><li><strong>Untracked:</strong> New files created in the folder that Git is not yet monitoring.</li><li><strong>Working Directory (Modified):</strong> Tracked files containing local edits that have not been staged.</li><li><strong>Staging Area (Index):</strong> Files marked to be included in the next snapshot commit.</li><li><strong>Local Repository (Committed):</strong> Files permanently stored as an immutable snapshot in your local <code>.git</code> database.</li><li><strong>Remote Repository:</strong> Cloud hosting repository (e.g. GitHub/GitLab) where commits are shared with collaborators.</li></ol><p><strong>Deployment Procedure:</strong></p><ol><li>Check status: <code>git status</code> (inspect changed files).</li><li>Stage files: <code>git add .</code> (moves changes to Staging Area).</li><li>Commit: <code>git commit -m "feat: complete responsive header"</code> (creates an immutable snapshot).</li><li>Push: <code>git push origin main</code> (synchronizes commits with remote GitHub repository).</li></ol>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="qa-question"><span class="qa-qnum">Q2:</span> What are the core components included in the XAMPP stack and what does the XAMPP acronym stand for?</div>
+        <div class="qa-answer">
+          <p><strong>XAMPP Acronym:</strong></p><ul><li><strong>X:</strong> Cross-Platform (operates identically across Windows, Linux, and macOS).</li><li><strong>A:</strong> <strong>Apache:</strong> The open-source HTTP web server that processes incoming client browser requests and delivers web pages.</li><li><strong>M:</strong> <strong>MariaDB / MySQL:</strong> The relational database management system (RDBMS) for storing tabular data.</li><li><strong>P:</strong> <strong>PHP:</strong> The server-side scripting language engine that executes dynamic backend scripts.</li><li><strong>P:</strong> <strong>Perl:</strong> High-level programming language used for system administration and text parsing.</li></ul>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="qa-question"><span class="qa-qnum">Q3:</span> Explain the difference between localhost (127.0.0.1) and a live remote web server IP address.</div>
+        <div class="qa-answer">
+          <p><strong>Localhost (127.0.0.1):</strong> The loopback network interface on your local machine. Traffic never leaves your physical network interface card; it is processed locally inside your operating system, enabling private offline testing without internet connectivity or hosting costs.</p><p><strong>Live Remote Server IP:</strong> A public, globally unique IPv4/IPv6 address assigned to a production server hosted in a datacenter. Anyone on the public internet can resolve the IP address via DNS to browse the hosted web application.</p>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="qa-question"><span class="qa-qnum">Q4:</span> What is the purpose of testing server functionality with a 'test.php' file containing 'phpinfo()', and what security risk does it pose if left on a live server?</div>
+        <div class="qa-answer">
+          <p><strong>Purpose:</strong> Creating a file with <code>&lt;?php phpinfo(); ?&gt;</code> confirms that the Apache web server and PHP engine are communicating correctly. It outputs a comprehensive dashboard showing PHP version, active extensions (cURL, GD, PDO), server environment variables, and memory limits.</p><p><strong>Security Risk:</strong> Exposing <code>phpinfo()</code> on a live public server provides malicious attackers with critical reconnaissance information: exact operating system version, internal server paths, installed modules, and configuration vulnerabilities. It must always be deleted before production deployment.</p>
         </div>
       </div>
 
       <div class="qa-card">
         <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
-        <div class="qa-question"><span class="qa-qnum">Q2:</span> Compare the difference between RESTful APIs and GraphQL APIs in modern data layer architectures.</div>
+        <div class="qa-question"><span class="qa-qnum">Q5:</span> Compare the difference between RESTful APIs and GraphQL APIs in modern data layer architectures.</div>
         <div class="qa-answer">
-          <p><strong>RESTful API:</strong> Architectural style organized around resource endpoints (URIs). Uses standard HTTP methods (<code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code>). Responses have fixed data structures, which can lead to <em>over-fetching</em> (receiving unnecessary fields) or <em>under-fetching</em> (requiring multiple round-trip requests to gather related data).</p>
-          <p><strong>GraphQL API:</strong> Query language where clients specify the exact shape and fields of data required in a single request. Operates via a single HTTP <code>POST</code> endpoint, reducing network payloads and mobile bandwidth consumption.</p>
+          <p><strong>RESTful API:</strong> Architectural style organized around resource endpoints (URIs). Uses standard HTTP methods (<code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code>). Responses have fixed data structures, which can lead to <em>over-fetching</em> (receiving unnecessary fields) or <em>under-fetching</em> (requiring multiple round-trip requests to gather related data).</p><p><strong>GraphQL API:</strong> Query language where clients specify the exact shape and fields of data required in a single request. Operates via a single HTTP <code>POST</code> endpoint, reducing network payloads and mobile bandwidth consumption.</p>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="qa-question"><span class="qa-qnum">Q6:</span> How do you resolve a common port conflict in XAMPP when Apache fails to start because Port 80 is occupied?</div>
+        <div class="qa-answer">
+          <p><strong>Resolution Steps:</strong></p><ol><li><strong>Identify the Conflicting Process:</strong> In XAMPP Control Panel, click <em>Netstat</em> to view which process PID is listening on port 80 (frequently <code>httpd.exe</code>, IIS <code>System</code> PID 4, or Skype).</li><li><strong>Option A (Stop Conflicting Service):</strong> Open Windows Services (<code>services.msc</code>), locate <em>World Wide Web Publishing Service</em> (IIS), right-click, select <em>Stop</em>, and change startup type to <em>Manual</em> or <em>Disabled</em>.</li><li><strong>Option B (Reconfigure Apache Port):</strong> In XAMPP, click Apache <em>Config -> httpd.conf</em>. Search for <code>Listen 80</code> and change it to <code>Listen 8080</code>. Search for <code>ServerName localhost:80</code> and change to <code>localhost:8080</code>. Save the file.</li><li><strong>Restart & Verify:</strong> Start Apache. Access your local projects in your browser using <code>http://localhost:8080/</code>.</li></ol>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="qa-question"><span class="qa-qnum">Q7:</span> Explain the role and syntax of an Apache '.htaccess' file for enforcing HTTPS and disabling directory listing.</div>
+        <div class="qa-answer">
+          <p>The <code>.htaccess</code> file is a directory-level configuration file interpreted by Apache's <code>mod_rewrite</code> module:</p><pre><code># 1. Disable public directory indexing
+Options -Indexes
+
+# 2. Enforce HTTPS redirect for all incoming traffic
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# 3. Custom Error Pages
+ErrorDocument 404 /404.html
+ErrorDocument 403 /403.html</code></pre><p><strong>Impact:</strong> <code>Options -Indexes</code> prevents directory asset scraping. The <code>RewriteRule</code> inspects if HTTPS is inactive and triggers a 301 Permanent Redirect to the secure HTTPS URI, protecting user privacy.</p>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="qa-question"><span class="qa-qnum">Q8:</span> Describe the FileZilla FTP client interface and the workflow for synchronizing local website files to a remote web server.</div>
+        <div class="qa-answer">
+          <p><strong>Interface Layout:</strong></p><ul><li><strong>Top Area:</strong> Quickconnect bar and Message Log displaying server status and raw command responses.</li><li><strong>Left Panes (Local):</strong> Local directory tree and file list on your computer.</li><li><strong>Right Panes (Remote):</strong> Remote directory tree and file list on the hosting server (e.g., <code>/public_html/</code>).</li><li><strong>Bottom Area:</strong> Transfer queue showing queued files, failed transfers, and successful transfers.</li></ul><p><strong>Deployment Workflow:</strong></p><ol><li>Open <em>Site Manager</em> (<code>Ctrl + S</code>), enter Host domain/IP, select <strong>SFTP (SSH File Transfer Protocol)</strong> on Port 22, and enter login credentials.</li><li>Connect and navigate to <code>public_html</code> in the Remote panel.</li><li>Select local files (HTML, CSS, JS, assets) in the Local panel, right-click and choose <em>Upload</em>.</li><li>Monitor the Transfer Queue until all files register under <em>Successful Transfers</em>.</li></ol>
         </div>
       </div>
 
       <div class="qa-card">
         <span class="exam-level-tag exam-level-advanced">Advanced</span>
-        <div class="qa-question"><span class="qa-qnum">Q3:</span> You are deploying a client website that requires both a database connection and custom routing. How do you configure DNS, Web Server settings, and SSL encryption for secure live access?</div>
+        <div class="qa-question"><span class="qa-qnum">Q9:</span> You are deploying a client website that requires both a database connection and custom routing. How do you configure DNS, Web Server settings, and SSL encryption for secure live access?</div>
         <div class="qa-answer">
-          <ol>
-            <li><strong>DNS Configuration:</strong> Create an <strong>A Record</strong> pointing <code>@</code> and <code>www</code> to the web server's static public IPv4 address. Wait for TTL propagation.</li>
-            <li><strong>Server Virtual Host / Directory:</strong> Point server virtual host document root to <code>/public_html</code>. Configure URL rewrite rules (via <code>.htaccess</code> for Apache <code>mod_rewrite</code> or <code>try_files</code> block in Nginx) to route traffic through <code>index.html</code>.</li>
-            <li><strong>Database Configuration:</strong> In cPanel/phpMyAdmin, create a dedicated database and database user with strong password; assign <code>GRANT ALL PRIVILEGES</code> on that specific database only.</li>
-            <li><strong>SSL/TLS Certificate:</strong> Install a Let's Encrypt SSL certificate via cPanel AutoSSL or Certbot. Enforce 301 permanent redirect from HTTP to HTTPS in server configuration.</li>
-          </ol>
+          <ol><li><strong>DNS Configuration:</strong> Create an <strong>A Record</strong> pointing <code>@</code> and <code>www</code> to the web server's static public IPv4 address. Wait for TTL propagation.</li><li><strong>Server Virtual Host / Directory:</strong> Point server virtual host document root to <code>/public_html</code>. Configure URL rewrite rules (via <code>.htaccess</code> for Apache <code>mod_rewrite</code> or <code>try_files</code> block in Nginx) to route traffic through <code>index.html</code>.</li><li><strong>Database Configuration:</strong> In cPanel/phpMyAdmin, create a dedicated database and database user with strong password; assign <code>GRANT ALL PRIVILEGES</code> on that specific database only.</li><li><strong>SSL/TLS Certificate:</strong> Install a Let's Encrypt SSL certificate via cPanel AutoSSL or Certbot. Enforce 301 permanent redirect from HTTP to HTTPS in server configuration.</li></ol>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="qa-question"><span class="qa-qnum">Q10:</span> Explain Linux octal file permissions (chmod). Why is chmod 777 hazardous, and what specific permissions should be applied to web files vs folders?</div>
+        <div class="qa-answer">
+          <p>Linux permissions are represented by a 3-digit octal number corresponding to <strong>Owner</strong>, <strong>Group</strong>, and <strong>Others/Public</strong>:</p><ul><li><strong>Binary Values:</strong> Read (r) = 4, Write (w) = 2, Execute (x) = 1.</li><li><strong>Calculation:</strong> Summing values generates permissions: 7 = 4+2+1 (rwx); 6 = 4+2+0 (rw-); 5 = 4+0+1 (r-x).</li></ul><p><strong>Standard Web Permissions:</strong></p><ul><li><strong>Directories (chmod 755):</strong> <code>drwxr-xr-x</code>. Allows the web server owner to read, write, and execute; allows the public to traverse and read directory contents without write/delete permissions.</li><li><strong>Static Files (chmod 644):</strong> <code>-rw-r--r--</code>. Owner can read and write; public can only read files.</li><li><strong>Configuration / Sensitive Files (chmod 600 / 400):</strong> <code>-rw-------</code>. Only the system owner can read database connection passwords.</li></ul><p><strong>Hazard of chmod 777 (rwxrwxrwx):</strong> Gives anyone on the shared server unrestricted permission to overwrite, modify, inject malicious PHP backdoor shells, or delete your files.</p>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="qa-question"><span class="qa-qnum">Q11:</span> Detail the 16 core Git commands mandated in CS V2 and categorize their operational functions across the development lifecycle.</div>
+        <div class="qa-answer">
+          <p><strong>Setup & Configuration:</strong></p><ul><li><code>git init</code>: Initializes a fresh local repository.</li><li><code>git clone [url]</code>: Copies an existing remote repository onto the local disk.</li><li><code>git config --global user.name / user.email</code>: Sets commit author identification.</li></ul><p><strong>Basic Tracking & Staging:</strong></p><ul><li><code>git status</code>: Inspects working directory and staging index state.</li><li><code>git add [files]</code>: Stages modified/new files into the index.</li><li><code>git commit -m "msg"</code>: Commits staged snapshot with descriptive message.</li><li><code>git diff</code>: Compares unstaged line-by-line differences.</li></ul><p><strong>Branching & Merging:</strong></p><ul><li><code>git branch</code>: Lists, creates, or deletes branch pointers.</li><li><code>git checkout [branch]</code> / <code>git switch</code>: Switches context to target branch.</li><li><code>git merge [branch]</code>: Integrates target branch changes into the active branch.</li><li><code>git stash</code> / <code>git stash pop</code>: Temporarily saves and restores uncommitted work.</li></ul><p><strong>Remote Collaboration & History:</strong></p><ul><li><code>git remote add origin [url]</code>: Links local repo to remote URL.</li><li><code>git push origin [branch]</code>: Uploads local commits to remote repository.</li><li><code>git pull origin [branch]</code>: Fetches and integrates remote changes.</li><li><code>git log --oneline --graph</code>: Visualizes commit history log.</li><li><code>git reset</code> / <code>git revert</code>: Undoes changes or creates compensating reverse commits.</li></ul>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="qa-question"><span class="qa-qnum">Q12:</span> How does a web designer diagnose and troubleshoot HTTP 500 Internal Server Errors on a live Apache/PHP production site?</div>
+        <div class="qa-answer">
+          <p>An HTTP 500 error is a generic catch-all indicator that the web server encountered an unexpected condition preventing it from fulfilling the request. Systematic troubleshooting steps:</p><ol><li><strong>Check Apache Error Logs:</strong> Inspect <code>/var/log/apache2/error.log</code> or cPanel <em>Metrics -> Errors</em>. The error log pinpoints the exact file and line number causing the crash.</li><li><strong>Inspect .htaccess Syntax:</strong> A single misconfigured directive, misspelled module name (e.g. uninstalled <code>mod_rewrite</code> command), or improper flag in <code>.htaccess</code> instantly triggers an immediate HTTP 500. Temporarily rename <code>.htaccess</code> to <code>.htaccess.bak</code> to test.</li><li><strong>Verify File Permissions:</strong> Servers running suPHP or FastCGI reject files with write permissions for group/others. If files are set to <code>777</code>, change them back to <code>644</code> (files) and <code>755</code> (directories).</li><li><strong>Check PHP Memory Limit:</strong> Heavy script execution can exceed allocated RAM. Increase limit in <code>php.ini</code> (e.g. <code>memory_limit = 256M</code>).</li><li><strong>Enable Localized Debugging:</strong> In non-production testing, enable PHP error display temporarily: <code>ini_set('display_errors', 1); error_reporting(E_ALL);</code>.</li></ol>
         </div>
       </div>
 
