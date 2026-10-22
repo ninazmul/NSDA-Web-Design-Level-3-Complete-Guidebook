@@ -43,6 +43,7 @@
       <a href="#components">Framework Components</a>
       <a href="#element6">6. Testing & Optimization</a>
       <a href="#evidence">Evidence Guide</a>
+      <a href="#exam-prep">Exam Question Bank & MCQs</a>
     </nav>
   </aside>
 
@@ -363,7 +364,7 @@
 
       <h2 id="evidence"><span class="icon">📊</span> Evidence Guide</h2>
       <div class="accordion">
-        <div class="accordion-item open">
+        <div class="accordion-item">
           <div class="accordion-header"><span>Critical Aspects of Competency</span><span class="arrow">▼</span></div>
           <div class="accordion-body"><div class="accordion-body-inner">
             <ul>
@@ -376,6 +377,103 @@
               <li>Optimized CSS-based web page performance</li>
             </ul>
           </div></div>
+        </div>
+      </div>
+
+      <!-- ============================================
+           NSDA EXAM PREPARATION: MCQS & QUESTION BANK
+           ============================================ -->
+      <h2 id="exam-prep"><span class="icon">🎯</span> NSDA Exam Preparation: Question Bank & MCQs</h2>
+      <p>High-yield exam questions covering CSS3 layouts, Grid/Flexbox, responsive design, and CSS frameworks for NSDA Level 3 certification.</p>
+
+      <h3>Part 1: Multiple Choice Questions (MCQs)</h3>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="mcq-title"><span class="mcq-num">1.</span> Why is <code>* { box-sizing: border-box; }</code> universally applied as the standard CSS reset in modern web design?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> It converts all elements into inline spans</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> It includes padding and borders inside an element's total declared width and height, preventing layout breakage</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> It automatically centers all containers on screen</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> It removes all default margins from headings</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — Under default <code>content-box</code>, adding padding or border expands the element beyond its set width. <code>border-box</code> absorbs padding/border within the width.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">2.</span> Which CSS Grid declaration creates an auto-responsive multi-column card grid that wraps columns automatically without requiring explicit media query breakpoints?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> <code>grid-template-columns: repeat(3, 1fr);</code></div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> <code>grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));</code></div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> <code>grid-template-columns: 280px auto;</code></div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> <code>display: flex; flex-direction: row;</code></div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — <code>repeat(auto-fit, minmax(280px, 1fr))</code> dynamically fits as many 280px+ columns as possible on screen, expanding each proportionally with <code>1fr</code>.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="mcq-title"><span class="mcq-num">3.</span> Between the two CSS rules below, which style will take precedence on a link with ID <code>#nav-link</code> and class <code>.active</code>?</div>
+        <div class="code-block">
+          <pre><code><span class="comment">/* Rule 1: */</span> header nav a.active { color: red; }
+<span class="comment">/* Rule 2: */</span> #nav-link { color: blue; }</code></pre>
+        </div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> Rule 1 (Red) because it contains more selectors</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> Rule 2 (Blue) because an ID selector (0,1,0,0) outweighs classes and elements (0,0,1,3)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> Whichever rule appears later in the stylesheet</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> Both colors combine into purple</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — Specificity math: Rule 1 has 1 class + 3 elements = <code>0,0,1,3</code> (score 13). Rule 2 has 1 ID = <code>0,1,0,0</code> (score 100). ID always defeats any quantity of class or element selectors.
+          </div>
+        </details>
+      </div>
+
+      <h3>Part 2: Written & Oral Questions with Detailed Answers</h3>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="qa-question"><span class="qa-qnum">Q1:</span> Compare the difference between Flexbox and CSS Grid. When should a web designer choose one over the other?</div>
+        <div class="qa-answer">
+          <p><strong>Flexbox (Flexible Box Layout):</strong> A <strong>one-dimensional</strong> layout system designed for distributing space along either a single row OR a single column. Best for: navigation bars, aligning buttons inside headers, pill badges, and centering single cards.</p>
+          <p><strong>CSS Grid:</strong> A <strong>two-dimensional</strong> layout system designed for controlling both columns AND rows simultaneously. Best for: complete page scaffoldings, photo galleries, dashboard widget layouts, and responsive card grids.</p>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="qa-question"><span class="qa-qnum">Q2:</span> What is "Mobile-First" Responsive Web Design, and how does it determine the choice between <code>min-width</code> and <code>max-width</code> media queries?</div>
+        <div class="qa-answer">
+          <p><strong>Mobile-First Design:</strong> Writing default base CSS styles for mobile/handheld screens first (simple single-column layouts, touch targets), and progressively layering enhanced styles as the viewport widens.</p>
+          <p><strong>Media Query Implementation:</strong> Always use <code>@media (min-width: 768px)</code> rather than <code>max-width</code>. This ensures lower-powered mobile devices parse the leanest CSS rules without having to override heavy desktop styles.</p>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="qa-question"><span class="qa-qnum">Q3:</span> How do CSS Custom Properties (Variables) improve front-end maintainability and enable real-time dynamic dark/light theme switching?</div>
+        <div class="qa-answer">
+          <p>CSS variables (declared via <code>--name: value;</code> and referenced with <code>var(--name)</code>) are scoped to the DOM tree and dynamically inherit down the hierarchy.</p>
+          <p><strong>Theme Switching Pattern:</strong></p>
+          <ul>
+            <li>Define semantic color tokens under <code>:root</code> for the default dark theme (e.g. <code>--bg-primary: #0a0e1a; --text-primary: #f1f5f9;</code>).</li>
+            <li>Override those exact variable definitions under a <code>[data-theme="light"]</code> attribute selector (e.g. <code>--bg-primary: #ffffff; --text-primary: #0f172a;</code>).</li>
+            <li>Toggling <code>document.documentElement.setAttribute('data-theme', 'light')</code> with JavaScript instantly updates the entire website without rewriting component classes or triggering costly style recalculations.</li>
+          </ul>
         </div>
       </div>
 

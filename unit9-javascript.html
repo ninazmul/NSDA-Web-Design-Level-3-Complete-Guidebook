@@ -45,6 +45,7 @@
       <a href="#events">Event Handling</a>
       <a href="#examples">Practical Examples</a>
       <a href="#evidence">Evidence Guide</a>
+      <a href="#exam-prep">Exam Question Bank & MCQs</a>
     </nav>
   </aside>
 
@@ -604,6 +605,113 @@ addBtn.addEventListener(<span class="string">"click"</span>, () => {
               <li>Portfolio — interactive web pages with JavaScript functionality</li>
             </ul>
           </div></div>
+        </div>
+      </div>
+
+      <!-- ============================================
+           NSDA EXAM PREPARATION: MCQS & QUESTION BANK
+           ============================================ -->
+      <h2 id="exam-prep"><span class="icon">🎯</span> NSDA Exam Preparation: Question Bank & MCQs</h2>
+      <p>Master these core JavaScript written examination and oral demonstration questions (Basic to Advanced) for NSDA Level 3 certification.</p>
+
+      <h3>Part 1: Multiple Choice Questions (MCQs)</h3>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="mcq-title"><span class="mcq-num">1.</span> In modern JavaScript (ES6+), what is the difference between declaring a variable with <code>const</code> versus <code>let</code>?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> <code>const</code> variables have global scope, while <code>let</code> variables have function scope</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> <code>const</code> creates a block-scoped variable that cannot be reassigned, while <code>let</code> can be reassigned</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> <code>const</code> can only store numbers, while <code>let</code> can store strings</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> There is no difference</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — Both <code>let</code> and <code>const</code> are block-scoped, but variables declared with <code>const</code> cannot be reassigned (though properties of <code>const</code> objects/arrays can be mutated).
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">2.</span> What is the output of the following JavaScript code expression: <code>console.log(typeof ("5" + 2));</code> and <code>console.log("5" - 2);</code>?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> <code>"string"</code> and <code>3</code></div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> <code>"number"</code> and <code>"52"</code></div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> <code>"string"</code> and <code>NaN</code></div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> <code>"number"</code> and <code>3</code></div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: A</strong> — The <code>+</code> operator triggers string concatenation (<code>"52"</code>, type: string). The <code>-</code> subtraction operator forces numeric coercion (<code>5 - 2 = 3</code>, type: number).
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="mcq-title"><span class="mcq-num">3.</span> What programming technique allows a single event listener placed on a common parent element (e.g. <code>&lt;ul&gt;</code>) to handle click events triggered by any current or dynamically added child elements (e.g. <code>&lt;li&gt;</code>)?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> Event Bubbling & Delegation via <code>event.target</code></div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> Synchronous Polling</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> DOM Mutation Observer</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> Event Hoisting</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: A</strong> — <strong>Event Delegation</strong> leverages the event bubbling phase, listening on the parent and identifying the clicked item using <code>event.target</code>. This saves memory and works automatically for dynamically inserted nodes.
+          </div>
+        </details>
+      </div>
+
+      <h3>Part 2: Written & Oral Questions with Detailed Answers</h3>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="qa-question"><span class="qa-qnum">Q1:</span> Explain the difference between strict equality (<code>===</code>) and loose equality (<code>==</code>) in JavaScript with examples.</div>
+        <div class="qa-answer">
+          <p><strong>Loose Equality (<code>==</code>):</strong> Compares two values for equality <em>after</em> performing implicit type coercion if the data types differ.</p>
+          <p><em>Example:</em> <code>5 == "5"</code> evaluates to <strong>true</strong> because the string <code>"5"</code> is coerced to number <code>5</code>.</p>
+          <p><strong>Strict Equality (<code>===</code>):</strong> Compares both the <strong>value</strong> AND the <strong>data type</strong> without type conversion. If types differ, it immediately returns false.</p>
+          <p><em>Example:</em> <code>5 === "5"</code> evaluates to <strong>false</strong> (Number vs String). Strict equality is the required standard in professional development to avoid insidious bugs.</p>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="qa-question"><span class="qa-qnum">Q2:</span> Describe the differences between the array methods <code>map()</code>, <code>filter()</code>, and <code>forEach()</code>.</div>
+        <div class="qa-answer">
+          <ul>
+            <li><strong><code>forEach(callback)</code>:</strong> Executes a provided function once for each array element. It returns <code>undefined</code> and is strictly used for side effects (e.g. logging or appending DOM nodes).</li>
+            <li><strong><code>map(callback)</code>:</strong> Transforms each item and returns a <strong>new array of the exact same length</strong> containing the transformed values. Does not mutate the original array.</li>
+            <li><strong><code>filter(callback)</code>:</strong> Tests each item with a boolean condition and returns a <strong>new array containing only elements that evaluate to true</strong>.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="qa-question"><span class="qa-qnum">Q3:</span> What is a JavaScript Closure? Provide a practical code example where closures are utilized in front-end development.</div>
+        <div class="qa-answer">
+          <p><strong>Definition:</strong> A closure is a function bundled together with references to its surrounding lexical state. In JavaScript, an inner function maintains access to variables declared in its outer enclosing function even after the outer function has finished executing.</p>
+          <p><strong>Practical Application (Counter / Private State):</strong></p>
+          <div class="code-block">
+            <pre><code>function createCartManager() {
+  let itemCount = 0; <span class="comment">// Private variable protected from global scope</span>
+  return {
+    addItem: () => { itemCount++; return itemCount; },
+    getCount: () => itemCount
+  };
+}
+
+const myCart = createCartManager();
+console.log(myCart.addItem()); <span class="comment">// 1</span>
+console.log(myCart.addItem()); <span class="comment">// 2</span>
+console.log(myCart.itemCount); <span class="comment">// undefined (safely encapsulated)</span></code></pre>
+          </div>
         </div>
       </div>
 

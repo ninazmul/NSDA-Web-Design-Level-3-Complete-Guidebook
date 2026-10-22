@@ -407,7 +407,7 @@ document.addEventListener('DOMContentLoaded', () => {
       { title: 'Practice OSH Standard in ICT', url: 'unit2-osh.html', code: 'SU-ICT-10-L2-V1', keywords: 'safety health hazard osh ppe ergonomics' },
       { title: 'Prepare Documents & Create Presentations', url: 'unit3-documents.html', code: 'SU-ICT-11-L2-V1', keywords: 'document word powerpoint presentation slide storytelling' },
       { title: 'Visual Design Principles & Color', url: 'unit4-visual-design.html', code: 'OU-ICT-WD-01-L3-V2', keywords: 'design color visual principles ui ux color theory palette' },
-      { title: 'Setup Web Design Environment', url: 'unit5-environment.html', code: 'OU-ICT-WD-02-L3-V2', keywords: 'vscode editor environment git server hosting domain' },
+      { title: 'Setup Web Design Environment', url: 'unit5-environment.html', code: 'OU-ICT-WD-02-L3-V2', keywords: 'vscode editor environment git server hosting domain xampp filezilla ftp cpanel devtools browser client server data layer mysql nosql' },
       { title: 'Work with HTML', url: 'unit6-html.html', code: 'OU-ICT-WD-03-L3-V2', keywords: 'html tags semantic form table accessibility' },
       { title: 'Work with CSS & CSS Frameworks', url: 'unit7-css.html', code: 'OU-ICT-WD-04-L3-V2', keywords: 'css selectors box model grid flexbox responsive bootstrap tailwind' },
       { title: 'Perform Design to Web', url: 'unit8-design-to-web.html', code: 'OU-ICT-WD-05-L3-V2', keywords: 'figma xd photoshop psd mockup design conversion' },

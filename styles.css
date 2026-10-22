@@ -1855,3 +1855,168 @@ body.sidebar-open {
     justify-content: center;
   }
 }
+
+/* ============================================
+   NSDA Exam Q&A and MCQ System
+   ============================================ */
+.exam-section {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.exam-level-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: 50px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.exam-level-basic {
+  background: rgba(52, 211, 153, 0.15);
+  color: var(--accent-green);
+  border: 1px solid rgba(52, 211, 153, 0.35);
+}
+
+.exam-level-intermediate {
+  background: rgba(56, 189, 248, 0.15);
+  color: var(--accent-cyan);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+}
+
+.exam-level-advanced {
+  background: rgba(244, 114, 182, 0.15);
+  color: var(--accent-pink);
+  border: 1px solid rgba(244, 114, 182, 0.35);
+}
+
+.mcq-card, .qa-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.mcq-card:hover, .qa-card:hover {
+  border-color: var(--border-glass);
+}
+
+.mcq-num {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--accent-cyan);
+  font-weight: 700;
+  margin-right: 6px;
+}
+
+.mcq-title {
+  font-weight: 600;
+  font-size: 0.98rem;
+  color: var(--text-primary);
+  margin-bottom: 0.85rem;
+  line-height: 1.5;
+}
+
+.mcq-options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.mcq-opt {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 9px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.mcq-opt-key {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--accent-cyan);
+  min-width: 18px;
+}
+
+.exam-reveal {
+  margin-top: 0.75rem;
+  border-top: 1px dashed var(--border-color);
+  padding-top: 0.75rem;
+}
+
+.exam-reveal summary {
+  cursor: pointer;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  user-select: none;
+  list-style: none;
+  transition: color var(--transition-fast);
+}
+
+.exam-reveal summary:hover {
+  color: var(--accent-teal);
+}
+
+.exam-reveal summary::-webkit-details-marker {
+  display: none;
+}
+
+.exam-reveal summary::before {
+  content: "💡";
+  font-size: 0.88rem;
+}
+
+.exam-reveal[open] summary::before {
+  content: "🔽";
+}
+
+.exam-reveal-body {
+  margin-top: 0.6rem;
+  padding: 0.85rem 1.1rem;
+  border-radius: var(--radius-sm);
+  background: var(--bg-hover);
+  border-left: 3px solid var(--accent-green);
+  font-size: 0.88rem;
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.qa-question {
+  font-weight: 600;
+  font-size: 0.98rem;
+  color: var(--text-primary);
+  margin-bottom: 0.65rem;
+  line-height: 1.5;
+}
+
+.qa-qnum {
+  font-family: var(--font-mono);
+  color: var(--accent-cyan);
+  font-weight: 700;
+  margin-right: 6px;
+}
+
+.qa-answer {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+

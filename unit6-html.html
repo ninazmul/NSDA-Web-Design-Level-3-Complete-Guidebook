@@ -43,6 +43,7 @@
       <a href="#element4">4. Accessibility</a>
       <a href="#aria">ARIA Roles</a>
       <a href="#evidence">Evidence Guide</a>
+      <a href="#exam-prep">Exam Question Bank & MCQs</a>
     </nav>
   </aside>
 
@@ -408,6 +409,104 @@
               <li>Accessibility guidelines and legal compliance</li>
             </ul>
           </div></div>
+        </div>
+      </div>
+
+      <!-- ============================================
+           NSDA EXAM PREPARATION: MCQS & QUESTION BANK
+           ============================================ -->
+      <h2 id="exam-prep"><span class="icon">🎯</span> NSDA Exam Preparation: Question Bank & MCQs</h2>
+      <p>Master these essential HTML5 written exam and practical oral questioning items (Basic to Advanced) for NSDA Level 3 certification.</p>
+
+      <h3>Part 1: Multiple Choice Questions (MCQs)</h3>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="mcq-title"><span class="mcq-num">1.</span> Which HTML5 element should be used to enclose self-contained content that could theoretically be distributed or republished independently (such as a blog post or news story)?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> <code>&lt;div&gt;</code></div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> <code>&lt;section&gt;</code></div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> <code>&lt;article&gt;</code></div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> <code>&lt;aside&gt;</code></div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: C</strong> — <code>&lt;article&gt;</code> represents independent, self-contained syndicateable content, whereas <code>&lt;section&gt;</code> groups thematically related page content with a heading.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">2.</span> How should an accessible form input field be strictly paired with its descriptive label to ensure assistive screen readers identify the field upon focus?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> Match the label's <code>for</code> attribute with the input's <code>id</code> attribute</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> Match the label's <code>name</code> attribute with the input's <code>class</code> attribute</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> Place the label after the input with a placeholder</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> Wrap both in a <code>&lt;span&gt;</code> tag without attributes</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: A</strong> — <code>&lt;label for="user-email"&gt;Email&lt;/label&gt;</code> strictly links with <code>&lt;input id="user-email" ...&gt;</code>. Clicking the label also moves input focus directly to the control.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="mcq-title"><span class="mcq-num">3.</span> When implementing modern responsive images with art direction (serving different aspect ratios or cropped images on mobile vs. desktop), which HTML5 element should be utilized?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> <code>&lt;canvas&gt;</code> with JavaScript resize listeners</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> <code>&lt;picture&gt;</code> containing multiple <code>&lt;source&gt;</code> elements with <code>media</code> queries and a fallback <code>&lt;img&gt;</code></div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> Multiple <code>&lt;img&gt;</code> tags hidden with CSS <code>display: none</code></div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> An embedded <code>&lt;iframe&gt;</code> pointing to image URLs</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — The <code>&lt;picture&gt;</code> element enables art direction and WebP/AVIF format negotiation before downloading, preventing wasted mobile data.
+          </div>
+        </details>
+      </div>
+
+      <h3>Part 2: Written & Oral Questions with Detailed Answers</h3>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="qa-question"><span class="qa-qnum">Q1:</span> What is the purpose of the <code>&lt;!DOCTYPE html&gt;</code> declaration and the viewport meta tag in an HTML5 document?</div>
+        <div class="qa-answer">
+          <p><strong><code>&lt;!DOCTYPE html&gt;</code>:</strong> Instructs the web browser's rendering engine to parse and render the document in full standard compliance mode rather than legacy "quirks mode".</p>
+          <p><strong>Viewport Meta Tag:</strong> <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> ensures that mobile devices render the web page at a 1:1 scale matching the device screen width, preventing mobile browsers from shrinking pages into an unreadable desktop view.</p>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="qa-question"><span class="qa-qnum">Q2:</span> Describe the structural hierarchy of semantic HTML tables and explain when to use <code>colspan</code> and <code>rowspan</code>.</div>
+        <div class="qa-answer">
+          <p><strong>Semantic Table Hierarchy:</strong></p>
+          <ul>
+            <li><code>&lt;caption&gt;</code>: Accessible table title.</li>
+            <li><code>&lt;thead&gt;</code>: Header row container containing column labels formatted with <code>&lt;th scope="col"&gt;</code>.</li>
+            <li><code>&lt;tbody&gt;</code>: Body container holding primary data rows (<code>&lt;tr&gt;</code>) and cells (<code>&lt;td&gt;</code>).</li>
+            <li><code>&lt;tfoot&gt;</code>: Summary or totals row (<code>&lt;tfoot&gt;</code>).</li>
+          </ul>
+          <p><strong>Cell Merging:</strong> <code>colspan="N"</code> expands a single cell across <em>N</em> columns horizontally; <code>rowspan="N"</code> expands a cell across <em>N</em> rows vertically.</p>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="qa-question"><span class="qa-qnum">Q3:</span> What are ARIA roles and landmarks, and what are the best practices for building an accessible modal dialog or navigation menu?</div>
+        <div class="qa-answer">
+          <p><strong>WAI-ARIA (Accessible Rich Internet Applications):</strong> Attributes extending HTML to communicate widget semantics, states, and properties to assistive screen readers.</p>
+          <ul>
+            <li><strong>Rule 1 (First Rule of ARIA):</strong> Use native semantic HTML elements first (e.g. <code>&lt;button&gt;</code>, <code>&lt;nav&gt;</code>). Only use ARIA when native tags cannot convey the state.</li>
+            <li><strong>Modal Dialog Pattern:</strong> Apply <code>role="dialog"</code> and <code>aria-modal="true"</code>, link title with <code>aria-labelledby="modal-title"</code>, trap keyboard focus (Tab key) inside the modal, and close on <code>Escape</code> key.</li>
+            <li><strong>Accessible Toggles:</strong> Use <code>aria-expanded="true/false"</code> and <code>aria-controls="nav-menu"</code> on mobile hamburger buttons so screen readers announce menu open/close states.</li>
+          </ul>
         </div>
       </div>
 

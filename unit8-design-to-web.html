@@ -39,6 +39,7 @@
       <a href="#element4">4. Consistency & Optimization</a>
       <a href="#checklist">Final Checklist</a>
       <a href="#evidence">Evidence Guide</a>
+      <a href="#exam-prep">Exam Question Bank & MCQs</a>
     </nav>
   </aside>
 
@@ -343,6 +344,114 @@
               <li>Commitment to delivering visually faithful web output</li>
             </ul>
           </div></div>
+        </div>
+      </div>
+
+      <!-- ============================================
+           NSDA EXAM PREPARATION: MCQS & QUESTION BANK
+           ============================================ -->
+      <h2 id="exam-prep"><span class="icon">🎯</span> NSDA Exam Preparation: Question Bank & MCQs</h2>
+      <p>High-yield exam questions covering design file inspection, asset slicing, font optimization, and PSD/Figma-to-HTML conversion for NSDA Level 3 certification.</p>
+
+      <h3>Part 1: Multiple Choice Questions (MCQs)</h3>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="mcq-title"><span class="mcq-num">1.</span> When exporting logos, UI icons, and decorative geometric shapes from Figma or Photoshop for web integration, which file format should you choose for infinite scalability without pixelation?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> JPEG (.jpg)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> SVG (Scalable Vector Graphics)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> BMP (.bmp)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> GIF (.gif)</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — SVG is XML-based vector code that scales smoothly to any resolution (Retina/4K displays) with tiny file sizes and CSS styling support.
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="mcq-title"><span class="mcq-num">2.</span> Why is <strong>WebP</strong> format superior to standard PNG and JPEG formats for photographic web assets?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> It is an uncompressed RAW camera file</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> It provides 25% to 35% smaller file sizes than JPEG/PNG while supporting both alpha transparency and animation</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> It only loads on desktop monitors</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> It does not require an <code>alt</code> tag</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: B</strong> — Developed by Google, WebP offers superior lossy and lossless compression, supports alpha transparency (replacing heavy PNG-24), and accelerates Google Core Web Vitals (LCP).
+          </div>
+        </details>
+      </div>
+
+      <div class="mcq-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="mcq-title"><span class="mcq-num">3.</span> When self-hosting custom brand web fonts with CSS <code>@font-face</code>, which font file format delivers maximum compression and universal support across modern browsers?</div>
+        <div class="mcq-options-list">
+          <div class="mcq-opt"><span class="mcq-opt-key">A</span> TrueType (.ttf)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">B</span> Embedded OpenType (.eot)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">C</span> WOFF2 (Web Open Font Format 2.0)</div>
+          <div class="mcq-opt"><span class="mcq-opt-key">D</span> PostScript (.ps)</div>
+        </div>
+        <details class="exam-reveal">
+          <summary>View Correct Answer & Explanation</summary>
+          <div class="exam-reveal-body">
+            <strong>Correct Answer: C</strong> — <strong>WOFF2</strong> provides approximately 30% better Brotli-based compression than original WOFF and is supported natively by all modern browsers.
+          </div>
+        </details>
+      </div>
+
+      <h3>Part 2: Written & Oral Questions with Detailed Answers</h3>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-basic">Basic</span>
+        <div class="qa-question"><span class="qa-qnum">Q1:</span> Explain the sequential design-to-code workflow when converting a visual Figma/PSD mockup into a responsive website.</div>
+        <div class="qa-answer">
+          <ol>
+            <li><strong>Design Audit:</strong> Inspect the layout grid (columns, gutter), extract brand color codes (HEX/HSL), typography hierarchy (font families, weights, sizes, line heights), and spacing scale.</li>
+            <li><strong>Asset Export:</strong> Slicing and exporting vector graphics as <code>.svg</code> and photos as optimized <code>.webp</code> or <code>.png</code> into the <code>images/</code> folder.</li>
+            <li><strong>HTML Scaffold:</strong> Write semantic HTML5 structure (<code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>).</li>
+            <li><strong>CSS Styling:</strong> Define CSS custom properties, apply global resets, and build desktop/mobile layouts using CSS Grid and Flexbox.</li>
+            <li><strong>Interactive Logic:</strong> Add vanilla JavaScript for mobile navigation toggles, modals, and dynamic components.</li>
+            <li><strong>QA & Optimization:</strong> Audit pixel alignment, responsive breakpoints, lighthouse performance, and WCAG accessibility.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-intermediate">Intermediate</span>
+        <div class="qa-question"><span class="qa-qnum">Q2:</span> A UI designer provides a static desktop mockup with a fixed width of 1440px. How should a front-end developer adapt this into a fluid responsive layout for tablets and smartphones?</div>
+        <div class="qa-answer">
+          <p>Static mockups represent a single snapshot in time. To convert to code:</p>
+          <ul>
+            <li><strong>Container Wrapper:</strong> Enclose the content in a container with <code>max-width: 1440px; margin-inline: auto; padding: 0 1.5rem;</code> to prevent unbounded stretching on ultra-wide monitors.</li>
+            <li><strong>Fluid Columns:</strong> Convert fixed pixel column widths to percentages, flex ratios, or CSS Grid <code>fr</code> units.</li>
+            <li><strong>Breakpoints:</strong> Introduce media queries at standard device viewports (e.g. <code>1024px</code> for tablet landscape, <code>768px</code> for portrait tablet, <code>480px</code> for smartphones).</li>
+            <li><strong>Layout Reorganization:</strong> Collapse multi-column desktop grids into a clean single-column vertical flow on mobile screens, and replace horizontal header links with an accessible mobile drawer/hamburger menu.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <span class="exam-level-tag exam-level-advanced">Advanced</span>
+        <div class="qa-question"><span class="qa-qnum">Q3:</span> What is "Flash of Invisible Text" (FOIT) and how does <code>font-display: swap</code> solve font rendering performance during web page loading?</div>
+        <div class="qa-answer">
+          <p><strong>FOIT (Flash of Invisible Text):</strong> Occurs when a browser hides text content while downloading external custom web fonts over the network, leaving users staring at blank spaces for several seconds.</p>
+          <p><strong>Solution with <code>font-display: swap</code>:</strong></p>
+          <div class="code-block">
+            <pre><code>@font-face {
+  font-family: 'Inter';
+  src: url('fonts/inter.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap; <span class="comment">/* Instantly renders fallback font */</span>
+}</code></pre>
+          </div>
+          <p>Instructs the browser to immediately render readable text using an installed system fallback font (e.g. <code>Arial, sans-serif</code>). Once the custom <code>.woff2</code> font finishes downloading, the browser smoothly swaps it in, preventing blocked user interaction and passing Core Web Vitals (FID/INP).</p>
         </div>
       </div>
 
